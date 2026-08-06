@@ -34,7 +34,6 @@ import numpy as np
 import pandas as pd
 
 from preprocessing import TimeSeriesBuilder, TimeSeriesError
-from metric_selector import MetricSelector  # type: ignore  # noqa: F401
 
 __all__ = [
     "NodeScreener",

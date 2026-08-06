@@ -6,29 +6,38 @@ Dataset: **M100 ExaData** (CINECA Marconi100), record `21-03`, CC-BY-4.0.
 
 ---
 
-## Status
+## Status — FROZEN (all phases complete)
 
-| Module | State |
+| Layer | State |
 |---|---|
 | Dataset exploration, schema, EDA | complete |
 | `loader` | **LOCKED** |
 | `validator` | **LOCKED** |
 | `preprocessing` | **LOCKED** |
 | `visualization` | **LOCKED** |
-| Modelling | not started |
+| `screening` (physics-based node screening) | **LOCKED** |
+| `baseline` (classical first-order thermal model) | **LOCKED** |
+| `pinn` (the single physics-informed neural network) | **LOCKED** |
+| Adversarial audit | complete |
+
+**Headline result:** the PINN provides **no scientifically meaningful
+improvement** over the classical first-order baseline. The residual the
+baseline leaves is real but **orthogonal to the available inputs** (explained
+variance R² ≤ 0.04 from power, power-change, fan, and temperature), so it is
+not learnable within scope. See `docs/RESEARCH_SUMMARY.md`.
 
 ---
 
 ## Layout
 
 ```
-data/       raw/ (Zenodo record) - processed/ - exports/
+data/       raw/ (Zenodo record, gitignored) - exports/ (generated, gitignored)
 src/        loader/ - validator/ - preprocessing/ - visualization/
-reports/    dataset/ - validation/ - preprocessing/ - visualization/
-docs/       architecture/ - handovers/ - module_documentation/ - specifications/
-assets/     images/ - plots/eda/ - plots/visualization/
-examples/   one runnable example per layer
-configs/    tests/    notebooks/    archive/
+            screening/ - baseline/ - pinn/     (7 locked layers)
+docs/       RESEARCH_SUMMARY.md - handovers/HANDOVER.md
+reports/    validation/
+examples/   run_pipeline.py - run_baseline.py - run_pinn.py
+README.md - requirements.txt - .gitignore
 ```
 
 ---
@@ -85,11 +94,12 @@ cd GLASSCHIP
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 
-pip install pandas pyarrow numpy matplotlib
+pip install -r requirements.txt
 ```
 
-Python 3.10 or newer. No packaging metadata is required; `src/` is placed on
-the path by the examples.
+Python 3.10 or newer (verified on 3.13). No packaging metadata is required;
+`src/` is placed on the path by the examples. `torch` (CPU build) is needed
+only for the PINN layer.
 
 ---
 
@@ -98,10 +108,9 @@ the path by the examples.
 From the repository root, after the dataset is in place:
 
 ```bash
-python examples/loader_example_usage.py
-python examples/validator_example_usage.py
-python examples/preprocessing_example_usage.py
-python examples/visualization_example_usage.py
+python examples/run_pipeline.py     # load -> validate -> preprocess -> visualise
+python examples/run_baseline.py     # screening + classical first-order fit
+python examples/run_pinn.py         # PINN vs baseline on one node
 ```
 
 The examples insert `src/` on `sys.path` themselves. For ad-hoc imports set
@@ -110,29 +119,16 @@ The examples insert `src/` on `sys.path` themselves. For ad-hoc imports set
 ```python
 from loader import DatasetLoader
 from validator import DatasetValidator
-from preprocessing import MetricSelector, TimeSeriesBuilder, Exporter
+from preprocessing import TimeSeriesBuilder, Exporter
 from visualization import ThermalVisualizer
+from screening import NodeScreener
+from baseline import ClassicalBaselineModel
+from pinn import ThermalPINN
 ```
 
-### Generated output
-
-Running the examples writes to git-ignored locations:
-
-| Path | Content |
-|---|---|
-| `data/exports/` | `Node_15.parquet`, `Node_15.csv`, `Node_15_report.json` |
-| `assets/plots/visualization/` | 7 node-15 figures (overwrites the committed copies) |
-
-### Reproducibility check
-
-The preprocessing pipeline is deterministic. For node 15 of record `21-03`:
-
-| | |
-|---|---|
-| Frame shape | `(11166, 5)` |
-| SHA-256 of frame (first 16) | `8473342129fb19f0` |
-| Segments | `61.978 h / 11157 samples`, `0.044 h / 9 samples` |
-| 5-input validator verdict | `FAIL` (expected — see Known constraints) |
+Examples write to the git-ignored `data/exports/`. The pipeline is
+deterministic: node 15's model-ready frame has SHA-256 (first 16)
+`8473342129fb19f0` — the reproducibility anchor.
 
 ---
 
@@ -148,6 +144,12 @@ data/raw/21-03
   preprocessing    gate -> clean -> exact join -> export
       |
   visualization    what does the data look like?
+      |
+  screening        which nodes deserve to teach a model?  PASS / FAIL (372/22)
+      |
+  baseline         how much does simple first-order physics explain?
+      |
+  pinn             can a PINN explain what the baseline cannot?  (answer: no)
 ```
 
 Each layer refuses to proceed when the previous one reports a problem.
@@ -160,12 +162,10 @@ returns `FAIL`; there is no override.
 
 | Topic | Path |
 |---|---|
-| Session handover - **read first** | `docs/handovers/HANDOVER.md` |
-| Repository structure | `docs/architecture/PROJECT_STRUCTURE.md` |
-| Reorganisation record | `docs/architecture/REPOSITORY_REORGANIZATION_REPORT.md` |
-| Module documentation | `docs/module_documentation/` |
-| Dataset reports | `reports/dataset/` |
-| Validation reports | `reports/validation/` |
+| **Complete scientific summary** | `docs/RESEARCH_SUMMARY.md` |
+| **Project state + how to continue** | `docs/handovers/HANDOVER.md` |
+| Validation report | `reports/validation/glasschip_v1_compatibility.md` |
+| API reference | in-code docstrings in `src/` |
 
 ---
 
@@ -191,12 +191,3 @@ remaining ~330 metrics.
 5. No instrument characterisation is possible from this record.
 
 Full detail in `docs/handovers/HANDOVER.md`.
-
----
-
-## `archive/`
-
-`archive/battery_project_v0/` holds a superseded battery-SOH project.
-**It is not a specification for this work.** `archive/exploration/` holds
-the exploration scripts that produced the dataset reports; they remain
-runnable but are not part of the locked pipeline.

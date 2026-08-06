@@ -1,0 +1,19 @@
+# GLASSCHIP-V1 dependencies
+# Verified working set (Python 3.13.14). Versions are lower bounds.
+
+# --- core pipeline (loader -> validator -> preprocessing -> visualization) ---
+pandas>=2.0
+pyarrow>=14.0          # Parquet reader used by the locked loader
+numpy>=1.24
+matplotlib>=3.7        # visualization layer only
+
+# --- classical baseline (Phase 9) ---
+# uses numpy only (already listed)
+
+# --- PINN (Phase 10) ---
+torch>=2.0             # CPU build is sufficient; ~100-parameter network
+
+# --- optional ---
+# duckdb>=1.0          # only needed as an alternative Parquet reader if the
+#                      # platform blocks pyarrow's compiled DLL; the canonical
+#                      # pipeline does not require it.

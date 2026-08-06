@@ -123,3 +123,6 @@ $RECYCLE.BIN/
 *.pem
 *.key
 credentials.json
+
+# Local agent settings
+.claude/
