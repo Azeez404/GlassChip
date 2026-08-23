@@ -112,3 +112,17 @@ estimator in `src/glasschip/models/`.
 The archive branch preserves later exploratory directions (a PINN prototype and a GPU/HBM
 thermal-coupling study), both of which produced honest negative results. They are historical and
 form no part of the V2 contribution.
+
+## Licence
+
+Code, documentation, and the manuscript in this repository are released under the
+**MIT License** — see [`LICENSE`](LICENSE).
+
+The datasets are **not** covered by that licence and are **not redistributed here**. Both are
+third-party works used under **CC-BY-4.0** and cited in the manuscript:
+
+- Summit per-component power and thermal measurements — OSTI/OLCF DOI `10.13139/OLCF/1861393`
+- M100 ExaData — DOI `10.1038/s41597-023-02174-3`
+
+If you use this work, please cite the manuscript and the dataset(s) you rely on. The verified
+reference list is in [`paper/references/references_block.md`](paper/references/references_block.md).
