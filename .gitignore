@@ -127,17 +127,15 @@ credentials.json
 # Local agent settings
 .claude/
 
-# V2 external datasets (not redistributed)
-v2_research/data/raw/
-v2_research/data/processed/
+# ---------------------------------------------------------------------
+# Datasets - public, referenced by local path, NEVER redistributed here
+#   Summit  (OSTI/OLCF DOI 10.13139/OLCF/1861393, CC-BY-4.0)  ~12 GB
+#   M100    (DOI 10.1038/s41597-023-02174-3,      CC-BY-4.0)  ~1.2 GB
+# data/ is already excluded in full above; these are defence in depth.
+# ---------------------------------------------------------------------
+data/summit/
+data/raw/
+data/exports/
 
-v2_research/d2_longitudinal/data/raw/
-v2_research/d2_longitudinal/data/processed/
-
-# V2 Summit dataset (Globus, CC-BY-4.0) - never redistributed
-v2_research/summit/raw/
-v2_research/summit/extracted/
-# Derived (cleaned) Summit data is reproducible from raw via summit_derive.py;
-# do not commit the parquet. JSON manifests/policy reports ARE kept as provenance.
-v2_research/summit/derived/cleaned/
-v2_research/summit/derived/quality_masks/
+# Generated per-phase CSV summaries (regenerable from artifacts/results/*.json)
+artifacts/**/*.csv

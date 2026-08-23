@@ -1,111 +1,107 @@
 # GLASSCHIP-V2
 
-**An empirical HPC measurement-quality study on the Summit supercomputer.**
-Manuscript complete and submission-ready.
-
----
-
-## Research question
+**An empirical measurement-quality study of thermal model identification on the Summit
+supercomputer.** Manuscript complete and submission-ready.
 
 > On real supercomputer temperature and power measurements, how does measurement quality —
-> temperature quantization, sampling rate, and spatial aggregation — affect identification of
-> a first-order thermal model, and does higher measurement quality that sharpens parameter
-> identification also make the unexplained residual dynamics more predictable out-of-sample?
+> temperature quantization, sampling rate, and spatial aggregation — affect identification of a
+> first-order thermal model, and does higher measurement quality also make the unexplained
+> residual more predictable?
 
-Holding hardware and workload fixed, only the *measurements* are degraded (five conditions,
+Hardware and workload are held fixed; only the *measurements* are degraded (five conditions,
 F0–F4), and the model is re-identified in each.
 
-## Main findings
+## Findings
 
-- **Measurement quality substantially changes the identified effective thermal response time
-  τ**: about 394 s at full quality, 116 s under 1 °C quantization (0.29×), 910 s under 10 s→20 s
-  downsampling (2.31×) — roughly a factor of eight across conditions on the same units.
-- **The strongest result:** the quantization-induced estimate falls **below the entire
-  full-quality range observed across all 116 sampled host-sockets** (minimum ≈ 205 s). A
-  measurement choice can bias an identified parameter further than real unit-to-unit variation.
-- **Better measurements do not buy predictability**: out-of-sample residual R² ≤ 0.066, near a
+- **Measurement quality substantially changes the identified effective thermal response time τ:**
+  ≈394 s at full quality, 116 s under 1 °C quantization (0.29×), 910 s under 10 s→20 s
+  downsampling (2.31×) — about a factor of eight across conditions, on the same units.
+- **Headline result:** the quantization-induced estimate falls **below the entire full-quality
+  range observed across all 116 sampled host-sockets** (minimum ≈205 s). A measurement choice can
+  bias an identified parameter further than real unit-to-unit variation does.
+- **Better measurements do not buy predictability:** out-of-sample residual R² ≤ 0.066, near a
   permutation null, and no better at full quality than under degradation.
-- **Extended 116-unit ablation (Phase 2F):** the degradation is *not* a constant per-unit
-  factor, and spatial aggregation disturbs the rank ordering of units (Spearman ρ ≈ 0.49) far
-  more than quantization or downsampling do (ρ ≈ 0.80).
+- **Extended 116-unit ablation:** the degradation is *not* a constant per-unit factor, and
+  spatial aggregation disturbs the rank ordering of units (Spearman ρ ≈ 0.49, 95% CI [0.32, 0.63])
+  far more than quantization or downsampling do (ρ ≈ 0.80).
 - **F0 is a reference measurement regime, not physical ground truth.** An ideal first-order
-  process would leave τ invariant under decimation; the observed shift indicates dynamics
-  faster than the model represents.
+  process would leave τ invariant under decimation; the observed shift indicates dynamics faster
+  than the model represents.
 
-This is a measurement-quality study. It is **not** a new model, a monitor, a digital twin, or
-a physics-informed-ML paper.
+This is a measurement-quality study — **not** a new model, a monitor, a digital twin, or a
+physics-informed-ML paper.
 
-## Repository layout
+## Reproduce
 
-```
-README.md                     this file
-requirements.txt
-docs/handovers/
-  PROJECT_HANDOVER.md         full project history and state — read this second
-src/baseline/                 frozen classical first-order estimator (V1 module,
-                              imported read-only by the Phase 2 generators)
-v2_research/
-  README.md                   V2 pipeline guide
-  paper/                      manuscript, figures, tables, references, claim audits
-    manuscript.md             ** the paper **
-  paper_analysis/             canonical analysis pipeline, validator, result manifest
-  summit/                     Phase 2A–2F experiment code + locked JSON results
-  data_audit/                 dataset provenance
-```
-
-## Reproduce the analysis
-
-Regenerates every table, figure, and manifest entry from the locked Phase 2 result artifacts,
-then validates them. **Requires no raw data.**
+Regenerates every table, figure, and manifest entry from the frozen results and validates them.
+**No raw data required**; runs in under a minute.
 
 ```bash
-python v2_research/paper_analysis/run_all.py
+python scripts/run_all.py
 ```
 
-Expected: `44/44 passed`, `PASS (23 checks)`, `GATE: GREEN (reproduced + validated)`.
+Expected: `44/44 passed` · `PASS (23 checks)` · `GATE: GREEN (reproduced + validated)`.
 
-Validation alone:
+## Layout
 
-```bash
-python v2_research/paper_analysis/validate_results.py
+```
+paper/
+  manuscript/        manuscript.md  ** the paper **, abstract.md
+  figures/           Fig 1-6 (PDF + PNG) - canonical, regenerated by the pipeline
+  tables/            Table 1-5
+  references/        verified reference list
+
+src/glasschip/       library code
+  config.py          artifact paths + locked expected values
+  models/            frozen first-order estimator
+  analysis/          load results, regenerate tables and figures
+  validation/        locked-number checks, artifact verification
+
+experiments/         one entry point per phase (2A-2F) + data_prep/
+artifacts/
+  results/           frozen experiment outputs (the paper's inputs)
+  manifests/         provenance: results manifest, per-host derivation, schema
+  validation/        validation run record
+scripts/run_all.py   the reproduction entry point
+
+docs/
+  HANDOVER.md          project state and history - read this second
+  METHODOLOGY.md       experimental design, conditions, model, conventions
+  REPRODUCIBILITY.md   how to reproduce, determinism anchors, data placement
+  DATA_PROVENANCE.md   dataset integrity, schema and sampling reports
+  EVIDENCE.md          claim-to-evidence trail
+  RELATED_WORK.md      literature, citation evidence, novelty assessment
 ```
 
 ## Datasets are intentionally not committed
 
-Both datasets are public and are referenced by local path, never redistributed here. `.gitignore`
-excludes them deliberately.
+Both are public and referenced by local path, never redistributed here.
 
-| Dataset | Size | Where it must go locally |
+| Dataset | Size | Expected local path |
 |---|---|---|
-| Summit per-component power and thermal (OSTI/OLCF DOI `10.13139/OLCF/1861393`, CC-BY-4.0) | ~12 GB | `v2_research/summit/raw/` → derived to `v2_research/summit/derived/cleaned/` |
-| M100 ExaData (DOI `10.1038/s41597-023-02174-3`, CC-BY-4.0) — V1 only, context in V2 | ~1.2 GB | `data/raw/` |
+| Summit power/thermal (OSTI/OLCF DOI `10.13139/OLCF/1861393`, CC-BY-4.0) | ~12 GB | `data/summit/raw/` → `data/summit/derived/cleaned/` |
+| M100 ExaData (DOI `10.1038/s41597-023-02174-3`, CC-BY-4.0) — V1 only | ~1.2 GB | `data/raw/` |
 
-Only the **derived JSON result artifacts** and provenance manifests are committed (~4 MB total).
-Regenerating the Phase 2 results from raw data additionally requires the Summit archive and
-`polars`.
+Only derived JSON results and provenance manifests (~4 MB) are committed, which is what makes
+the paper reproducible without the archive. Override the dataset location with
+`GLASSCHIP_SUMMIT_DERIVED`.
 
 Note: the public Summit release provides 10 s and 1 min means only — the original 1 Hz
-measurements are **not** distributed. This bounds the fast dynamics any analysis of this archive
-can resolve, and is discussed in the manuscript.
+measurements are **not** distributed. See `docs/REPRODUCIBILITY.md`.
 
 ## Branches
 
 | Branch | Contents |
 |---|---|
-| `main` | **GLASSCHIP-V2** — the current project (this README) |
-| `backup/v1` | **GLASSCHIP-V1**, frozen at the `Release GLASSCHIP-V1.0` commit: 26 files, full V1 source, docs, handover, research summary, usage examples |
-| `archive/exploratory-2026-08` | Historical exploratory work removed from `main` — PINN opportunity hunts and prototype, GPU/HBM coupling study, strategy/novelty audits, early V2 decision records |
+| `main` | **GLASSCHIP-V2** — this project |
+| `backup/v1` | **GLASSCHIP-V1**, frozen at the `Release GLASSCHIP-V1.0` commit (26 files: full V1 source, docs, handover, research summary, examples) |
+| `archive/exploratory-2026-08` | Historical exploratory work — PINN opportunity hunts and prototype, GPU/HBM coupling study, strategy audits, early V2 records |
 
-**V1** asked whether a physics-informed neural network could learn thermal behaviour classical
-first-order physics cannot already explain, on CINECA Marconi100 data. The answer was **no** — a
-rigorous negative result. V1 is frozen; nothing in V2 depends on it except the classical
-estimator in `src/baseline/`.
+**V1** tested whether a physics-informed neural network could learn thermal behaviour that
+classical first-order physics cannot already explain, on CINECA Marconi100. The answer was **no** —
+a rigorous negative result. V1 is frozen. V2's only inheritance from it is the classical
+estimator in `src/glasschip/models/`.
 
-The `archive/` branch preserves later exploratory directions (a PINN prototype and a GPU/HBM
-thermal-coupling study, both of which produced honest negative results). They are historical and
+The archive branch preserves later exploratory directions (a PINN prototype and a GPU/HBM
+thermal-coupling study), both of which produced honest negative results. They are historical and
 form no part of the V2 contribution.
-
-## Licence and citation
-
-Datasets are used under CC-BY-4.0 and cited in the manuscript. See
-`v2_research/paper/references/references_block.md` for the verified reference list.
