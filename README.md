@@ -3,6 +3,13 @@
 **An empirical measurement-quality study of thermal model identification on the Summit
 supercomputer.** Manuscript complete and submission-ready.
 
+| Start here | |
+|---|---|
+| **The paper** | [`paper/manuscript/manuscript.md`](paper/manuscript/manuscript.md) |
+| **Reproduce it** | `python scripts/run_all.py` |
+| **Project state and history** | [`docs/HANDOVER.md`](docs/HANDOVER.md) |
+| **Method in brief** | [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) |
+
 > On real supercomputer temperature and power measurements, how does measurement quality —
 > temperature quantization, sampling rate, and spatial aggregation — affect identification of a
 > first-order thermal model, and does higher measurement quality also make the unexplained

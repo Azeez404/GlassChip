@@ -5,11 +5,20 @@ supports it, plus the numerical-consistency and artifact-inventory checks. Conso
 the separate claim-audit documents produced during analysis.
 
 
+
+> **Path note.** This document consolidates audit files written *before* the repository was
+> reorganised. Source paths quoted below are pre-reorganisation and no longer exist as such.
+> Current equivalents: `v2_research/paper_analysis/*.py` → `src/glasschip/`;
+> `paper_results_manifest.json` → `artifacts/manifests/`; `v2_research/summit/*/[phase]_results.json`
+> → `artifacts/results/`; `v2_research/paper/` → `paper/`; `src/baseline/` → `src/glasschip/models/`.
+> The content is preserved verbatim as the historical evidence record.
+
+
 ---
 
 ## Paper-level claim audit
 
-*(source: `v2_research/paper/claims/paper_level_claim_audit.md`)*
+*(pre-reorganisation source: `v2_research/paper/claims/paper_level_claim_audit.md`)*
 
 ## PHASE 3D — PAPER-LEVEL CLAIM AUDIT
 
@@ -179,7 +188,7 @@ manuscript.md not modified.
 
 ## Claim audit (conditions)
 
-*(source: `v2_research/paper/claims/claim_audit.md`)*
+*(pre-reorganisation source: `v2_research/paper/claims/claim_audit.md`)*
 
 ## Paper Claim Audit (Phase 3D)
 
@@ -208,7 +217,7 @@ Prior art [L]: quantization bias (P6–P8), block bootstrap (P9), identifiabilit
 
 ## Final numerical consistency
 
-*(source: `v2_research/paper/claims/final_numerical_consistency.md`)*
+*(pre-reorganisation source: `v2_research/paper/claims/final_numerical_consistency.md`)*
 
 ## PHASE 3D — FINAL NUMERICAL CONSISTENCY AUDIT
 
@@ -355,7 +364,7 @@ step); validator 44/44 PASS. Only this file
 
 ## Claim-evidence matrix
 
-*(source: `v2_research/paper_analysis/claim_evidence_matrix.md`)*
+*(pre-reorganisation source: `v2_research/paper_analysis/claim_evidence_matrix.md`)*
 
 ## Claim → Evidence Matrix
 
@@ -376,7 +385,7 @@ step); validator 44/44 PASS. Only this file
 
 ## Analysis-stage claim audit
 
-*(source: `v2_research/paper_analysis/claim_audit.md`)*
+*(pre-reorganisation source: `v2_research/paper_analysis/claim_audit.md`)*
 
 ## Claim Audit
 
@@ -417,7 +426,7 @@ Automated guard: `validate_results.py` enforces the numeric facts (44 checks); t
 
 ## Artifact inventory
 
-*(source: `v2_research/paper_analysis/artifact_inventory.md`)*
+*(pre-reorganisation source: `v2_research/paper_analysis/artifact_inventory.md`)*
 
 ## Phase 2 Artifact Inventory (source of truth for the paper)
 

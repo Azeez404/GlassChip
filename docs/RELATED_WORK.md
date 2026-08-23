@@ -4,11 +4,20 @@ Background research supporting the manuscript's related-work section and its pos
 Consolidated from the separate literature documents produced during analysis.
 
 
+
+> **Path note.** This document consolidates audit files written *before* the repository was
+> reorganised. Source paths quoted below are pre-reorganisation and no longer exist as such.
+> Current equivalents: `v2_research/paper_analysis/*.py` → `src/glasschip/`;
+> `paper_results_manifest.json` → `artifacts/manifests/`; `v2_research/summit/*/[phase]_results.json`
+> → `artifacts/results/`; `v2_research/paper/` → `paper/`; `src/baseline/` → `src/glasschip/models/`.
+> The content is preserved verbatim as the historical evidence record.
+
+
 ---
 
 ## Related-work outline
 
-*(source: `v2_research/paper_analysis/related_work_outline.md`)*
+*(pre-reorganisation source: `v2_research/paper_analysis/related_work_outline.md`)*
 
 ## Related Work — outline (no prose yet)
 
@@ -49,7 +58,7 @@ No prior work runs a **controlled, same-hardware measurement-quality ablation on
 
 ## Literature matrix
 
-*(source: `v2_research/paper_analysis/literature_matrix.md`)*
+*(pre-reorganisation source: `v2_research/paper_analysis/literature_matrix.md`)*
 
 ## Literature Matrix — closest prior art
 
@@ -85,7 +94,7 @@ measurement manipulation, fleet, OOS, uncertainty, online are encoded in columns
 
 ## Citation evidence
 
-*(source: `v2_research/paper_analysis/citation_evidence.md`)*
+*(pre-reorganisation source: `v2_research/paper_analysis/citation_evidence.md`)*
 
 ## Citation Evidence
 
@@ -133,7 +142,7 @@ exact claim it supports · evidence type. No DOI is asserted without verificatio
 
 ## Novelty verdict
 
-*(source: `v2_research/paper_analysis/novelty_verdict.md`)*
+*(pre-reorganisation source: `v2_research/paper_analysis/novelty_verdict.md`)*
 
 ## Novelty Verdict
 

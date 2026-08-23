@@ -7,11 +7,20 @@ reports record what was received, how it was checked, and how it was derived.
 Machine-readable counterparts live in `artifacts/manifests/`.
 
 
+
+> **Path note.** This document consolidates audit files written *before* the repository was
+> reorganised. Source paths quoted below are pre-reorganisation and no longer exist as such.
+> Current equivalents: `v2_research/paper_analysis/*.py` → `src/glasschip/`;
+> `paper_results_manifest.json` → `artifacts/manifests/`; `v2_research/summit/*/[phase]_results.json`
+> → `artifacts/results/`; `v2_research/paper/` → `paper/`; `src/baseline/` → `src/glasschip/models/`.
+> The content is preserved verbatim as the historical evidence record.
+
+
 ---
 
 ## Inventory summary
 
-*(source: `v2_research/summit/inventory/summary.md`)*
+*(pre-reorganisation source: `v2_research/summit/inventory/summary.md`)*
 
 ## Summit dataset - inventory summary
 
@@ -43,7 +52,7 @@ See `schema_report.md`, `sampling_report.md`, `integrity_report.md`, and `datase
 
 ## Integrity report
 
-*(source: `v2_research/summit/inventory/integrity_report.md`)*
+*(pre-reorganisation source: `v2_research/summit/inventory/integrity_report.md`)*
 
 ## Summit dataset - integrity report
 
@@ -227,7 +236,7 @@ Downstream MUST NOT blind-drop duplicates: most are same-timestamp rows with DIF
 
 ## Schema report
 
-*(source: `v2_research/summit/inventory/schema_report.md`)*
+*(pre-reorganisation source: `v2_research/summit/inventory/schema_report.md`)*
 
 ## Summit dataset - schema report
 
@@ -274,7 +283,7 @@ Distinct fleet-wide schemas: **1**
 
 ## Sampling report
 
-*(source: `v2_research/summit/inventory/sampling_report.md`)*
+*(pre-reorganisation source: `v2_research/summit/inventory/sampling_report.md`)*
 
 ## Summit dataset - sampling report
 
@@ -353,7 +362,7 @@ Intervals are computed from actual timestamp differences, not the directory name
 
 ## Dataset inventory (narrative)
 
-*(source: `v2_research/data_audit/dataset_inventory.md`)*
+*(pre-reorganisation source: `v2_research/data_audit/dataset_inventory.md`)*
 
 ## GLASSCHIP-V2 — Phase V2-1: Dataset Acquisition & Verification Record
 

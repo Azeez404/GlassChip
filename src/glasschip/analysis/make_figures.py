@@ -1,7 +1,16 @@
 """Generate the 6 paper figures (PDF + PNG) from canonical loaded results.
-Deterministic; no hand-typed numbers; no smoothing/manipulation. Read-only."""
+Deterministic; no hand-typed numbers; no smoothing/manipulation. Read-only.
+
+Byte-reproducible: SOURCE_DATE_EPOCH is pinned before matplotlib is imported so
+the PDF /CreationDate is fixed. Without it, every run rewrites the PDFs with a
+new timestamp and dirties the working tree even though the plots are identical.
+"""
 from __future__ import annotations
 import json
+import os
+
+os.environ.setdefault("SOURCE_DATE_EPOCH", "1577836800")  # 2020-01-01T00:00:00Z
+
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")

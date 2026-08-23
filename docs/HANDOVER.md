@@ -116,7 +116,9 @@ Canonical hashes (unchanged by the cleanup): manifest `c999514568e1ab20`, Phase 
 ### 4.4 Locked / sacred
 
 `src/glasschip/models/`; Phase 2A–2F `*_results.json`; condition definitions F0–F4; seeds (0);
-the τ = −Δt/ln α convention; `paper_analysis/` logic. Phase 2F is **additive** — it imports
+the τ = −Δt/ln α convention; the locked expected values and tolerances in
+`src/glasschip/config.py`; and the analysis/validation logic in `src/glasschip/`.
+Phase 2F is **additive** — it imports
 Phase 2B read-only and altered no previously reported value.
 
 ---
