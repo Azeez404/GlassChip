@@ -1,0 +1,24 @@
+# GLASSCHIP - HBM thermal coupling study. All paths and settings in one place.
+dataset:
+  # Read-only reference to the existing local Summit derived tables.
+  # Override with env var GLASSCHIP_SUMMIT_DERIVED.
+  root: v2_research/summit/derived/cleaned
+  dt_s: 10.0                 # nominal sampling interval
+  gpu_power_map:             # verified by correlation, see docs/DATA_AUDIT.json
+    0: p0_gpu0_power
+    1: p0_gpu1_power
+    2: p0_gpu2_power
+    3: p1_gpu0_power
+    4: p1_gpu1_power
+    5: p1_gpu2_power
+
+split:                       # chronological, never shuffled
+  train_frac: 0.60
+  val_frac: 0.15
+  test_frac: 0.25
+
+experiment:
+  horizon: 30                # free-running multi-step horizon (30 x 10s = 300 s)
+  min_segment_len: 2000      # samples required for a usable segment
+  seed: 0
+  n_probe_gpus: 8            # diverse traces for phase-3 step 2

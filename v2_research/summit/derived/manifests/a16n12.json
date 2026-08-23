@@ -1,0 +1,557 @@
+{
+  "host": "a16n12",
+  "generated": "2026-08-20T10:18:31+00:00",
+  "provenance": {
+    "raw_dir": "v2_research\\summit\\raw\\a_fullperiod_10sec_58hosts_decomp\\a16n12",
+    "n_source_files": 142,
+    "source_files": [
+      "a16n12\\202001\\20200101.parquet",
+      "a16n12\\202001\\20200102.parquet",
+      "a16n12\\202001\\20200103.parquet",
+      "a16n12\\202001\\20200106.parquet",
+      "a16n12\\202001\\20200107.parquet",
+      "a16n12\\202001\\20200108.parquet",
+      "a16n12\\202001\\20200109.parquet",
+      "a16n12\\202001\\20200110.parquet",
+      "a16n12\\202001\\20200111.parquet",
+      "a16n12\\202001\\20200112.parquet",
+      "a16n12\\202001\\20200113.parquet",
+      "a16n12\\202001\\20200114.parquet",
+      "a16n12\\202001\\20200115.parquet",
+      "a16n12\\202001\\20200116.parquet",
+      "a16n12\\202001\\20200117.parquet",
+      "a16n12\\202001\\20200118.parquet",
+      "a16n12\\202001\\20200119.parquet",
+      "a16n12\\202001\\20200120.parquet",
+      "a16n12\\202001\\20200121.parquet",
+      "a16n12\\202001\\20200122.parquet",
+      "a16n12\\202001\\20200123.parquet",
+      "a16n12\\202001\\20200124.parquet",
+      "a16n12\\202001\\20200125.parquet",
+      "a16n12\\202001\\20200126.parquet",
+      "a16n12\\202001\\20200127.parquet",
+      "a16n12\\202001\\20200128.parquet",
+      "a16n12\\202001\\20200129.parquet",
+      "a16n12\\202001\\20200131.parquet",
+      "a16n12\\202008\\20200801.parquet",
+      "a16n12\\202008\\20200802.parquet",
+      "a16n12\\202008\\20200803.parquet",
+      "a16n12\\202008\\20200804.parquet",
+      "a16n12\\202008\\20200805.parquet",
+      "a16n12\\202008\\20200806.parquet",
+      "a16n12\\202008\\20200807.parquet",
+      "a16n12\\202008\\20200808.parquet",
+      "a16n12\\202008\\20200809.parquet",
+      "a16n12\\202008\\20200810.parquet",
+      "a16n12\\202008\\20200811.parquet",
+      "a16n12\\202008\\20200812.parquet",
+      "a16n12\\202008\\20200813.parquet",
+      "a16n12\\202008\\20200814.parquet",
+      "a16n12\\202008\\20200815.parquet",
+      "a16n12\\202008\\20200816.parquet",
+      "a16n12\\202008\\20200817.parquet",
+      "a16n12\\202008\\20200818.parquet",
+      "a16n12\\202008\\20200819.parquet",
+      "a16n12\\202008\\20200820.parquet",
+      "a16n12\\202008\\20200821.parquet",
+      "a16n12\\202008\\20200822.parquet",
+      "a16n12\\202008\\20200823.parquet",
+      "a16n12\\202008\\20200824.parquet",
+      "a16n12\\202008\\20200825.parquet",
+      "a16n12\\202008\\20200826.parquet",
+      "a16n12\\202008\\20200827.parquet",
+      "a16n12\\202008\\20200828.parquet",
+      "a16n12\\202008\\20200829.parquet",
+      "a16n12\\202008\\20200830.parquet",
+      "a16n12\\202008\\20200831.parquet",
+      "a16n12\\202102\\20210201.parquet",
+      "a16n12\\202102\\20210202.parquet",
+      "a16n12\\202102\\20210203.parquet",
+      "a16n12\\202102\\20210204.parquet",
+      "a16n12\\202102\\20210205.parquet",
+      "a16n12\\202102\\20210206.parquet",
+      "a16n12\\202102\\20210207.parquet",
+      "a16n12\\202102\\20210208.parquet",
+      "a16n12\\202102\\20210209.parquet",
+      "a16n12\\202102\\20210210.parquet",
+      "a16n12\\202102\\20210211.parquet",
+      "a16n12\\202102\\20210212.parquet",
+      "a16n12\\202102\\20210213.parquet",
+      "a16n12\\202102\\20210214.parquet",
+      "a16n12\\202102\\20210215.parquet",
+      "a16n12\\202102\\20210216.parquet",
+      "a16n12\\202102\\20210217.parquet",
+      "a16n12\\202102\\20210218.parquet",
+      "a16n12\\202102\\20210219.parquet",
+      "a16n12\\202102\\20210220.parquet",
+      "a16n12\\202102\\20210221.parquet",
+      "a16n12\\202102\\20210222.parquet",
+      "a16n12\\202102\\20210223.parquet",
+      "a16n12\\202102\\20210224.parquet",
+      "a16n12\\202102\\20210225.parquet",
+      "a16n12\\202102\\20210226.parquet",
+      "a16n12\\202102\\20210227.parquet",
+      "a16n12\\202102\\20210228.parquet",
+      "a16n12\\202108\\20210801.parquet",
+      "a16n12\\202108\\20210802.parquet",
+      "a16n12\\202108\\20210803.parquet",
+      "a16n12\\202108\\20210804.parquet",
+      "a16n12\\202108\\20210805.parquet",
+      "a16n12\\202108\\20210806.parquet",
+      "a16n12\\202108\\20210807.parquet",
+      "a16n12\\202108\\20210808.parquet",
+      "a16n12\\202108\\20210809.parquet",
+      "a16n12\\202108\\20210810.parquet",
+      "a16n12\\202108\\20210811.parquet",
+      "a16n12\\202108\\20210812.parquet",
+      "a16n12\\202108\\20210813.parquet",
+      "a16n12\\202108\\20210814.parquet",
+      "a16n12\\202108\\20210815.parquet",
+      "a16n12\\202108\\20210816.parquet",
+      "a16n12\\202108\\20210824.parquet",
+      "a16n12\\202108\\20210825.parquet",
+      "a16n12\\202108\\20210826.parquet",
+      "a16n12\\202108\\20210827.parquet",
+      "a16n12\\202108\\20210828.parquet",
+      "a16n12\\202108\\20210829.parquet",
+      "a16n12\\202108\\20210830.parquet",
+      "a16n12\\202108\\20210831.parquet",
+      "a16n12\\202201\\20220101.parquet",
+      "a16n12\\202201\\20220102.parquet",
+      "a16n12\\202201\\20220103.parquet",
+      "a16n12\\202201\\20220104.parquet",
+      "a16n12\\202201\\20220105.parquet",
+      "a16n12\\202201\\20220106.parquet",
+      "a16n12\\202201\\20220107.parquet",
+      "a16n12\\202201\\20220108.parquet",
+      "a16n12\\202201\\20220109.parquet",
+      "a16n12\\202201\\20220110.parquet",
+      "a16n12\\202201\\20220111.parquet",
+      "a16n12\\202201\\20220112.parquet",
+      "a16n12\\202201\\20220113.parquet",
+      "a16n12\\202201\\20220114.parquet",
+      "a16n12\\202201\\20220115.parquet",
+      "a16n12\\202201\\20220116.parquet",
+      "a16n12\\202201\\20220117.parquet",
+      "a16n12\\202201\\20220118.parquet",
+      "a16n12\\202201\\20220119.parquet",
+      "a16n12\\202201\\20220120.parquet",
+      "a16n12\\202201\\20220121.parquet",
+      "a16n12\\202201\\20220122.parquet",
+      "a16n12\\202201\\20220123.parquet",
+      "a16n12\\202201\\20220124.parquet",
+      "a16n12\\202201\\20220125.parquet",
+      "a16n12\\202201\\20220126.parquet",
+      "a16n12\\202201\\20220127.parquet",
+      "a16n12\\202201\\20220128.parquet",
+      "a16n12\\202201\\20220129.parquet",
+      "a16n12\\202201\\20220130.parquet",
+      "a16n12\\202201\\20220131.parquet"
+    ]
+  },
+  "cleaning": {
+    "policy": "C_mean_aggregate",
+    "rows_before": 1311634,
+    "rows_after": 1191388,
+    "removed": 120246,
+    "merged_bins": 52309,
+    "dtype_cast_to": "Float64",
+    "interpolation": "none"
+  },
+  "audit": {
+    "host": "a16n12",
+    "rows": 1191388,
+    "temporal": {
+      "dominant_dt_s": 10,
+      "median_dt_s": 10.0,
+      "pct_dt_eq_10_within_seg": 99.988,
+      "remaining_duplicate_ts": 0,
+      "n_segments": 90,
+      "n_short_gaps_le_30s": 141,
+      "n_large_gaps_gt_30s": 89,
+      "max_gap_s": 15724810,
+      "monotonic": true,
+      "node_hours_total": 3309.4,
+      "longest_segment_hours": 483.7
+    },
+    "missing": {
+      "ps0_input_power": {
+        "nulls": 1,
+        "runs": 1,
+        "max_run": 1,
+        "isolated": 1,
+        "clustered_gt2": 0,
+        "null_pct": 0.0
+      },
+      "ps1_input_power": {
+        "nulls": 1,
+        "runs": 1,
+        "max_run": 1,
+        "isolated": 1,
+        "clustered_gt2": 0,
+        "null_pct": 0.0
+      },
+      "p0_gpu0_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p0_gpu1_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p0_gpu2_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p1_gpu0_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p1_gpu1_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p1_gpu2_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p0_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p1_power": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "gpu0_core_temp": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "gpu1_core_temp": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "gpu2_core_temp": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "gpu3_core_temp": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "gpu4_core_temp": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "gpu5_core_temp": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "gpu0_mem_temp": {
+        "nulls": 58,
+        "runs": 3,
+        "max_run": 29,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.005
+      },
+      "gpu1_mem_temp": {
+        "nulls": 61,
+        "runs": 3,
+        "max_run": 30,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.005
+      },
+      "gpu2_mem_temp": {
+        "nulls": 65,
+        "runs": 3,
+        "max_run": 32,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.005
+      },
+      "gpu3_mem_temp": {
+        "nulls": 66,
+        "runs": 3,
+        "max_run": 33,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.006
+      },
+      "gpu4_mem_temp": {
+        "nulls": 71,
+        "runs": 3,
+        "max_run": 35,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.006
+      },
+      "gpu5_mem_temp": {
+        "nulls": 72,
+        "runs": 3,
+        "max_run": 36,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.006
+      },
+      "p0_core_temp_mean": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p0_core_temp_min": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p0_core_temp_max": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p1_core_temp_mean": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p1_core_temp_min": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      },
+      "p1_core_temp_max": {
+        "nulls": 37,
+        "runs": 3,
+        "max_run": 18,
+        "isolated": 1,
+        "clustered_gt2": 2,
+        "null_pct": 0.003
+      }
+    },
+    "physical": {
+      "temperatures": {
+        "gpu0_core_temp": {
+          "min": 23.0,
+          "max": 62.70000076293945,
+          "out_of_range": 0
+        },
+        "gpu1_core_temp": {
+          "min": 24.0,
+          "max": 64.0999984741211,
+          "out_of_range": 0
+        },
+        "gpu2_core_temp": {
+          "min": 25.0,
+          "max": 65.0999984741211,
+          "out_of_range": 0
+        },
+        "gpu3_core_temp": {
+          "min": 24.0,
+          "max": 64.80000305175781,
+          "out_of_range": 0
+        },
+        "gpu4_core_temp": {
+          "min": 24.0,
+          "max": 71.9000015258789,
+          "out_of_range": 0
+        },
+        "gpu5_core_temp": {
+          "min": 21.0,
+          "max": 73.9000015258789,
+          "out_of_range": 0
+        },
+        "gpu0_mem_temp": {
+          "min": 21.0,
+          "max": 56.5,
+          "out_of_range": 0
+        },
+        "gpu1_mem_temp": {
+          "min": 23.0,
+          "max": 60.5,
+          "out_of_range": 0
+        },
+        "gpu2_mem_temp": {
+          "min": 22.0,
+          "max": 62.0,
+          "out_of_range": 0
+        },
+        "gpu3_mem_temp": {
+          "min": 22.0,
+          "max": 60.29999923706055,
+          "out_of_range": 0
+        },
+        "gpu4_mem_temp": {
+          "min": 22.0,
+          "max": 67.0999984741211,
+          "out_of_range": 0
+        },
+        "gpu5_mem_temp": {
+          "min": 24.0,
+          "max": 69.80000305175781,
+          "out_of_range": 0
+        },
+        "p0_core_temp_mean": {
+          "min": 19.365083694458008,
+          "max": 43.852386474609375,
+          "out_of_range": 0
+        },
+        "p0_core_temp_min": {
+          "min": 19.22222137451172,
+          "max": 38.77777862548828,
+          "out_of_range": 0
+        },
+        "p0_core_temp_max": {
+          "min": 19.66666603088379,
+          "max": 47.33333206176758,
+          "out_of_range": 0
+        },
+        "p1_core_temp_mean": {
+          "min": 21.391536712646484,
+          "max": 51.86190414428711,
+          "out_of_range": 0
+        },
+        "p1_core_temp_min": {
+          "min": 21.22222137451172,
+          "max": 46.900001525878906,
+          "out_of_range": 0
+        },
+        "p1_core_temp_max": {
+          "min": 21.625,
+          "max": 55.400001525878906,
+          "out_of_range": 0
+        }
+      },
+      "powers": {
+        "ps0_input_power": {
+          "min": 209.3333282470703,
+          "neg": 0
+        },
+        "ps1_input_power": {
+          "min": 180.0,
+          "neg": 0
+        },
+        "p0_gpu0_power": {
+          "min": 17.0,
+          "neg": 0
+        },
+        "p0_gpu1_power": {
+          "min": 15.0,
+          "neg": 0
+        },
+        "p0_gpu2_power": {
+          "min": 14.933333396911621,
+          "neg": 0
+        },
+        "p1_gpu0_power": {
+          "min": 15.0,
+          "neg": 0
+        },
+        "p1_gpu1_power": {
+          "min": 14.0,
+          "neg": 0
+        },
+        "p1_gpu2_power": {
+          "min": 18.0,
+          "neg": 0
+        },
+        "p0_power": {
+          "min": 9.0,
+          "neg": 0
+        },
+        "p1_power": {
+          "min": 10.049999952316284,
+          "neg": 0
+        }
+      },
+      "dTdt": {
+        "p0_core_temp_mean": {
+          "std": 0.7727677379327322,
+          "max_abs": 14.328575134277344,
+          "n_flagged_gt5C": 5659
+        },
+        "p1_core_temp_mean": {
+          "std": 0.8252399359674346,
+          "max_abs": 15.276187896728516,
+          "n_flagged_gt5C": 7172
+        }
+      },
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.971616319984109,
+        "p1_core_temp_mean~p1_power": 0.9462457360809797
+      }
+    }
+  },
+  "failures": []
+}

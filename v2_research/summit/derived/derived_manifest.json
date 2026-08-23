@@ -1,0 +1,653 @@
+{
+  "generated": "2026-08-20T10:18:18+00:00",
+  "policy": "C_mean_aggregate",
+  "grid_s": 10,
+  "gap_break_s": 30,
+  "dtype": "Float64",
+  "interpolation": "none",
+  "nodes": [
+    {
+      "host": "a07n04",
+      "rows_before": 1312341,
+      "rows_after": 1191562,
+      "failures": [],
+      "node_hours": 3309.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9807955733895999,
+        "p1_core_temp_mean~p1_power": 0.9566037374543155
+      }
+    },
+    {
+      "host": "a09n18",
+      "rows_before": 1311650,
+      "rows_after": 1191400,
+      "failures": [],
+      "node_hours": 3309.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9636518825328518,
+        "p1_core_temp_mean~p1_power": 0.940734808155461
+      }
+    },
+    {
+      "host": "a11n12",
+      "rows_before": 1311598,
+      "rows_after": 1191377,
+      "failures": [],
+      "node_hours": 3309.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9444305038979698,
+        "p1_core_temp_mean~p1_power": 0.9480014571640544
+      }
+    },
+    {
+      "host": "a13n06",
+      "rows_before": 1312344,
+      "rows_after": 1191559,
+      "failures": [],
+      "node_hours": 3309.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9813855065801398,
+        "p1_core_temp_mean~p1_power": 0.9757903155432228
+      }
+    },
+    {
+      "host": "a14n08",
+      "rows_before": 1311686,
+      "rows_after": 1191395,
+      "failures": [],
+      "node_hours": 3309.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9709711328647348,
+        "p1_core_temp_mean~p1_power": 0.9735186545287935
+      }
+    },
+    {
+      "host": "a16n12",
+      "rows_before": 1311634,
+      "rows_after": 1191388,
+      "failures": [],
+      "node_hours": 3309.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.971616319984109,
+        "p1_core_temp_mean~p1_power": 0.9462457360809797
+      }
+    },
+    {
+      "host": "a17n15",
+      "rows_before": 1173719,
+      "rows_after": 1115497,
+      "failures": [],
+      "node_hours": 3098.6,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.8829643016575196,
+        "p1_core_temp_mean~p1_power": 0.9345465374941097
+      }
+    },
+    {
+      "host": "a26n06",
+      "rows_before": 1250457,
+      "rows_after": 1132676,
+      "failures": [],
+      "node_hours": 3146.3,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9685704906574562,
+        "p1_core_temp_mean~p1_power": 0.9729921576862879
+      }
+    },
+    {
+      "host": "a26n16",
+      "rows_before": 1249760,
+      "rows_after": 1132516,
+      "failures": [],
+      "node_hours": 3145.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9298825293841154,
+        "p1_core_temp_mean~p1_power": 0.9571754079793543
+      }
+    },
+    {
+      "host": "a31n17",
+      "rows_before": 1249769,
+      "rows_after": 1132519,
+      "failures": [],
+      "node_hours": 3145.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9762424779014404,
+        "p1_core_temp_mean~p1_power": 0.9284075036735066
+      }
+    },
+    {
+      "host": "a32n09",
+      "rows_before": 1249802,
+      "rows_after": 1132510,
+      "failures": [],
+      "node_hours": 3145.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.944816282591111,
+        "p1_core_temp_mean~p1_power": 0.9062880929468553
+      }
+    },
+    {
+      "host": "a33n14",
+      "rows_before": 1283330,
+      "rows_after": 1165598,
+      "failures": [],
+      "node_hours": 3237.8,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9674891958645884,
+        "p1_core_temp_mean~p1_power": 0.9336969078611317
+      }
+    },
+    {
+      "host": "a34n06",
+      "rows_before": 1283524,
+      "rows_after": 1165635,
+      "failures": [],
+      "node_hours": 3237.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9789384013285817,
+        "p1_core_temp_mean~p1_power": 0.9718074075753742
+      }
+    },
+    {
+      "host": "b03n06",
+      "rows_before": 1283528,
+      "rows_after": 1165635,
+      "failures": [],
+      "node_hours": 3237.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9572272710351829,
+        "p1_core_temp_mean~p1_power": 0.9736733125484545
+      }
+    },
+    {
+      "host": "b03n16",
+      "rows_before": 1282847,
+      "rows_after": 1165483,
+      "failures": [],
+      "node_hours": 3237.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9515505867479522,
+        "p1_core_temp_mean~p1_power": 0.9662457580029874
+      }
+    },
+    {
+      "host": "b08n16",
+      "rows_before": 1206813,
+      "rows_after": 1148348,
+      "failures": [],
+      "node_hours": 3189.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9341934778147447,
+        "p1_core_temp_mean~p1_power": 0.9490337695660563
+      }
+    },
+    {
+      "host": "b17n09",
+      "rows_before": 1249264,
+      "rows_after": 1132734,
+      "failures": [],
+      "node_hours": 3146.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9787570631465966,
+        "p1_core_temp_mean~p1_power": 0.9679546029252201
+      }
+    },
+    {
+      "host": "b18n01",
+      "rows_before": 1249279,
+      "rows_after": 1132724,
+      "failures": [],
+      "node_hours": 3146.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9719166106121485,
+        "p1_core_temp_mean~p1_power": 0.9774829991136288
+      }
+    },
+    {
+      "host": "b28n11",
+      "rows_before": 1249199,
+      "rows_after": 1132703,
+      "failures": [],
+      "node_hours": 3146.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9708287449898233,
+        "p1_core_temp_mean~p1_power": 0.9648971309943286
+      }
+    },
+    {
+      "host": "b29n03",
+      "rows_before": 1249261,
+      "rows_after": 1132709,
+      "failures": [],
+      "node_hours": 3146.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9759644121277642,
+        "p1_core_temp_mean~p1_power": 0.9759589182023148
+      }
+    },
+    {
+      "host": "c03n13",
+      "rows_before": 1249030,
+      "rows_after": 1132675,
+      "failures": [],
+      "node_hours": 3146.3,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9739168568460022,
+        "p1_core_temp_mean~p1_power": 0.9370070594927118
+      }
+    },
+    {
+      "host": "c04n05",
+      "rows_before": 1249801,
+      "rows_after": 1132860,
+      "failures": [],
+      "node_hours": 3146.8,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9792278501896324,
+        "p1_core_temp_mean~p1_power": 0.9671077835553008
+      }
+    },
+    {
+      "host": "c25n15",
+      "rows_before": 1161705,
+      "rows_after": 1106923,
+      "failures": [],
+      "node_hours": 3074.8,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9492259513773192,
+        "p1_core_temp_mean~p1_power": 0.9451161809940877
+      }
+    },
+    {
+      "host": "d01n08",
+      "rows_before": 1284592,
+      "rows_after": 1165482,
+      "failures": [],
+      "node_hours": 3237.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9682475807743649,
+        "p1_core_temp_mean~p1_power": 0.9720905625305244
+      }
+    },
+    {
+      "host": "d01n18",
+      "rows_before": 1284452,
+      "rows_after": 1165446,
+      "failures": [],
+      "node_hours": 3237.3,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9776814472666759,
+        "p1_core_temp_mean~p1_power": 0.9706250753076308
+      }
+    },
+    {
+      "host": "d06n18",
+      "rows_before": 1284543,
+      "rows_after": 1165480,
+      "failures": [],
+      "node_hours": 3237.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9659404760782146,
+        "p1_core_temp_mean~p1_power": 0.9619547199166207
+      }
+    },
+    {
+      "host": "d07n10",
+      "rows_before": 1284529,
+      "rows_after": 1165468,
+      "failures": [],
+      "node_hours": 3237.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9762732155748217,
+        "p1_core_temp_mean~p1_power": 0.9765095985676471
+      }
+    },
+    {
+      "host": "d12n10",
+      "rows_before": 1284537,
+      "rows_after": 1165471,
+      "failures": [],
+      "node_hours": 3237.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9590595687149912,
+        "p1_core_temp_mean~p1_power": 0.9701420502120575
+      }
+    },
+    {
+      "host": "d13n02",
+      "rows_before": 1284605,
+      "rows_after": 1165476,
+      "failures": [],
+      "node_hours": 3237.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9760492982322985,
+        "p1_core_temp_mean~p1_power": 0.9692334591937077
+      }
+    },
+    {
+      "host": "d16n17",
+      "rows_before": 1251409,
+      "rows_after": 1132744,
+      "failures": [],
+      "node_hours": 3146.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.955871384344805,
+        "p1_core_temp_mean~p1_power": 0.8944001033772534
+      }
+    },
+    {
+      "host": "d17n09",
+      "rows_before": 1251495,
+      "rows_after": 1132752,
+      "failures": [],
+      "node_hours": 3146.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9721196986339177,
+        "p1_core_temp_mean~p1_power": 0.9744952467130469
+      }
+    },
+    {
+      "host": "d24n11",
+      "rows_before": 1251362,
+      "rows_after": 1132723,
+      "failures": [],
+      "node_hours": 3146.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.968560909895934,
+        "p1_core_temp_mean~p1_power": 0.961214783280409
+      }
+    },
+    {
+      "host": "e05n03",
+      "rows_before": 1250588,
+      "rows_after": 1132896,
+      "failures": [],
+      "node_hours": 3146.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9729519212595905,
+        "p1_core_temp_mean~p1_power": 0.9693567355606106
+      }
+    },
+    {
+      "host": "e05n13",
+      "rows_before": 1249767,
+      "rows_after": 1132702,
+      "failures": [],
+      "node_hours": 3146.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9637140473159346,
+        "p1_core_temp_mean~p1_power": 0.9476985210197432
+      }
+    },
+    {
+      "host": "e27n05",
+      "rows_before": 1252459,
+      "rows_after": 1132896,
+      "failures": [],
+      "node_hours": 3146.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9766805964227154,
+        "p1_core_temp_mean~p1_power": 0.9583780673205698
+      }
+    },
+    {
+      "host": "e27n15",
+      "rows_before": 1252265,
+      "rows_after": 1132856,
+      "failures": [],
+      "node_hours": 3146.8,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9687946668146642,
+        "p1_core_temp_mean~p1_power": 0.9670911030189361
+      }
+    },
+    {
+      "host": "e30n11",
+      "rows_before": 1251766,
+      "rows_after": 1132724,
+      "failures": [],
+      "node_hours": 3146.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9629918416996195,
+        "p1_core_temp_mean~p1_power": 0.9701672511266963
+      }
+    },
+    {
+      "host": "f07n02",
+      "rows_before": 1306808,
+      "rows_after": 1185298,
+      "failures": [],
+      "node_hours": 3292.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9738299831359483,
+        "p1_core_temp_mean~p1_power": 0.9724971568555661
+      }
+    },
+    {
+      "host": "f07n12",
+      "rows_before": 1306722,
+      "rows_after": 1185289,
+      "failures": [],
+      "node_hours": 3292.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9522816709108841,
+        "p1_core_temp_mean~p1_power": 0.9367386168365516
+      }
+    },
+    {
+      "host": "f12n12",
+      "rows_before": 1218061,
+      "rows_after": 1159528,
+      "failures": [],
+      "node_hours": 3220.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9569694975128034,
+        "p1_core_temp_mean~p1_power": 0.9568911906285539
+      }
+    },
+    {
+      "host": "f23n17",
+      "rows_before": 1250819,
+      "rows_after": 1132540,
+      "failures": [],
+      "node_hours": 3145.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.964624828153905,
+        "p1_core_temp_mean~p1_power": 0.9654939248336768
+      }
+    },
+    {
+      "host": "f24n09",
+      "rows_before": 1250867,
+      "rows_after": 1132535,
+      "failures": [],
+      "node_hours": 3145.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9810351984379245,
+        "p1_core_temp_mean~p1_power": 0.9674431894110112
+      }
+    },
+    {
+      "host": "g03n14",
+      "rows_before": 1309120,
+      "rows_after": 1191649,
+      "failures": [],
+      "node_hours": 3310.1,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9677520850910494,
+        "p1_core_temp_mean~p1_power": 0.954706667296355
+      }
+    },
+    {
+      "host": "g04n06",
+      "rows_before": 1309853,
+      "rows_after": 1191829,
+      "failures": [],
+      "node_hours": 3310.6,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9784748191923752,
+        "p1_core_temp_mean~p1_power": 0.9664071360530809
+      }
+    },
+    {
+      "host": "g09n06",
+      "rows_before": 1242506,
+      "rows_after": 1128210,
+      "failures": [],
+      "node_hours": 3133.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9740122384835505,
+        "p1_core_temp_mean~p1_power": 0.9613770416645105
+      }
+    },
+    {
+      "host": "g09n16",
+      "rows_before": 1309184,
+      "rows_after": 1191661,
+      "failures": [],
+      "node_hours": 3310.2,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9379210216511396,
+        "p1_core_temp_mean~p1_power": 0.9546081392793815
+      }
+    },
+    {
+      "host": "g14n16",
+      "rows_before": 1309210,
+      "rows_after": 1191677,
+      "failures": [],
+      "node_hours": 3310.2,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.8742524143920195,
+        "p1_core_temp_mean~p1_power": 0.8928696011662925
+      }
+    },
+    {
+      "host": "g15n08",
+      "rows_before": 1309772,
+      "rows_after": 1191802,
+      "failures": [],
+      "node_hours": 3310.6,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9575357359616179,
+        "p1_core_temp_mean~p1_power": 0.9496026328631785
+      }
+    },
+    {
+      "host": "g20n08",
+      "rows_before": 1313713,
+      "rows_after": 1191657,
+      "failures": [],
+      "node_hours": 3310.2,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9810405353483346,
+        "p1_core_temp_mean~p1_power": 0.9781347816418324
+      }
+    },
+    {
+      "host": "g20n18",
+      "rows_before": 1313701,
+      "rows_after": 1191666,
+      "failures": [],
+      "node_hours": 3310.2,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9812255723257254,
+        "p1_core_temp_mean~p1_power": 0.9764414475024826
+      }
+    },
+    {
+      "host": "g25n18",
+      "rows_before": 1314141,
+      "rows_after": 1191782,
+      "failures": [],
+      "node_hours": 3310.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9710756041078705,
+        "p1_core_temp_mean~p1_power": 0.9721667823336885
+      }
+    },
+    {
+      "host": "g26n10",
+      "rows_before": 1314258,
+      "rows_after": 1191804,
+      "failures": [],
+      "node_hours": 3310.6,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9689678648295357,
+        "p1_core_temp_mean~p1_power": 0.9202252318339197
+      }
+    },
+    {
+      "host": "h25n02",
+      "rows_before": 1308432,
+      "rows_after": 1191788,
+      "failures": [],
+      "node_hours": 3310.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9798204547725525,
+        "p1_core_temp_mean~p1_power": 0.9797862184754549
+      }
+    },
+    {
+      "host": "h25n12",
+      "rows_before": 1308301,
+      "rows_after": 1191776,
+      "failures": [],
+      "node_hours": 3310.5,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9825596081533086,
+        "p1_core_temp_mean~p1_power": 0.981397724495237
+      }
+    },
+    {
+      "host": "h30n12",
+      "rows_before": 1307691,
+      "rows_after": 1191617,
+      "failures": [],
+      "node_hours": 3310.0,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9833508224054878,
+        "p1_core_temp_mean~p1_power": 0.9669326086659921
+      }
+    },
+    {
+      "host": "h31n04",
+      "rows_before": 1308437,
+      "rows_after": 1191803,
+      "failures": [],
+      "node_hours": 3310.6,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9824952448829185,
+        "p1_core_temp_mean~p1_power": 0.9813253127082249
+      }
+    },
+    {
+      "host": "h36n04",
+      "rows_before": 1223849,
+      "rows_after": 1166015,
+      "failures": [],
+      "node_hours": 3238.9,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.9612954359084293,
+        "p1_core_temp_mean~p1_power": 0.9583461621242039
+      }
+    },
+    {
+      "host": "h36n14",
+      "rows_before": 1308198,
+      "rows_after": 1191742,
+      "failures": [],
+      "node_hours": 3310.4,
+      "corr_PT": {
+        "p0_core_temp_mean~p0_power": 0.972574446285773,
+        "p1_core_temp_mean~p1_power": 0.9740640551075623
+      }
+    }
+  ],
+  "totals": {
+    "rows_before": 73904353,
+    "rows_after": 67337210
+  },
+  "failures": {}
+}

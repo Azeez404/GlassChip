@@ -1,0 +1,46 @@
+{
+  "_comment": "Authoritative schema for the OLCF Summit per-component power+thermal parquet files, transcribed verbatim from the dataset README DATA-SPECIFIC INFORMATION section (2026-08-10). Physical meaning cross-checked against the SC'21 companion paper. VERIFY against real parquet headers once downloaded (feasibility question C-H).",
+  "row_grain": "one row per (hostname, timestamp); ALL component signals for that node are columns in the SAME wide row -> CPU/GPU temp and power are co-located by construction (no join).",
+  "keys": {
+    "timestamp": {"units": "datetime", "note": "precision/timezone TO VERIFY on real data"},
+    "hostname": {"format": "<column a-h><row 0-24>n<node_in_rack 1-18>", "note": "physical rack position encoded; stability within dataset TO VERIFY"}
+  },
+  "cpu_temperature": {
+    "per_core": {
+      "p0": ["p0_core0_temp","...","p0_core12_temp","p0_core14_temp","...","p0_core23_temp"],
+      "p1": ["p1_core0_temp","...","p1_core12_temp","p1_core14_temp","...","p1_core23_temp"],
+      "note": "23 cores per socket; core index 13 is EXCLUDED (absent by design). units=Celsius, dtype=float32 (NOT 1C-quantized)."
+    },
+    "aggregates": ["p0_core_temp_mean","p0_core_temp_min","p0_core_temp_max","p1_core_temp_mean","p1_core_temp_min","p1_core_temp_max"],
+    "pilot_choice": "use p0_core_temp_mean and p1_core_temp_mean as the socket temperature T for the first-order model"
+  },
+  "cpu_power": {
+    "fields": ["p0_power","p1_power"],
+    "units": "Watts (DC)",
+    "note": "per-socket. p0_power pairs with p0_core_temp_mean; p1_power with p1_core_temp_mean."
+  },
+  "gpu_temperature": {
+    "core": ["gpu0_core_temp","gpu1_core_temp","gpu2_core_temp","gpu3_core_temp","gpu4_core_temp","gpu5_core_temp"],
+    "memory": ["gpu0_mem_temp","gpu1_mem_temp","gpu2_mem_temp","gpu3_mem_temp","gpu4_mem_temp","gpu5_mem_temp"],
+    "units": "Celsius (float32)"
+  },
+  "gpu_power": {
+    "fields": ["p0_gpu0_power","p0_gpu1_power","p0_gpu2_power","p1_gpu0_power","p1_gpu1_power","p1_gpu2_power"],
+    "units": "Watts (DC)",
+    "note": "GPUs grouped under the socket they hang off (p0 -> gpu0/1/2, p1 -> gpu0/1/2). Map to gpuN_core_temp by verifying the naming correspondence on real data before pairing."
+  },
+  "cooling_boundary": {
+    "measured_column": null,
+    "assumed_value_C": 21.0,
+    "provenance": "OLCF documentation/blog: medium-temperature direct liquid cooling, node inlet ~21C. NOT a column in the dataset.",
+    "usage": "treat as a CONSTANT assumed boundary T_ref; in the first-order ARX baseline T_ref is absorbed into the intercept gamma, so a constant value is harmless but must be labeled ASSUMED, not measured. Does NOT vary in time and is NOT node-specific in this dataset."
+  },
+  "missing_data": {"marker": "NaN (float32)", "fraction": "1.2%-5.5% depending on sample"},
+  "sampling_interval_nominal_s": {"a_fullperiod": 10, "b_snapshot": 10, "c_snapshot": 60, "d_snapshot": 60, "note": "these are aggregated MEANS over the interval; raw 1Hz is NOT in the public release"},
+  "v1_baseline_adapter": {
+    "target": "src/baseline ClassicalBaselineModel.fit(segments) where segments = list of (T_array, P_array)",
+    "cpu_socket0": {"T": "p0_core_temp_mean", "P": "p0_power"},
+    "cpu_socket1": {"T": "p1_core_temp_mean", "P": "p1_power"},
+    "note": "V1 model used READ-ONLY via a V2 adapter; V1 is NOT modified. Adapter only reshapes columns into (T,P) segments split on timestamp gaps."
+  }
+}

@@ -126,3 +126,18 @@ credentials.json
 
 # Local agent settings
 .claude/
+
+# V2 external datasets (not redistributed)
+v2_research/data/raw/
+v2_research/data/processed/
+
+v2_research/d2_longitudinal/data/raw/
+v2_research/d2_longitudinal/data/processed/
+
+# V2 Summit dataset (Globus, CC-BY-4.0) - never redistributed
+v2_research/summit/raw/
+v2_research/summit/extracted/
+# Derived (cleaned) Summit data is reproducible from raw via summit_derive.py;
+# do not commit the parquet. JSON manifests/policy reports ARE kept as provenance.
+v2_research/summit/derived/cleaned/
+v2_research/summit/derived/quality_masks/

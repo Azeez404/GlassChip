@@ -1,0 +1,13 @@
+{
+  "n_nodes": 120,
+  "chance": 0.008333333333333333,
+  "raw": {
+    "reid_acc": 0.08333333333333333,
+    "shuffled_mean": 0.009208333333333334
+  },
+  "conditional": {
+    "reid_acc": 0.016666666666666666,
+    "shuffled_mean": 0.008166666666666666
+  },
+  "note": "within-record; easier than cross-record. High != sufficient; low = fatal."
+}

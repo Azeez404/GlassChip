@@ -1,0 +1,3830 @@
+[
+  {
+    "host": "a07n04",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 419.2410914636425,
+      "F1_quantized": 127.61555450097377,
+      "F2_downsampled": 3292.7044710075857,
+      "F3_spatial": 280.50147871100506,
+      "F4_combined": 348.19064431957025
+    },
+    "alpha": {
+      "F0_full": 0.9764296017230598,
+      "F1_quantized": 0.9246311721537414,
+      "F2_downsampled": 0.9939443753226632,
+      "F3_spatial": 0.9649775559971911,
+      "F4_combined": 0.9441787308696512
+    },
+    "cov": {
+      "F0_full": 0.035274148112864015,
+      "F1_quantized": 0.011597361549560925,
+      "F2_downsampled": 0.23641407506250434,
+      "F3_spatial": 0.010035462105267587,
+      "F4_combined": 0.011489411340762694
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a07n04",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 385.7341555440601,
+      "F1_quantized": 152.0208191839151,
+      "F2_downsampled": 920.8422943412469,
+      "F3_spatial": 305.3104441676535,
+      "F4_combined": 368.0586656823082
+    },
+    "alpha": {
+      "F0_full": 0.9744085665625756,
+      "F1_quantized": 0.9363364014228237,
+      "F2_downsampled": 0.9785149188055098,
+      "F3_spatial": 0.9677770417007338,
+      "F4_combined": 0.9471108266299764
+    },
+    "cov": {
+      "F0_full": 0.021844687879323196,
+      "F1_quantized": 0.00960047540119267,
+      "F2_downsampled": 0.04586075945344327,
+      "F3_spatial": 0.009964220034558682,
+      "F4_combined": 0.011157803243765533
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a09n18",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 442.16620397749404,
+      "F1_quantized": 139.134259106898,
+      "F2_downsampled": 1015.4672099684885,
+      "F3_spatial": 239.8575402959207,
+      "F4_combined": 283.62972048696923
+    },
+    "alpha": {
+      "F0_full": 0.9776378928801648,
+      "F1_quantized": 0.9306490580294865,
+      "F2_downsampled": 0.9804973190539147,
+      "F3_spatial": 0.9591657200756101,
+      "F4_combined": 0.9319142527114112
+    },
+    "cov": {
+      "F0_full": 0.025647124481895087,
+      "F1_quantized": 0.009204127356912282,
+      "F2_downsampled": 0.05182558772704271,
+      "F3_spatial": 0.009123702797210708,
+      "F4_combined": 0.010055957269267439
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a09n18",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 479.45090344947164,
+      "F1_quantized": 192.8939519872584,
+      "F2_downsampled": 930.6809800184645,
+      "F3_spatial": 347.70109109663616,
+      "F4_combined": 407.82908195378184
+    },
+    "alpha": {
+      "F0_full": 0.9793588139333288,
+      "F1_quantized": 0.9494789133067679,
+      "F2_downsampled": 0.9787396163339886,
+      "F3_spatial": 0.9716493065027619,
+      "F4_combined": 0.9521428988839571
+    },
+    "cov": {
+      "F0_full": 0.022341550630155645,
+      "F1_quantized": 0.010132143291264209,
+      "F2_downsampled": 0.03819000820977895,
+      "F3_spatial": 0.01066553945547004,
+      "F4_combined": 0.011899715666551304
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a11n12",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 556.326980726379,
+      "F1_quantized": 256.2152298730915,
+      "F2_downsampled": 987.8550625434195,
+      "F3_spatial": 306.06963994990736,
+      "F4_combined": 379.4283256308867
+    },
+    "alpha": {
+      "F0_full": 0.9821855469298227,
+      "F1_quantized": 0.9617221589273477,
+      "F2_downsampled": 0.9799576867776474,
+      "F3_spatial": 0.9678556710769437,
+      "F4_combined": 0.9486542501055809
+    },
+    "cov": {
+      "F0_full": 0.024988541052485345,
+      "F1_quantized": 0.012529648643207096,
+      "F2_downsampled": 0.03959020198022178,
+      "F3_spatial": 0.009695121943088062,
+      "F4_combined": 0.011160621122320684
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a11n12",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 501.988179290419,
+      "F1_quantized": 235.52051273474876,
+      "F2_downsampled": 1009.1255158339791,
+      "F3_spatial": 372.53164541953436,
+      "F4_combined": 463.70799195867954
+    },
+    "alpha": {
+      "F0_full": 0.9802763200709618,
+      "F1_quantized": 0.9584296197382655,
+      "F2_downsampled": 0.9803759679505136,
+      "F3_spatial": 0.9735137235656394,
+      "F4_combined": 0.9577863031009247
+    },
+    "cov": {
+      "F0_full": 0.022624084009505652,
+      "F1_quantized": 0.011613726172903191,
+      "F2_downsampled": 0.04145272089801484,
+      "F3_spatial": 0.010218839463357401,
+      "F4_combined": 0.011825707269055458
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a13n06",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 433.9852138468258,
+      "F1_quantized": 132.4976962456482,
+      "F2_downsampled": 1581.8980566626487,
+      "F3_spatial": 294.7425593341683,
+      "F4_combined": 369.29182200281105
+    },
+    "alpha": {
+      "F0_full": 0.9772211858342149,
+      "F1_quantized": 0.9273047578278081,
+      "F2_downsampled": 0.9874365477215776,
+      "F3_spatial": 0.9666411840954655,
+      "F4_combined": 0.9472826972306495
+    },
+    "cov": {
+      "F0_full": 0.034174912602919404,
+      "F1_quantized": 0.01150548328706522,
+      "F2_downsampled": 0.11065741467822682,
+      "F3_spatial": 0.010198005241094363,
+      "F4_combined": 0.0117178437377713
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a13n06",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 294.5999167090953,
+      "F1_quantized": 114.54293063000387,
+      "F2_downsampled": 775.8674182005486,
+      "F3_spatial": 223.85544791602325,
+      "F4_combined": 279.2592988034883
+    },
+    "alpha": {
+      "F0_full": 0.9666253046409417,
+      "F1_quantized": 0.9163989163023959,
+      "F2_downsampled": 0.9745518057796402,
+      "F3_spatial": 0.956311401910095,
+      "F4_combined": 0.9308864013872113
+    },
+    "cov": {
+      "F0_full": 0.019792212791042953,
+      "F1_quantized": 0.008568762772445745,
+      "F2_downsampled": 0.04765400429454543,
+      "F3_spatial": 0.008656981273103432,
+      "F4_combined": 0.010214008520471878
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a14n08",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 397.8283062356958,
+      "F1_quantized": 128.71269356771563,
+      "F2_downsampled": 887.3887356281006,
+      "F3_spatial": 220.6711536927772,
+      "F4_combined": 271.7368151961859
+    },
+    "alpha": {
+      "F0_full": 0.9751768188133151,
+      "F1_quantized": 0.9252489755177782,
+      "F2_downsampled": 0.977714047349777,
+      "F3_spatial": 0.9556951485214825,
+      "F4_combined": 0.9290426542353485
+    },
+    "cov": {
+      "F0_full": 0.02485596049534107,
+      "F1_quantized": 0.009090348220435175,
+      "F2_downsampled": 0.050527686021821845,
+      "F3_spatial": 0.008439972882939321,
+      "F4_combined": 0.00983133796190654
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a14n08",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 308.4093705956766,
+      "F1_quantized": 135.34610272640643,
+      "F2_downsampled": 764.5712477601326,
+      "F3_spatial": 269.14046331637365,
+      "F4_combined": 344.1743681752008
+    },
+    "alpha": {
+      "F0_full": 0.9680955999253955,
+      "F1_quantized": 0.928778818380001,
+      "F2_downsampled": 0.9741807168590961,
+      "F3_spatial": 0.9635264689364129,
+      "F4_combined": 0.943546076355858
+    },
+    "cov": {
+      "F0_full": 0.020034970880798295,
+      "F1_quantized": 0.009592926968079332,
+      "F2_downsampled": 0.04610033392127799,
+      "F3_spatial": 0.009744374688138654,
+      "F4_combined": 0.011848704876848918
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a16n12",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 549.6482661485646,
+      "F1_quantized": 172.9527510892026,
+      "F2_downsampled": 893.3193407252174,
+      "F3_spatial": 299.43025200344573,
+      "F4_combined": 358.61720057038815
+    },
+    "alpha": {
+      "F0_full": 0.9819710485526107,
+      "F1_quantized": 0.9438205185949308,
+      "F2_downsampled": 0.9778603501707729,
+      "F3_spatial": 0.9671547559834501,
+      "F4_combined": 0.9457568492462437
+    },
+    "cov": {
+      "F0_full": 0.03504642578178395,
+      "F1_quantized": 0.01212963736759298,
+      "F2_downsampled": 0.051802970245703836,
+      "F3_spatial": 0.009699510099273173,
+      "F4_combined": 0.010925195228833649
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a16n12",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 609.1360135484439,
+      "F1_quantized": 277.60395820153826,
+      "F2_downsampled": 1106.8390519908853,
+      "F3_spatial": 360.8970381802794,
+      "F4_combined": 440.0726460237322
+    },
+    "alpha": {
+      "F0_full": 0.983717324788041,
+      "F1_quantized": 0.9646185496534561,
+      "F2_downsampled": 0.9820927996045781,
+      "F3_spatial": 0.9726716318091305,
+      "F4_combined": 0.9555702063773847
+    },
+    "cov": {
+      "F0_full": 0.027361463466681557,
+      "F1_quantized": 0.01361388213858513,
+      "F2_downsampled": 0.04632687946552672,
+      "F3_spatial": 0.01030458497621427,
+      "F4_combined": 0.012001306679687398
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a17n15",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 974.2806418400515,
+      "F1_quantized": 397.58130008784036,
+      "F2_downsampled": 1629.3718296639433,
+      "F3_spatial": 358.800052985132,
+      "F4_combined": 432.9266599125482
+    },
+    "alpha": {
+      "F0_full": 0.9897885118618847,
+      "F1_quantized": 0.9751615899983326,
+      "F2_downsampled": 0.9878003573923189,
+      "F3_spatial": 0.9725141281553981,
+      "F4_combined": 0.9548536453667694
+    },
+    "cov": {
+      "F0_full": 0.030467258751710188,
+      "F1_quantized": 0.014066980848858034,
+      "F2_downsampled": 0.04617384750071853,
+      "F3_spatial": 0.010374562948419803,
+      "F4_combined": 0.011634605682479817
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a17n15",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 425.0597779410502,
+      "F1_quantized": 171.8654593124162,
+      "F2_downsampled": 779.8001475577978,
+      "F3_spatial": 289.3215952741882,
+      "F4_combined": 341.7257083320277
+    },
+    "alpha": {
+      "F0_full": 0.976748478539402,
+      "F1_quantized": 0.9434753430549153,
+      "F2_downsampled": 0.9746785086311276,
+      "F3_spatial": 0.9660268847003037,
+      "F4_combined": 0.9431532731927889
+    },
+    "cov": {
+      "F0_full": 0.018901314593155947,
+      "F1_quantized": 0.008853240712770797,
+      "F2_downsampled": 0.031896177273735574,
+      "F3_spatial": 0.009574111465341874,
+      "F4_combined": 0.010799223217235627
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a26n06",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 318.21779377849526,
+      "F1_quantized": 121.68170898852684,
+      "F2_downsampled": 571.6121205507129,
+      "F3_spatial": 201.99958909296942,
+      "F4_combined": 236.7105485562353
+    },
+    "alpha": {
+      "F0_full": 0.9690636157452664,
+      "F1_quantized": 0.9211046522424304,
+      "F2_downsampled": 0.9656162685393197,
+      "F3_spatial": 0.9517003508975176,
+      "F4_combined": 0.9189795804720492
+    },
+    "cov": {
+      "F0_full": 0.01985274853158427,
+      "F1_quantized": 0.008548572041306957,
+      "F2_downsampled": 0.0325672521153443,
+      "F3_spatial": 0.008649937312211961,
+      "F4_combined": 0.009721025607456137
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a26n06",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 369.4067571454708,
+      "F1_quantized": 134.45998693368202,
+      "F2_downsampled": 1045.5229198815773,
+      "F3_spatial": 280.856100600273,
+      "F4_combined": 340.4658792683765
+    },
+    "alpha": {
+      "F0_full": 0.9732926894760199,
+      "F1_quantized": 0.9283266936816311,
+      "F2_downsampled": 0.9810526180464076,
+      "F3_spatial": 0.9650209943661073,
+      "F4_combined": 0.9429490403312379
+    },
+    "cov": {
+      "F0_full": 0.023521895596286754,
+      "F1_quantized": 0.00952769274659077,
+      "F2_downsampled": 0.06126602861386703,
+      "F3_spatial": 0.0092319601018707,
+      "F4_combined": 0.010660163758498282
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a26n16",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 518.9999477451581,
+      "F1_quantized": 240.14771834973521,
+      "F2_downsampled": 891.159521005066,
+      "F3_spatial": 288.3459258064847,
+      "F4_combined": 350.31087384461927
+    },
+    "alpha": {
+      "F0_full": 0.9809166133849129,
+      "F1_quantized": 0.9592140412311556,
+      "F2_downsampled": 0.9778072922332379,
+      "F3_spatial": 0.9659139124286804,
+      "F4_combined": 0.9445070316114934
+    },
+    "cov": {
+      "F0_full": 0.021993922611685313,
+      "F1_quantized": 0.011355811620718904,
+      "F2_downsampled": 0.03429765447354997,
+      "F3_spatial": 0.00968554497627142,
+      "F4_combined": 0.011020754043879753
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a26n16",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 391.4691347962368,
+      "F1_quantized": 157.68288267776322,
+      "F2_downsampled": 832.932210461198,
+      "F3_spatial": 212.5145599436506,
+      "F4_combined": 278.8439531519389
+    },
+    "alpha": {
+      "F0_full": 0.974778709780254,
+      "F1_quantized": 0.9385506788595642,
+      "F2_downsampled": 0.9762744260084781,
+      "F3_spatial": 0.9540343523753696,
+      "F4_combined": 0.9307871025161388
+    },
+    "cov": {
+      "F0_full": 0.02091527475418407,
+      "F1_quantized": 0.009470501910755729,
+      "F2_downsampled": 0.04074725847526418,
+      "F3_spatial": 0.008496792237966861,
+      "F4_combined": 0.010496801473357334
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a31n17",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 438.82487224544195,
+      "F1_quantized": 155.62074733181706,
+      "F2_downsampled": 1098.1560954185106,
+      "F3_spatial": 299.65703748949414,
+      "F4_combined": 372.89616936510265
+    },
+    "alpha": {
+      "F0_full": 0.9774695543820389,
+      "F1_quantized": 0.9377622901829146,
+      "F2_downsampled": 0.9819524954351198,
+      "F3_spatial": 0.967179201350335,
+      "F4_combined": 0.9477787093678572
+    },
+    "cov": {
+      "F0_full": 0.02907929852183687,
+      "F1_quantized": 0.011341928160509218,
+      "F2_downsampled": 0.06624673235979539,
+      "F3_spatial": 0.009589538825533074,
+      "F4_combined": 0.011331992218988972
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a31n17",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 714.4295977754934,
+      "F1_quantized": 356.8020279520021,
+      "F2_downsampled": 1333.0341533668543,
+      "F3_spatial": 109.1951092111665,
+      "F4_combined": 184.6387359973101
+    },
+    "alpha": {
+      "F0_full": 0.9861003246165728,
+      "F1_quantized": 0.9723623591311633,
+      "F2_downsampled": 0.9851086231997257,
+      "F3_spatial": 0.9124890503873121,
+      "F4_combined": 0.8973407314643426
+    },
+    "cov": {
+      "F0_full": 0.027730517682162024,
+      "F1_quantized": 0.015055025017330248,
+      "F2_downsampled": 0.04731350395125506,
+      "F3_spatial": 0.005682732420124748,
+      "F4_combined": 0.007859322565856584
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a32n09",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 679.1655657685318,
+      "F1_quantized": 251.75410248764666,
+      "F2_downsampled": 1338.8135573006457,
+      "F3_spatial": 326.55898342624164,
+      "F4_combined": 397.63117382303346
+    },
+    "alpha": {
+      "F0_full": 0.9853839170483781,
+      "F1_quantized": 0.961057249368886,
+      "F2_downsampled": 0.9851724274854978,
+      "F3_spatial": 0.9698417750213473,
+      "F4_combined": 0.9509461265916256
+    },
+    "cov": {
+      "F0_full": 0.03076932483419542,
+      "F1_quantized": 0.012749846909441642,
+      "F2_downsampled": 0.0545306327366941,
+      "F3_spatial": 0.010946555287480586,
+      "F4_combined": 0.012444688861517065
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a32n09",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 576.1712535551895,
+      "F1_quantized": 266.4753693876391,
+      "F2_downsampled": 987.1856963017257,
+      "F3_spatial": 406.8261652348504,
+      "F4_combined": 468.066578202681
+    },
+    "alpha": {
+      "F0_full": 0.9827937960081163,
+      "F1_quantized": 0.9631684884025334,
+      "F2_downsampled": 0.979944234182874,
+      "F3_spatial": 0.9757191177124123,
+      "F4_combined": 0.95817105366388
+    },
+    "cov": {
+      "F0_full": 0.021044722454402875,
+      "F1_quantized": 0.011035435873831732,
+      "F2_downsampled": 0.03279646546164914,
+      "F3_spatial": 0.010960055666810575,
+      "F4_combined": 0.012024183305942316
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a33n14",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 492.9470294957252,
+      "F1_quantized": 175.76283903001698,
+      "F2_downsampled": 1191.1857099478023,
+      "F3_spatial": 309.6459627574741,
+      "F4_combined": 379.05558893920767
+    },
+    "alpha": {
+      "F0_full": 0.9799182243793296,
+      "F1_quantized": 0.9446934006017523,
+      "F2_downsampled": 0.9833501731505019,
+      "F3_spatial": 0.9682209659536629,
+      "F4_combined": 0.9486050805605574
+    },
+    "cov": {
+      "F0_full": 0.029350689662705928,
+      "F1_quantized": 0.011549117245287278,
+      "F2_downsampled": 0.0638357560080116,
+      "F3_spatial": 0.009629634528930307,
+      "F4_combined": 0.011121512268377466
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a33n14",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 690.1046831371708,
+      "F1_quantized": 289.58604701238175,
+      "F2_downsampled": 1369.659550154214,
+      "F3_spatial": 332.9045851266824,
+      "F4_combined": 405.18526219996323
+    },
+    "alpha": {
+      "F0_full": 0.9856139276216691,
+      "F1_quantized": 0.9660573765667767,
+      "F2_downsampled": 0.9855039257990761,
+      "F3_spatial": 0.9704080391345349,
+      "F4_combined": 0.9518382759073915
+    },
+    "cov": {
+      "F0_full": 0.027625707109702517,
+      "F1_quantized": 0.012852853060657093,
+      "F2_downsampled": 0.050268583732625736,
+      "F3_spatial": 0.009914615814745903,
+      "F4_combined": 0.011538649124141516
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a34n06",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 514.3282268485502,
+      "F1_quantized": 139.85228235588687,
+      "F2_downsampled": 1616.1244118306872,
+      "F3_spatial": 336.797489936277,
+      "F4_combined": 408.314009531889
+    },
+    "alpha": {
+      "F0_full": 0.9807449556797577,
+      "F1_quantized": 0.9309925376243288,
+      "F2_downsampled": 0.9877009740571558,
+      "F3_spatial": 0.9707450275284504,
+      "F4_combined": 0.9521983549663249
+    },
+    "cov": {
+      "F0_full": 0.03636742886705307,
+      "F1_quantized": 0.010870767759928597,
+      "F2_downsampled": 0.10281233833141948,
+      "F3_spatial": 0.010500991533137638,
+      "F4_combined": 0.011844386690788099
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "a34n06",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 420.09526316701977,
+      "F1_quantized": 135.3265253033831,
+      "F2_downsampled": 1039.977184287777,
+      "F3_spatial": 263.73297216524423,
+      "F4_combined": 326.66856296882736
+    },
+    "alpha": {
+      "F0_full": 0.9764769588145049,
+      "F1_quantized": 0.9287688909502927,
+      "F2_downsampled": 0.9809525484987607,
+      "F3_spatial": 0.9627927146934291,
+      "F4_combined": 0.940612392563555
+    },
+    "cov": {
+      "F0_full": 0.02554512757740963,
+      "F1_quantized": 0.009276892389506387,
+      "F2_downsampled": 0.05752197729377827,
+      "F3_spatial": 0.008566179832222156,
+      "F4_combined": 0.010026999226630404
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b03n06",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 803.4932970258393,
+      "F1_quantized": 250.15528429211736,
+      "F2_downsampled": 4721.0790124689365,
+      "F3_spatial": 294.95761427586126,
+      "F4_combined": 398.37471120096404
+    },
+    "alpha": {
+      "F0_full": 0.9876314723221187,
+      "F1_quantized": 0.9608132959116377,
+      "F2_downsampled": 0.995772640850028,
+      "F3_spatial": 0.9666650961906295,
+      "F4_combined": 0.9510354030418114
+    },
+    "cov": {
+      "F0_full": 0.03923581084129087,
+      "F1_quantized": 0.01338564636765848,
+      "F2_downsampled": 0.207548854376549,
+      "F3_spatial": 0.008418425156770604,
+      "F4_combined": 0.010231794700210428
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b03n06",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 396.01717200549336,
+      "F1_quantized": 132.87809668024946,
+      "F2_downsampled": 5496.253207373652,
+      "F3_spatial": 277.700286254575,
+      "F4_combined": 352.6024933307668
+    },
+    "alpha": {
+      "F0_full": 0.9750647204307792,
+      "F1_quantized": 0.9275051352036614,
+      "F2_downsampled": 0.9963677700210553,
+      "F3_spatial": 0.9646306030410848,
+      "F4_combined": 0.9448575568355455
+    },
+    "cov": {
+      "F0_full": 0.0271112710095155,
+      "F1_quantized": 0.010199095033785526,
+      "F2_downsampled": 0.33821848924414305,
+      "F3_spatial": 0.009684650414128472,
+      "F4_combined": 0.01164101498755088
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b03n16",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 557.0325044885698,
+      "F1_quantized": 221.9728242806878,
+      "F2_downsampled": 1456.3481967630512,
+      "F3_spatial": 309.8588722125197,
+      "F4_combined": 403.14935359438397
+    },
+    "alpha": {
+      "F0_full": 0.9822079083543762,
+      "F1_quantized": 0.9559491479886619,
+      "F2_downsampled": 0.986360887632934,
+      "F3_spatial": 0.968242451425315,
+      "F4_combined": 0.951601041485706
+    },
+    "cov": {
+      "F0_full": 0.026507728637738127,
+      "F1_quantized": 0.011739186862257856,
+      "F2_downsampled": 0.06254781275554255,
+      "F3_spatial": 0.010258084686893983,
+      "F4_combined": 0.0124093422217401
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b03n16",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 276.64723796268555,
+      "F1_quantized": 119.66466967483521,
+      "F2_downsampled": 746.5413699300615,
+      "F3_spatial": 291.91890939003014,
+      "F4_combined": 350.1579306002574
+    },
+    "alpha": {
+      "F0_full": 0.9644983892088154,
+      "F1_quantized": 0.919829590171958,
+      "F2_downsampled": 0.9735654644970579,
+      "F3_spatial": 0.9663240084656326,
+      "F4_combined": 0.9444834788144628
+    },
+    "cov": {
+      "F0_full": 0.017660007329328525,
+      "F1_quantized": 0.008620562080820923,
+      "F2_downsampled": 0.043103870457971816,
+      "F3_spatial": 0.009989528412761415,
+      "F4_combined": 0.011344203961240385
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b08n16",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 505.99223462309396,
+      "F1_quantized": 249.13749923809905,
+      "F2_downsampled": 1180.9182147083968,
+      "F3_spatial": 403.39441753202743,
+      "F4_combined": 478.6113379733685
+    },
+    "alpha": {
+      "F0_full": 0.9804308616947159,
+      "F1_quantized": 0.9606564002880102,
+      "F2_downsampled": 0.9832066335578399,
+      "F3_spatial": 0.9755151055786604,
+      "F4_combined": 0.9590735045119531
+    },
+    "cov": {
+      "F0_full": 0.02161562038479954,
+      "F1_quantized": 0.011700569649649635,
+      "F2_downsampled": 0.04625284632011737,
+      "F3_spatial": 0.011473290858453465,
+      "F4_combined": 0.01301786454770525
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b08n16",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 413.86256384371586,
+      "F1_quantized": 176.97155985629934,
+      "F2_downsampled": 1084.6374226629175,
+      "F3_spatial": 339.7769438260394,
+      "F4_combined": 415.1062313755879
+    },
+    "alpha": {
+      "F0_full": 0.9761269681938819,
+      "F1_quantized": 0.9450605735979853,
+      "F2_downsampled": 0.9817296228873789,
+      "F3_spatial": 0.9709978034073178,
+      "F4_combined": 0.9529618211397848
+    },
+    "cov": {
+      "F0_full": 0.020649769942059512,
+      "F1_quantized": 0.009946215548067579,
+      "F2_downsampled": 0.04952376154532853,
+      "F3_spatial": 0.010480772971269186,
+      "F4_combined": 0.012140697392567743
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b17n09",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 438.9568180342596,
+      "F1_quantized": 108.4173922292356,
+      "F2_downsampled": 1213.5627711008915,
+      "F3_spatial": 305.6610595214662,
+      "F4_combined": 376.0896076825712
+    },
+    "alpha": {
+      "F0_full": 0.9774762499469744,
+      "F1_quantized": 0.9118898053347901,
+      "F2_downsampled": 0.9836546587461967,
+      "F3_spatial": 0.9678134024336639,
+      "F4_combined": 0.9482104422405304
+    },
+    "cov": {
+      "F0_full": 0.032314333252474715,
+      "F1_quantized": 0.009066207286002591,
+      "F2_downsampled": 0.07989239429641855,
+      "F3_spatial": 0.01090045085321199,
+      "F4_combined": 0.012303623447084425
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b17n09",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 597.0178951523494,
+      "F1_quantized": 191.76952305836997,
+      "F2_downsampled": 1179.1136693707454,
+      "F3_spatial": 369.1408082826126,
+      "F4_combined": 441.8513057872191
+    },
+    "alpha": {
+      "F0_full": 0.9833895832183317,
+      "F1_quantized": 0.9491903420104607,
+      "F2_downsampled": 0.9831811499173428,
+      "F3_spatial": 0.9732737075415415,
+      "F4_combined": 0.9557450398912181
+    },
+    "cov": {
+      "F0_full": 0.03233322390915506,
+      "F1_quantized": 0.011461083951308454,
+      "F2_downsampled": 0.05890449071967338,
+      "F3_spatial": 0.011760459634066297,
+      "F4_combined": 0.01336767976448273
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b18n01",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 769.8321597172657,
+      "F1_quantized": 137.06781151183463,
+      "F2_downsampled": 2438.146908534091,
+      "F3_spatial": 388.13361057065384,
+      "F4_combined": 447.9581786613836
+    },
+    "alpha": {
+      "F0_full": 0.9870941594628816,
+      "F1_quantized": 0.9296411857328136,
+      "F2_downsampled": 0.9918306012430156,
+      "F3_spatial": 0.9745647443124359,
+      "F4_combined": 0.9563349846092873
+    },
+    "cov": {
+      "F0_full": 0.04792102062952098,
+      "F1_quantized": 0.009816561041305434,
+      "F2_downsampled": 0.1356415888096475,
+      "F3_spatial": 0.011311369579193513,
+      "F4_combined": 0.012269701139461669
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b18n01",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 521.7671629545356,
+      "F1_quantized": 148.21827676221778,
+      "F2_downsampled": 1515.9315315368635,
+      "F3_spatial": 347.2051947814688,
+      "F4_combined": 424.1925465669992
+    },
+    "alpha": {
+      "F0_full": 0.9810168561778452,
+      "F1_quantized": 0.9347575737085435,
+      "F2_downsampled": 0.9868934408972078,
+      "F3_spatial": 0.971609394893546,
+      "F4_combined": 0.9539458212166894
+    },
+    "cov": {
+      "F0_full": 0.03376539161801742,
+      "F1_quantized": 0.010719974819334678,
+      "F2_downsampled": 0.08964309040435689,
+      "F3_spatial": 0.010692206110179315,
+      "F4_combined": 0.01237387265298476
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b28n11",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 410.12660290232293,
+      "F1_quantized": 147.88405462848797,
+      "F2_downsampled": 735.2357072481095,
+      "F3_spatial": 309.1830446115214,
+      "F4_combined": 367.0821124047813
+    },
+    "alpha": {
+      "F0_full": 0.9759121422345215,
+      "F1_quantized": 0.934615052997333,
+      "F2_downsampled": 0.973164485839123,
+      "F3_spatial": 0.9681741507306448,
+      "F4_combined": 0.9469739229636173
+    },
+    "cov": {
+      "F0_full": 0.027361893637674353,
+      "F1_quantized": 0.010854931090218739,
+      "F2_downsampled": 0.04393710140487515,
+      "F3_spatial": 0.009540062341061242,
+      "F4_combined": 0.010613523346809003
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b28n11",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 413.787559148672,
+      "F1_quantized": 142.10771789525066,
+      "F2_downsampled": 793.481222211937,
+      "F3_spatial": 361.5578739932054,
+      "F4_combined": 414.5290859630998
+    },
+    "alpha": {
+      "F0_full": 0.9761226929564679,
+      "F1_quantized": 0.9320496857675595,
+      "F2_downsampled": 0.9751096181979553,
+      "F3_spatial": 0.9727208935410007,
+      "F4_combined": 0.9528978974379284
+    },
+    "cov": {
+      "F0_full": 0.023984249905614763,
+      "F1_quantized": 0.009352732440299818,
+      "F2_downsampled": 0.04188804570925785,
+      "F3_spatial": 0.010967141384193918,
+      "F4_combined": 0.012008138152782427
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b29n03",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 397.81468689730104,
+      "F1_quantized": 105.7971139144444,
+      "F2_downsampled": 1186.6875557231938,
+      "F3_spatial": 274.5617214401797,
+      "F4_combined": 323.8361197962146
+    },
+    "alpha": {
+      "F0_full": 0.9751759796186789,
+      "F1_quantized": 0.9098090498597958,
+      "F2_downsampled": 0.9832875920993934,
+      "F3_spatial": 0.9642336067602864,
+      "F4_combined": 0.9401088305155169
+    },
+    "cov": {
+      "F0_full": 0.026299403950004466,
+      "F1_quantized": 0.00812618647079107,
+      "F2_downsampled": 0.07106721520178201,
+      "F3_spatial": 0.008990979252842955,
+      "F4_combined": 0.010123292205654562
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "b29n03",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 336.0372632736308,
+      "F1_quantized": 110.98566118242887,
+      "F2_downsampled": 857.311177532148,
+      "F3_spatial": 299.72951800033934,
+      "F4_combined": 357.384157586172
+    },
+    "alpha": {
+      "F0_full": 0.9706798230537688,
+      "F1_quantized": 0.9138382164207459,
+      "F2_downsampled": 0.9769412594078445,
+      "F3_spatial": 0.967187006405011,
+      "F4_combined": 0.9455748877445023
+    },
+    "cov": {
+      "F0_full": 0.02283437497858206,
+      "F1_quantized": 0.00846907703208488,
+      "F2_downsampled": 0.052988963170080366,
+      "F3_spatial": 0.00997343662822312,
+      "F4_combined": 0.011362390338387707
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "c03n13",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 478.10490175064444,
+      "F1_quantized": 149.48332203880992,
+      "F2_downsampled": 1088.5189573039354,
+      "F3_spatial": 260.4541756874287,
+      "F4_combined": 313.67953385096854
+    },
+    "alpha": {
+      "F0_full": 0.9793013087018474,
+      "F1_quantized": 0.9352914425216161,
+      "F2_downsampled": 0.9817941762774111,
+      "F3_spatial": 0.9623332545383939,
+      "F4_combined": 0.938230767128514
+    },
+    "cov": {
+      "F0_full": 0.029406305538869297,
+      "F1_quantized": 0.010377523077020012,
+      "F2_downsampled": 0.05914972700385927,
+      "F3_spatial": 0.009625472295575727,
+      "F4_combined": 0.01070056316617591
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "c03n13",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 829.8806968116178,
+      "F1_quantized": 320.3707581609254,
+      "F2_downsampled": 1630.8869199325577,
+      "F3_spatial": 438.5827575580701,
+      "F4_combined": 513.4975391107289
+    },
+    "alpha": {
+      "F0_full": 0.9880223847981976,
+      "F1_quantized": 0.9692682873818844,
+      "F2_downsampled": 0.987811621482179,
+      "F3_spatial": 0.9774572579573468,
+      "F4_combined": 0.9618001636053133
+    },
+    "cov": {
+      "F0_full": 0.03125179412769597,
+      "F1_quantized": 0.013583055345347029,
+      "F2_downsampled": 0.055818011889839994,
+      "F3_spatial": 0.011584021557958605,
+      "F4_combined": 0.012736747955713557
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "c04n05",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 470.67880099597863,
+      "F1_quantized": 120.08586453616122,
+      "F2_downsampled": 1544.4465354509316,
+      "F3_spatial": 347.663559048015,
+      "F4_combined": 398.06354561999376
+    },
+    "alpha": {
+      "F0_full": 0.9789781932843532,
+      "F1_quantized": 0.9200992375823726,
+      "F2_downsampled": 0.9871338628517468,
+      "F3_spatial": 0.9716462897069545,
+      "F4_combined": 0.9509980809874018
+    },
+    "cov": {
+      "F0_full": 0.031932734408147964,
+      "F1_quantized": 0.009248024980149507,
+      "F2_downsampled": 0.09346594104757093,
+      "F3_spatial": 0.010197008798513372,
+      "F4_combined": 0.010994146784991419
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "c04n05",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 440.7020362174785,
+      "F1_quantized": 155.29401918419106,
+      "F2_downsampled": 1058.9756842157578,
+      "F3_spatial": 331.62313188114746,
+      "F4_combined": 390.32850294692383
+    },
+    "alpha": {
+      "F0_full": 0.9775644377812552,
+      "F1_quantized": 0.9376355169016285,
+      "F2_downsampled": 0.9812910514261312,
+      "F3_spatial": 0.9702954056934113,
+      "F4_combined": 0.9500516836911023
+    },
+    "cov": {
+      "F0_full": 0.023463128559420045,
+      "F1_quantized": 0.009294024940237832,
+      "F2_downsampled": 0.05132382380230927,
+      "F3_spatial": 0.010009940216922563,
+      "F4_combined": 0.011143519831778975
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "c25n15",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 663.1172468722516,
+      "F1_quantized": 235.43223813625778,
+      "F2_downsampled": 1329.5477523147817,
+      "F3_spatial": 300.29313818660904,
+      "F4_combined": 346.69303082392025
+    },
+    "alpha": {
+      "F0_full": 0.9850328487152286,
+      "F1_quantized": 0.9584143617298033,
+      "F2_downsampled": 0.9850698673109775,
+      "F3_spatial": 0.9672475733497501,
+      "F4_combined": 0.9439444871982923
+    },
+    "cov": {
+      "F0_full": 0.030887782569204828,
+      "F1_quantized": 0.012307133547447582,
+      "F2_downsampled": 0.05501990874199721,
+      "F3_spatial": 0.010172866163685295,
+      "F4_combined": 0.011029729810400636
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "c25n15",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 700.1792860072743,
+      "F1_quantized": 267.0851720497378,
+      "F2_downsampled": 1535.9477303950532,
+      "F3_spatial": 360.4955753165572,
+      "F4_combined": 424.45058884393603
+    },
+    "alpha": {
+      "F0_full": 0.9858194484351216,
+      "F1_quantized": 0.9632510167856057,
+      "F2_downsampled": 0.9870631336040321,
+      "F3_spatial": 0.9726416179616812,
+      "F4_combined": 0.9539731651270383
+    },
+    "cov": {
+      "F0_full": 0.030327570601802696,
+      "F1_quantized": 0.012896528944503154,
+      "F2_downsampled": 0.060247444564534056,
+      "F3_spatial": 0.011245368527680974,
+      "F4_combined": 0.012645176713316147
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d01n08",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 420.4808045835124,
+      "F1_quantized": 127.90249580716558,
+      "F2_downsampled": 946.0705155614826,
+      "F3_spatial": 305.72866314976847,
+      "F4_combined": 343.3542542678772
+    },
+    "alpha": {
+      "F0_full": 0.9764982717769154,
+      "F1_quantized": 0.9247937334467627,
+      "F2_downsampled": 0.9790818117911599,
+      "F3_spatial": 0.9678204038666554,
+      "F4_combined": 0.9434151231335417
+    },
+    "cov": {
+      "F0_full": 0.022170711696397078,
+      "F1_quantized": 0.007856346956049786,
+      "F2_downsampled": 0.04521512969212955,
+      "F3_spatial": 0.009767404761690367,
+      "F4_combined": 0.010498063601329448
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d01n08",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 396.70228773647386,
+      "F1_quantized": 120.27463196776942,
+      "F2_downsampled": 1027.8511652512973,
+      "F3_spatial": 277.2805037133681,
+      "F4_combined": 339.17192583882365
+    },
+    "alpha": {
+      "F0_full": 0.9751072438452392,
+      "F1_quantized": 0.920219498411144,
+      "F2_downsampled": 0.9807300162627097,
+      "F3_spatial": 0.964578016100106,
+      "F4_combined": 0.9427377426605578
+    },
+    "cov": {
+      "F0_full": 0.022183347210399555,
+      "F1_quantized": 0.007777620066937651,
+      "F2_downsampled": 0.05217801237573552,
+      "F3_spatial": 0.00922409570395745,
+      "F4_combined": 0.010547125020372791
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d01n18",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 599.5766430941251,
+      "F1_quantized": 133.75509636362256,
+      "F2_downsampled": 1982.693420089185,
+      "F3_spatial": 352.1665513558386,
+      "F4_combined": 396.61545781429396
+    },
+    "alpha": {
+      "F0_full": 0.9834598801836012,
+      "F1_quantized": 0.9279629176924553,
+      "F2_downsampled": 0.9899634178232517,
+      "F3_spatial": 0.9720037122919323,
+      "F4_combined": 0.950823642362137
+    },
+    "cov": {
+      "F0_full": 0.0366557041452815,
+      "F1_quantized": 0.009397490536622564,
+      "F2_downsampled": 0.10891482279404115,
+      "F3_spatial": 0.01077022377355084,
+      "F4_combined": 0.011509855686005124
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d01n18",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 401.4502915631114,
+      "F1_quantized": 130.3844961869945,
+      "F2_downsampled": 946.3453862153126,
+      "F3_spatial": 406.7396947678272,
+      "F4_combined": 464.9823381409509
+    },
+    "alpha": {
+      "F0_full": 0.9753980018643331,
+      "F1_quantized": 0.9261711489748563,
+      "F2_downsampled": 0.9790878236048128,
+      "F3_spatial": 0.9757140189350512,
+      "F4_combined": 0.9578995250612967
+    },
+    "cov": {
+      "F0_full": 0.02196790709903383,
+      "F1_quantized": 0.008208270923453007,
+      "F2_downsampled": 0.047327523808979324,
+      "F3_spatial": 0.011062533769781434,
+      "F4_combined": 0.012114414520668033
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d06n18",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 486.59149515695145,
+      "F1_quantized": 155.62429683479218,
+      "F2_downsampled": 1806.86139880294,
+      "F3_spatial": 335.40141281427526,
+      "F4_combined": 409.1374107363433
+    },
+    "alpha": {
+      "F0_full": 0.9796586154647136,
+      "F1_quantized": 0.9377636645910865,
+      "F2_downsampled": 0.9889921174295321,
+      "F3_spatial": 0.9706250626786624,
+      "F4_combined": 0.9522922249739154
+    },
+    "cov": {
+      "F0_full": 0.02891098780987112,
+      "F1_quantized": 0.010288679808600652,
+      "F2_downsampled": 0.09540585301475987,
+      "F3_spatial": 0.010987980676233996,
+      "F4_combined": 0.012398138252762484
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d06n18",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 584.3462599998985,
+      "F1_quantized": 174.74536125021143,
+      "F2_downsampled": 3119.594598881728,
+      "F3_spatial": 467.2998297707462,
+      "F4_combined": 585.7355041464348
+    },
+    "alpha": {
+      "F0_full": 0.9830324569670055,
+      "F1_quantized": 0.9443804965648143,
+      "F2_downsampled": 0.9936094177428383,
+      "F3_spatial": 0.9788278085021629,
+      "F4_combined": 0.9664312609352804
+    },
+    "cov": {
+      "F0_full": 0.03253149287476225,
+      "F1_quantized": 0.010899801025006674,
+      "F2_downsampled": 0.15585141987629858,
+      "F3_spatial": 0.012071498894901351,
+      "F4_combined": 0.014012819177861503
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d07n10",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 377.9440882648308,
+      "F1_quantized": 112.64784121133187,
+      "F2_downsampled": 975.3399893981588,
+      "F3_spatial": 325.73320782990874,
+      "F4_combined": 387.7121416775521
+    },
+    "alpha": {
+      "F0_full": 0.9738880307405524,
+      "F1_quantized": 0.9150539722438878,
+      "F2_downsampled": 0.9797031415021821,
+      "F3_spatial": 0.9697664876035073,
+      "F4_combined": 0.949723240554764
+    },
+    "cov": {
+      "F0_full": 0.023721604924300956,
+      "F1_quantized": 0.0080853241491953,
+      "F2_downsampled": 0.05584252864124894,
+      "F3_spatial": 0.00956495253445441,
+      "F4_combined": 0.01078719663060893
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d07n10",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 371.2706622587812,
+      "F1_quantized": 102.05430770544133,
+      "F2_downsampled": 1328.169946886721,
+      "F3_spatial": 353.93582077186704,
+      "F4_combined": 435.4148768995287
+    },
+    "alpha": {
+      "F0_full": 0.9734249716441262,
+      "F1_quantized": 0.9066606498359253,
+      "F2_downsampled": 0.9850544955386392,
+      "F3_spatial": 0.9721416935480746,
+      "F4_combined": 0.955105758105446
+    },
+    "cov": {
+      "F0_full": 0.023027695821181225,
+      "F1_quantized": 0.007496847619139832,
+      "F2_downsampled": 0.07559667770950483,
+      "F3_spatial": 0.009842090054696181,
+      "F4_combined": 0.011339659960338332
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d12n10",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 445.31999617339187,
+      "F1_quantized": 160.18130102740207,
+      "F2_downsampled": 816.2675226382447,
+      "F3_spatial": 313.88660446883836,
+      "F4_combined": 361.23704741760014
+    },
+    "alpha": {
+      "F0_full": 0.9777944915753668,
+      "F1_quantized": 0.9394795197659401,
+      "F2_downsampled": 0.9757959606799246,
+      "F3_spatial": 0.9686435008731374,
+      "F4_combined": 0.9461394535283991
+    },
+    "cov": {
+      "F0_full": 0.02323171533315337,
+      "F1_quantized": 0.009487622681722502,
+      "F2_downsampled": 0.03902013124534896,
+      "F3_spatial": 0.009832432280407729,
+      "F4_combined": 0.01079318773628004
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d12n10",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 275.487664571088,
+      "F1_quantized": 106.29781256491047,
+      "F2_downsampled": 528.691943202528,
+      "F3_spatial": 352.88738217627144,
+      "F4_combined": 412.84220936149876
+    },
+    "alpha": {
+      "F0_full": 0.9643516526893589,
+      "F1_quantized": 0.910214208596079,
+      "F2_downsampled": 0.9628773740255412,
+      "F3_spatial": 0.9720600928839391,
+      "F4_combined": 0.952710061897549
+    },
+    "cov": {
+      "F0_full": 0.017670059402085932,
+      "F1_quantized": 0.007813201430064963,
+      "F2_downsampled": 0.030847493572702365,
+      "F3_spatial": 0.010122520258523234,
+      "F4_combined": 0.011229552798483785
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d13n02",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 376.5885030062806,
+      "F1_quantized": 107.58085927118933,
+      "F2_downsampled": 876.3391767043039,
+      "F3_spatial": 268.23133391519434,
+      "F4_combined": 310.17375958271776
+    },
+    "alpha": {
+      "F0_full": 0.9737952793198775,
+      "F1_quantized": 0.9112360191804306,
+      "F2_downsampled": 0.9774362430602761,
+      "F3_spatial": 0.9634051374544881,
+      "F4_combined": 0.9375548773166353
+    },
+    "cov": {
+      "F0_full": 0.02526533302551512,
+      "F1_quantized": 0.008384675152549285,
+      "F2_downsampled": 0.05361739431992982,
+      "F3_spatial": 0.009390721352686586,
+      "F4_combined": 0.010443709846808424
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d13n02",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 330.66038723536104,
+      "F1_quantized": 126.10801364288547,
+      "F2_downsampled": 711.6345151491224,
+      "F3_spatial": 308.2994857582806,
+      "F4_combined": 367.14306995984197
+    },
+    "alpha": {
+      "F0_full": 0.9702102195346044,
+      "F1_quantized": 0.9237654312665159,
+      "F2_downsampled": 0.9722869381897172,
+      "F3_spatial": 0.9680844119077873,
+      "F4_combined": 0.9469824893757031
+    },
+    "cov": {
+      "F0_full": 0.019785293472158915,
+      "F1_quantized": 0.008426499874027354,
+      "F2_downsampled": 0.038910902507521675,
+      "F3_spatial": 0.00988241516416043,
+      "F4_combined": 0.011302502543433497
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d16n17",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 1685.088079198115,
+      "F1_quantized": 274.8895703970668,
+      "F2_downsampled": 2191.2162224530202,
+      "F3_spatial": 327.2780962265031,
+      "F4_combined": 389.9904797270111
+    },
+    "alpha": {
+      "F0_full": 0.9940831659235144,
+      "F1_quantized": 0.9642754926023834,
+      "F2_downsampled": 0.9909141766354649,
+      "F3_spatial": 0.969907033048685,
+      "F4_combined": 0.9500094917168885
+    },
+    "cov": {
+      "F0_full": 0.08549326902382842,
+      "F1_quantized": 0.015519432510901867,
+      "F2_downsampled": 0.09833950316045648,
+      "F3_spatial": 0.010395460297237112,
+      "F4_combined": 0.011462508003821807
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d16n17",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 1305.5990812780603,
+      "F1_quantized": 426.8531997869355,
+      "F2_downsampled": 1953.0551184059004,
+      "F3_spatial": 332.12148556542655,
+      "F4_combined": 391.23235432663284
+    },
+    "alpha": {
+      "F0_full": 0.9923699387234418,
+      "F1_quantized": 0.976845029836095,
+      "F2_downsampled": 0.9898118876390971,
+      "F3_spatial": 0.9703393102591024,
+      "F4_combined": 0.9501641532337435
+    },
+    "cov": {
+      "F0_full": 0.040845053943609044,
+      "F1_quantized": 0.015215649744782296,
+      "F2_downsampled": 0.054431084142357825,
+      "F3_spatial": 0.010612474039675496,
+      "F4_combined": 0.011672898051151874
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d17n09",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 724.7036077493302,
+      "F1_quantized": 141.40743711746532,
+      "F2_downsampled": 1246.0302489510123,
+      "F3_spatial": 316.7946075774469,
+      "F4_combined": 371.0292231376607
+    },
+    "alpha": {
+      "F0_full": 0.9862960216821058,
+      "F1_quantized": 0.9317249383670095,
+      "F2_downsampled": 0.984077155740014,
+      "F3_spatial": 0.9689268173144361,
+      "F4_combined": 0.9475229602685425
+    },
+    "cov": {
+      "F0_full": 0.04532838952830744,
+      "F1_quantized": 0.010141327545433997,
+      "F2_downsampled": 0.06991382822753797,
+      "F3_spatial": 0.010244603565634492,
+      "F4_combined": 0.011303428785487775
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d17n09",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 478.82020780499226,
+      "F1_quantized": 148.80340848160947,
+      "F2_downsampled": 833.9957741932269,
+      "F3_spatial": 360.8749608948773,
+      "F4_combined": 422.991778758444
+    },
+    "alpha": {
+      "F0_full": 0.9793319085558042,
+      "F1_quantized": 0.9350055987927584,
+      "F2_downsampled": 0.9763043210093183,
+      "F3_spatial": 0.9726699829958155,
+      "F4_combined": 0.9538181512576984
+    },
+    "cov": {
+      "F0_full": 0.03064478108424281,
+      "F1_quantized": 0.010589776555079651,
+      "F2_downsampled": 0.047906049841627184,
+      "F3_spatial": 0.010777223680465998,
+      "F4_combined": 0.011991306781467708
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d24n11",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 295.8950681148766,
+      "F1_quantized": 118.37758935780481,
+      "F2_downsampled": 851.1038947122368,
+      "F3_spatial": 239.28288747876448,
+      "F4_combined": 294.58326946592575
+    },
+    "alpha": {
+      "F0_full": 0.9667689331388118,
+      "F1_quantized": 0.9189942174242379,
+      "F2_downsampled": 0.9767750552165317,
+      "F3_spatial": 0.9590696888589881,
+      "F4_combined": 0.9343608949193022
+    },
+    "cov": {
+      "F0_full": 0.021541160339399054,
+      "F1_quantized": 0.00950009849647523,
+      "F2_downsampled": 0.05539713531632148,
+      "F3_spatial": 0.009870725013231663,
+      "F4_combined": 0.011393630392255773
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "d24n11",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 268.71602248888996,
+      "F1_quantized": 121.60692298286719,
+      "F2_downsampled": 640.5291555427572,
+      "F3_spatial": 246.87950251420193,
+      "F4_combined": 300.49338095009637
+    },
+    "alpha": {
+      "F0_full": 0.9634699237682155,
+      "F1_quantized": 0.9210581006288746,
+      "F2_downsampled": 0.9692582568423316,
+      "F3_spatial": 0.9603037960412787,
+      "F4_combined": 0.9356093914109429
+    },
+    "cov": {
+      "F0_full": 0.017299467965898797,
+      "F1_quantized": 0.008783149075201219,
+      "F2_downsampled": 0.036932483237894415,
+      "F3_spatial": 0.009536377220879024,
+      "F4_combined": 0.010853375502763198
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e05n03",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 424.6376300981514,
+      "F1_quantized": 115.10398448886524,
+      "F2_downsampled": 932.1392296908442,
+      "F3_spatial": 278.9119197042709,
+      "F4_combined": 326.70222343001717
+    },
+    "alpha": {
+      "F0_full": 0.9767256344552784,
+      "F1_quantized": 0.9167889686371502,
+      "F2_downsampled": 0.9787725207908547,
+      "F3_spatial": 0.9647815147223221,
+      "F4_combined": 0.940618325950771
+    },
+    "cov": {
+      "F0_full": 0.025949817712698484,
+      "F1_quantized": 0.008258208293873477,
+      "F2_downsampled": 0.05054741627588054,
+      "F3_spatial": 0.009773387252986671,
+      "F4_combined": 0.010855076254653625
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e05n03",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 408.72136414347636,
+      "F1_quantized": 134.29798521567022,
+      "F2_downsampled": 854.7112027657239,
+      "F3_spatial": 318.9827948963282,
+      "F4_combined": 387.3168904453114
+    },
+    "alpha": {
+      "F0_full": 0.9758303339364268,
+      "F1_quantized": 0.9282434141227798,
+      "F2_downsampled": 0.9768719337038767,
+      "F3_spatial": 0.9691366520856101,
+      "F4_combined": 0.9496732471143355
+    },
+    "cov": {
+      "F0_full": 0.02350610433268751,
+      "F1_quantized": 0.00892708524908933,
+      "F2_downsampled": 0.043983301010344276,
+      "F3_spatial": 0.010088102487974121,
+      "F4_combined": 0.011425937802431448
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e05n13",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 351.5453759002223,
+      "F1_quantized": 123.65400467256053,
+      "F2_downsampled": 878.3875157891905,
+      "F3_spatial": 247.56307228416915,
+      "F4_combined": 287.67955418739524
+    },
+    "alpha": {
+      "F0_full": 0.9719549435198035,
+      "F1_quantized": 0.9223128337456378,
+      "F2_downsampled": 0.9774882634331478,
+      "F3_spatial": 0.9604112060825556,
+      "F4_combined": 0.9328397986506357
+    },
+    "cov": {
+      "F0_full": 0.021360231060160155,
+      "F1_quantized": 0.008630000087920194,
+      "F2_downsampled": 0.047210325011473736,
+      "F3_spatial": 0.009748306110287751,
+      "F4_combined": 0.010743082138848227
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e05n13",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 644.2628213096297,
+      "F1_quantized": 224.898433074968,
+      "F2_downsampled": 1488.8917688529236,
+      "F3_spatial": 350.56783030646534,
+      "F4_combined": 431.83843035623477
+    },
+    "alpha": {
+      "F0_full": 0.9845982236229348,
+      "F1_quantized": 0.95650954017321,
+      "F2_downsampled": 0.986657007735072,
+      "F3_spatial": 0.9718778509574103,
+      "F4_combined": 0.9547424910267053
+    },
+    "cov": {
+      "F0_full": 0.031750213063789924,
+      "F1_quantized": 0.012264732106037485,
+      "F2_downsampled": 0.066167910126284,
+      "F3_spatial": 0.010611973637108594,
+      "F4_combined": 0.012175102137714784
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e27n05",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 300.4876269312821,
+      "F1_quantized": 90.41410515043101,
+      "F2_downsampled": 623.537152179885,
+      "F3_spatial": 333.63379120733146,
+      "F4_combined": 370.4138503733499
+    },
+    "alpha": {
+      "F0_full": 0.9672684213690258,
+      "F1_quantized": 0.8952948158928011,
+      "F2_downsampled": 0.9684338756079958,
+      "F3_spatial": 0.9704717522902833,
+      "F4_combined": 0.9474381119521664
+    },
+    "cov": {
+      "F0_full": 0.020874631467263958,
+      "F1_quantized": 0.007362460835162624,
+      "F2_downsampled": 0.038339771686908525,
+      "F3_spatial": 0.011306042189203684,
+      "F4_combined": 0.011858768936714998
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e27n05",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 463.2187177254962,
+      "F1_quantized": 164.9736029244512,
+      "F2_downsampled": 877.9982288088521,
+      "F3_spatial": 374.92973415003826,
+      "F4_combined": 438.4639342121258
+    },
+    "alpha": {
+      "F0_full": 0.9786432805530315,
+      "F1_quantized": 0.9411848129907948,
+      "F2_downsampled": 0.9774783954263582,
+      "F3_spatial": 0.9736808832548102,
+      "F4_combined": 0.9554108841430714
+    },
+    "cov": {
+      "F0_full": 0.022261930525736825,
+      "F1_quantized": 0.009148898587616815,
+      "F2_downsampled": 0.03852470197259357,
+      "F3_spatial": 0.01135874081995037,
+      "F4_combined": 0.01249424613587182
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e27n15",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 374.38675610269524,
+      "F1_quantized": 125.51552244038596,
+      "F2_downsampled": 687.1702607356955,
+      "F3_spatial": 246.0467496676806,
+      "F4_combined": 280.1734581368359
+    },
+    "alpha": {
+      "F0_full": 0.9736432198000657,
+      "F1_quantized": 0.9234197130933414,
+      "F2_downsampled": 0.971314598927619,
+      "F3_spatial": 0.9601721546884485,
+      "F4_combined": 0.9311039541931404
+    },
+    "cov": {
+      "F0_full": 0.020522942816258962,
+      "F1_quantized": 0.008095981889087276,
+      "F2_downsampled": 0.03431956468018968,
+      "F3_spatial": 0.010156284126767378,
+      "F4_combined": 0.010970682484827857
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e27n15",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 409.9023662738435,
+      "F1_quantized": 156.23188511898763,
+      "F2_downsampled": 756.053519695956,
+      "F3_spatial": 401.313250945164,
+      "F4_combined": 459.65860832816463
+    },
+    "alpha": {
+      "F0_full": 0.9758991250813895,
+      "F1_quantized": 0.9379980388882371,
+      "F2_downsampled": 0.9738936660327372,
+      "F3_spatial": 0.9753897049989214,
+      "F4_combined": 0.9574224508575337
+    },
+    "cov": {
+      "F0_full": 0.022606597256801253,
+      "F1_quantized": 0.009619148483139496,
+      "F2_downsampled": 0.03843953806496268,
+      "F3_spatial": 0.01193736703412845,
+      "F4_combined": 0.01311529329364702
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e30n11",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 490.03504608695556,
+      "F1_quantized": 149.56592644420465,
+      "F2_downsampled": 905.1888629058082,
+      "F3_spatial": 332.9763148949591,
+      "F4_combined": 394.49223969188023
+    },
+    "alpha": {
+      "F0_full": 0.9798001039111306,
+      "F1_quantized": 0.9353259992633203,
+      "F2_downsampled": 0.9781474664918304,
+      "F3_spatial": 0.9704143185916573,
+      "F4_combined": 0.9505656198817413
+    },
+    "cov": {
+      "F0_full": 0.024589733695368873,
+      "F1_quantized": 0.008696752350353467,
+      "F2_downsampled": 0.04106741347821538,
+      "F3_spatial": 0.010154929442782862,
+      "F4_combined": 0.011260644565250298
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "e30n11",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 388.04516581570556,
+      "F1_quantized": 116.91534672045672,
+      "F2_downsampled": 727.244350713987,
+      "F3_spatial": 341.4237756734621,
+      "F4_combined": 400.13085987990036
+    },
+    "alpha": {
+      "F0_full": 0.9745590213884895,
+      "F1_quantized": 0.918023792800821,
+      "F2_downsampled": 0.9728736386298122,
+      "F3_spatial": 0.9711356546432929,
+      "F4_combined": 0.9512449792602281
+    },
+    "cov": {
+      "F0_full": 0.022079141328368263,
+      "F1_quantized": 0.00781709442883053,
+      "F2_downsampled": 0.037219099819789075,
+      "F3_spatial": 0.010867753539255733,
+      "F4_combined": 0.011885677214619923
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f07n02",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 388.7778305507477,
+      "F1_quantized": 130.47994995953127,
+      "F2_downsampled": 744.7727006902073,
+      "F3_spatial": 353.5594390751981,
+      "F4_combined": 423.91351331797847
+    },
+    "alpha": {
+      "F0_full": 0.9746063517924054,
+      "F1_quantized": 0.9262231158729541,
+      "F2_downsampled": 0.973503527473035,
+      "F3_spatial": 0.9721124544091051,
+      "F4_combined": 0.9539162163828319
+    },
+    "cov": {
+      "F0_full": 0.023865125412502842,
+      "F1_quantized": 0.008930359514529158,
+      "F2_downsampled": 0.04188258302100174,
+      "F3_spatial": 0.010890178943471773,
+      "F4_combined": 0.01220008789754029
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f07n02",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 270.4740230461292,
+      "F1_quantized": 93.17338732073071,
+      "F2_downsampled": 517.6735032094887,
+      "F3_spatial": 246.36065315108166,
+      "F4_combined": 280.4566186473653
+    },
+    "alpha": {
+      "F0_full": 0.9637029960198434,
+      "F1_quantized": 0.8982320972969632,
+      "F2_downsampled": 0.9621023991390113,
+      "F3_spatial": 0.9602218788545174,
+      "F4_combined": 0.9311710636647829
+    },
+    "cov": {
+      "F0_full": 0.016865772993552977,
+      "F1_quantized": 0.006871430632335212,
+      "F2_downsampled": 0.029536104618699037,
+      "F3_spatial": 0.009416573565734566,
+      "F4_combined": 0.010330442063716885
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f07n12",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 712.0180905569923,
+      "F1_quantized": 231.05199025611222,
+      "F2_downsampled": 1283.428375410754,
+      "F3_spatial": 374.73406482026763,
+      "F4_combined": 443.2658243781869
+    },
+    "alpha": {
+      "F0_full": 0.9860535781373063,
+      "F1_quantized": 0.9576429228680123,
+      "F2_downsampled": 0.9845375292602507,
+      "F3_spatial": 0.9736673231414947,
+      "F4_combined": 0.9558831011035552
+    },
+    "cov": {
+      "F0_full": 0.03282799995350317,
+      "F1_quantized": 0.011955683628742355,
+      "F2_downsampled": 0.05369059443346764,
+      "F3_spatial": 0.010896348498015126,
+      "F4_combined": 0.012014584362898175
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f07n12",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 491.75896827594556,
+      "F1_quantized": 210.231406042946,
+      "F2_downsampled": 814.5350327579353,
+      "F3_spatial": 369.3980014147862,
+      "F4_combined": 425.4457220128623
+    },
+    "alpha": {
+      "F0_full": 0.9798701995898795,
+      "F1_quantized": 0.953546933941219,
+      "F2_downsampled": 0.9757451089049399,
+      "F3_spatial": 0.9732920649704155,
+      "F4_combined": 0.9540783128779408
+    },
+    "cov": {
+      "F0_full": 0.020845229114288575,
+      "F1_quantized": 0.010113372223922355,
+      "F2_downsampled": 0.031411879099795766,
+      "F3_spatial": 0.010221617435256444,
+      "F4_combined": 0.01117759326006084
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f12n12",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 534.9634492515264,
+      "F1_quantized": 214.1506005577502,
+      "F2_downsampled": 1785.1448003889045,
+      "F3_spatial": 124.862987318806,
+      "F4_combined": 200.942393649615
+    },
+    "alpha": {
+      "F0_full": 0.9814807621993963,
+      "F1_quantized": 0.9543773792695986,
+      "F2_downsampled": 0.98885895334819,
+      "F3_spatial": 0.9230353147873581,
+      "F4_combined": 0.9052618745222767
+    },
+    "cov": {
+      "F0_full": 0.026335442084410875,
+      "F1_quantized": 0.011570904087157824,
+      "F2_downsampled": 0.08244820210448293,
+      "F3_spatial": 0.00653701410455079,
+      "F4_combined": 0.009251041005020036
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f12n12",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 387.52037804305314,
+      "F1_quantized": 180.08689603520094,
+      "F2_downsampled": 942.8946463083544,
+      "F3_spatial": 214.60967827532588,
+      "F4_combined": 286.76894112666736
+    },
+    "alpha": {
+      "F0_full": 0.9745250113241936,
+      "F1_quantized": 0.9459848274145163,
+      "F2_downsampled": 0.9790120994843727,
+      "F3_spatial": 0.9544727158217299,
+      "F4_combined": 0.9326338865397994
+    },
+    "cov": {
+      "F0_full": 0.019550554665365167,
+      "F1_quantized": 0.010145899578093257,
+      "F2_downsampled": 0.04478859234202973,
+      "F3_spatial": 0.009306075583130865,
+      "F4_combined": 0.011702610109213502
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f23n17",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 514.3227912819139,
+      "F1_quantized": 146.57090494603617,
+      "F2_downsampled": 1268.2205972155455,
+      "F3_spatial": 324.6733028863415,
+      "F4_combined": 376.4300622838412
+    },
+    "alpha": {
+      "F0_full": 0.9807447541567049,
+      "F1_quantized": 0.9340490140170241,
+      "F2_downsampled": 0.9843535702666434,
+      "F3_spatial": 0.9696693016025553,
+      "F4_combined": 0.9482560489510572
+    },
+    "cov": {
+      "F0_full": 0.02879916595266826,
+      "F1_quantized": 0.009373656183731063,
+      "F2_downsampled": 0.06358949848064732,
+      "F3_spatial": 0.01132181682888121,
+      "F4_combined": 0.01251797589589801
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f23n17",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 507.5112234293945,
+      "F1_quantized": 158.26298013580205,
+      "F2_downsampled": 1701.5684399767376,
+      "F3_spatial": 411.2406518343979,
+      "F4_combined": 501.1489742375046
+    },
+    "alpha": {
+      "F0_full": 0.9804888572737299,
+      "F1_quantized": 0.9387688741025657,
+      "F2_downsampled": 0.9883149451544753,
+      "F3_spatial": 0.9759766059527551,
+      "F4_combined": 0.9608775545024777
+    },
+    "cov": {
+      "F0_full": 0.0290142191821759,
+      "F1_quantized": 0.010205991469367556,
+      "F2_downsampled": 0.08686718475470498,
+      "F3_spatial": 0.012002692140099315,
+      "F4_combined": 0.013634038240356097
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f24n09",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 431.9735343654065,
+      "F1_quantized": 107.38965138362121,
+      "F2_downsampled": 10611.375996266206,
+      "F3_spatial": 341.9294311675683,
+      "F4_combined": 408.08932516764736
+    },
+    "alpha": {
+      "F0_full": 0.9771163291099925,
+      "F1_quantized": 0.9110852184996611,
+      "F2_downsampled": 0.9981170053586266,
+      "F3_spatial": 0.9711777189553453,
+      "F4_combined": 0.9521726761558662
+    },
+    "cov": {
+      "F0_full": 0.03430640442724394,
+      "F1_quantized": 0.00951083429541008,
+      "F2_downsampled": 0.7371649679948133,
+      "F3_spatial": 0.010370288983602056,
+      "F4_combined": 0.011584542386205281
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "f24n09",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 310.50278423723637,
+      "F1_quantized": 114.64777743229865,
+      "F2_downsampled": 916.0771035117167,
+      "F3_spatial": 261.87832920478144,
+      "F4_combined": 310.57604870101665
+    },
+    "alpha": {
+      "F0_full": 0.968307254521097,
+      "F1_quantized": 0.9164720846358413,
+      "F2_downsampled": 0.9784043746146616,
+      "F3_spatial": 0.9625342085845675,
+      "F4_combined": 0.9376331860321563
+    },
+    "cov": {
+      "F0_full": 0.01883440021668568,
+      "F1_quantized": 0.007972836066638987,
+      "F2_downsampled": 0.04947318560343469,
+      "F3_spatial": 0.010096878110354254,
+      "F4_combined": 0.011465932356023225
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g03n14",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 1500.9253909590675,
+      "F1_quantized": 309.98644703546483,
+      "F2_downsampled": 6304.318516527164,
+      "F3_spatial": 345.4165176903016,
+      "F4_combined": 447.5624043207961
+    },
+    "alpha": {
+      "F0_full": 0.9933595892654197,
+      "F1_quantized": 0.9682553115546396,
+      "F2_downsampled": 0.9968325982922155,
+      "F3_spatial": 0.97146449704109,
+      "F4_combined": 0.9562972284307124
+    },
+    "cov": {
+      "F0_full": 0.07396104259785241,
+      "F1_quantized": 0.016762948941891478,
+      "F2_downsampled": 0.2798451718883934,
+      "F3_spatial": 0.009419466775488798,
+      "F4_combined": 0.011069104264720513
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g03n14",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 1043.9530227490486,
+      "F1_quantized": 228.9390354915488,
+      "F2_downsampled": 3386.7085103104823,
+      "F3_spatial": 393.73181255979677,
+      "F4_combined": 446.0131423268532
+    },
+    "alpha": {
+      "F0_full": 0.9904667571527694,
+      "F1_quantized": 0.9572604703680231,
+      "F2_downsampled": 0.994111963983094,
+      "F3_spatial": 0.97492181734433,
+      "F4_combined": 0.9561488014681674
+    },
+    "cov": {
+      "F0_full": 0.042153056308846804,
+      "F1_quantized": 0.01085752674169942,
+      "F2_downsampled": 0.12291993052831131,
+      "F3_spatial": 0.010305638705397382,
+      "F4_combined": 0.011189087964558158
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g04n06",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 662.9572472495718,
+      "F1_quantized": 119.31202828241689,
+      "F2_downsampled": 2738.2855621127715,
+      "F3_spatial": 320.28584041928934,
+      "F4_combined": 382.69508191364395
+    },
+    "alpha": {
+      "F0_full": 0.9850292636832362,
+      "F1_quantized": 0.919602427558519,
+      "F2_downsampled": 0.992722768081468,
+      "F3_spatial": 0.9692602659844631,
+      "F4_combined": 0.9490811929764599
+    },
+    "cov": {
+      "F0_full": 0.04288407079737899,
+      "F1_quantized": 0.008987345087178382,
+      "F2_downsampled": 0.16063969270760511,
+      "F3_spatial": 0.009810403041047267,
+      "F4_combined": 0.011093678995950304
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g04n06",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 539.6415092841825,
+      "F1_quantized": 152.15529348540284,
+      "F2_downsampled": 1424.3664020079596,
+      "F3_spatial": 308.09497623230084,
+      "F4_combined": 375.6650326766677
+    },
+    "alpha": {
+      "F0_full": 0.9816398193916198,
+      "F1_quantized": 0.9363908383615194,
+      "F2_downsampled": 0.9860567887877159,
+      "F3_spatial": 0.9680635686942999,
+      "F4_combined": 0.9481534541641877
+    },
+    "cov": {
+      "F0_full": 0.025892072286629906,
+      "F1_quantized": 0.008670439173087593,
+      "F2_downsampled": 0.06268030285594164,
+      "F3_spatial": 0.00943611787621662,
+      "F4_combined": 0.010826389181081211
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g09n06",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 1009.3615082595988,
+      "F1_quantized": 132.26264352889922,
+      "F2_downsampled": 10273.293543122174,
+      "F3_spatial": 256.15463568478486,
+      "F4_combined": 293.49517793524836
+    },
+    "alpha": {
+      "F0_full": 0.9901416619934492,
+      "F1_quantized": 0.9271803885500995,
+      "F2_downsampled": 0.9980550984365476,
+      "F3_spatial": 0.9617132797766098,
+      "F4_combined": 0.934125744165033
+    },
+    "cov": {
+      "F0_full": 0.061637477810979405,
+      "F1_quantized": 0.009405982944406695,
+      "F2_downsampled": 0.564453012013956,
+      "F3_spatial": 0.009132241921411368,
+      "F4_combined": 0.010000321100292472
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g09n06",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 635.0718125530434,
+      "F1_quantized": 161.40704502750282,
+      "F2_downsampled": 1566.747529496529,
+      "F3_spatial": 311.3198574928967,
+      "F4_combined": 341.7807358834905
+    },
+    "alpha": {
+      "F0_full": 0.984377073317976,
+      "F1_quantized": 0.9399250280071695,
+      "F2_downsampled": 0.9873158322657156,
+      "F3_spatial": 0.9683891048094839,
+      "F4_combined": 0.9431621604811933
+    },
+    "cov": {
+      "F0_full": 0.031171290182486305,
+      "F1_quantized": 0.0091358580362565,
+      "F2_downsampled": 0.06998205311320779,
+      "F3_spatial": 0.009631871256915425,
+      "F4_combined": 0.010272642564535469
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g09n16",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 1748.0843607611023,
+      "F1_quantized": 388.04225182075226,
+      "F2_downsampled": 4722.760625859519,
+      "F3_spatial": 350.81774859578894,
+      "F4_combined": 406.8748166043573
+    },
+    "alpha": {
+      "F0_full": 0.9942957834596329,
+      "F1_quantized": 0.974558832791131,
+      "F2_downsampled": 0.9957741428830034,
+      "F3_spatial": 0.9718976006581348,
+      "F4_combined": 0.9520333930377335
+    },
+    "cov": {
+      "F0_full": 0.059034922377819564,
+      "F1_quantized": 0.01491242974455193,
+      "F2_downsampled": 0.14491880935837134,
+      "F3_spatial": 0.010198451815492981,
+      "F4_combined": 0.011278263788429983
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g09n16",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 696.8621433917575,
+      "F1_quantized": 176.84418701237195,
+      "F2_downsampled": 1459.5710333533457,
+      "F3_spatial": 302.12772305471555,
+      "F4_combined": 337.9469250486845
+    },
+    "alpha": {
+      "F0_full": 0.9857524305633657,
+      "F1_quantized": 0.9450221114631665,
+      "F2_downsampled": 0.986390797897233,
+      "F3_spatial": 0.9674431798936176,
+      "F4_combined": 0.9425362577861761
+    },
+    "cov": {
+      "F0_full": 0.029044732642087193,
+      "F1_quantized": 0.00891471118149075,
+      "F2_downsampled": 0.05539067661071758,
+      "F3_spatial": 0.009268510424387663,
+      "F4_combined": 0.010052791352704992
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g14n16",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 2260.5330799090943,
+      "F1_quantized": 578.9536043432066,
+      "F2_downsampled": 4164.13070601669,
+      "F3_spatial": 455.7785624639191,
+      "F4_combined": 497.7492835982873
+    },
+    "alpha": {
+      "F0_full": 0.9955860349968659,
+      "F1_quantized": 0.9828757739580086,
+      "F2_downsampled": 0.9952085923862946,
+      "F3_spatial": 0.9782984625747201,
+      "F4_combined": 0.9606156754469207
+    },
+    "cov": {
+      "F0_full": 0.05389597394194949,
+      "F1_quantized": 0.016261439080203124,
+      "F2_downsampled": 0.09099802711088985,
+      "F3_spatial": 0.011933668092785468,
+      "F4_combined": 0.01252357549202887
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g14n16",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 2596.2049984628984,
+      "F1_quantized": 638.7575671789622,
+      "F2_downsampled": 5268.579401767576,
+      "F3_spatial": 459.5365024532187,
+      "F4_combined": 554.2904577631626
+    },
+    "alpha": {
+      "F0_full": 0.9961556326140344,
+      "F1_quantized": 0.9844665168095135,
+      "F2_downsampled": 0.99621110634015,
+      "F3_spatial": 0.9784740066855869,
+      "F4_combined": 0.9645610366430515
+    },
+    "cov": {
+      "F0_full": 0.06909003715164681,
+      "F1_quantized": 0.01928094047273326,
+      "F2_downsampled": 0.12793669170019886,
+      "F3_spatial": 0.012115182346794226,
+      "F4_combined": 0.013664642964893588
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g15n08",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 878.541055205718,
+      "F1_quantized": 216.4124462889225,
+      "F2_downsampled": 1705.8421590917283,
+      "F3_spatial": 369.9667264583122,
+      "F4_combined": 417.57352802154406
+    },
+    "alpha": {
+      "F0_full": 0.9886820283159823,
+      "F1_quantized": 0.9548432737541561,
+      "F2_downsampled": 0.9883440489387563,
+      "F3_spatial": 0.9733325689190424,
+      "F4_combined": 0.9532331503016258
+    },
+    "cov": {
+      "F0_full": 0.03996565228593091,
+      "F1_quantized": 0.011326929139054049,
+      "F2_downsampled": 0.0702026349039921,
+      "F3_spatial": 0.010478556332972956,
+      "F4_combined": 0.011286392262519658
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g15n08",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 862.5331009182886,
+      "F1_quantized": 278.3442648882565,
+      "F2_downsampled": 1865.6956573397945,
+      "F3_spatial": 153.04007879257296,
+      "F4_combined": 255.1400880727459
+    },
+    "alpha": {
+      "F0_full": 0.988473190678488,
+      "F1_quantized": 0.964710972673257,
+      "F2_downsampled": 0.9893373909465142,
+      "F3_spatial": 0.9367467033994187,
+      "F4_combined": 0.9246053244830363
+    },
+    "cov": {
+      "F0_full": 0.03665740265391072,
+      "F1_quantized": 0.013154230442760888,
+      "F2_downsampled": 0.07118304104711695,
+      "F3_spatial": 0.006908497157889391,
+      "F4_combined": 0.009505677204257329
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g20n08",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 431.787138750678,
+      "F1_quantized": 112.34705986243493,
+      "F2_downsampled": 1076.1583494492002,
+      "F3_spatial": 264.40509872921825,
+      "F4_combined": 316.8302812115198
+    },
+    "alpha": {
+      "F0_full": 0.9771065645438933,
+      "F1_quantized": 0.9148365212378741,
+      "F2_downsampled": 0.9815870036976151,
+      "F3_spatial": 0.9628855195130196,
+      "F4_combined": 0.9388258508528279
+    },
+    "cov": {
+      "F0_full": 0.0300108471641142,
+      "F1_quantized": 0.00895580146574354,
+      "F2_downsampled": 0.06842444433980008,
+      "F3_spatial": 0.009076152256329085,
+      "F4_combined": 0.010287912250222436
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g20n08",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 346.47330885128196,
+      "F1_quantized": 101.74110838797068,
+      "F2_downsampled": 830.2868450361683,
+      "F3_spatial": 274.32255266328343,
+      "F4_combined": 336.8780647532234
+    },
+    "alpha": {
+      "F0_full": 0.9715502842218023,
+      "F1_quantized": 0.9063872033986445,
+      "F2_downsampled": 0.9761997410480643,
+      "F3_spatial": 0.9642029886524178,
+      "F4_combined": 0.9423592929411605
+    },
+    "cov": {
+      "F0_full": 0.022058250535768216,
+      "F1_quantized": 0.007555284962640802,
+      "F2_downsampled": 0.04870623107367358,
+      "F3_spatial": 0.008714018107173246,
+      "F4_combined": 0.010054079562618992
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g20n18",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 459.6534814529406,
+      "F1_quantized": 99.85054856479191,
+      "F2_downsampled": 2720.5963757325535,
+      "F3_spatial": 279.09543091368556,
+      "F4_combined": 340.6335556142949
+    },
+    "alpha": {
+      "F0_full": 0.9784794255443373,
+      "F1_quantized": 0.904701996515521,
+      "F2_downsampled": 0.9926756255746876,
+      "F3_spatial": 0.9648042592482322,
+      "F4_combined": 0.9429763072005382
+    },
+    "cov": {
+      "F0_full": 0.035367791419179805,
+      "F1_quantized": 0.008758318783294299,
+      "F2_downsampled": 0.18856978570519517,
+      "F3_spatial": 0.008921912468181874,
+      "F4_combined": 0.010192537118912305
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g20n18",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 320.82477353187875,
+      "F1_quantized": 99.85356822224618,
+      "F2_downsampled": 793.0921255629994,
+      "F3_spatial": 283.74425423097045,
+      "F4_combined": 339.44757720964157
+    },
+    "alpha": {
+      "F0_full": 0.9693111031151943,
+      "F1_quantized": 0.9047047365109758,
+      "F2_downsampled": 0.9750975601238201,
+      "F3_spatial": 0.9653707984016383,
+      "F4_combined": 0.9427828865354998
+    },
+    "cov": {
+      "F0_full": 0.021247078761019264,
+      "F1_quantized": 0.007686355944060668,
+      "F2_downsampled": 0.047600344570676204,
+      "F3_spatial": 0.009503518823010227,
+      "F4_combined": 0.010717862244514549
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g25n18",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 400.0635269912431,
+      "F1_quantized": 106.11560372931999,
+      "F2_downsampled": 855.3430955168463,
+      "F3_spatial": 213.01025522982434,
+      "F4_combined": 243.24193189673824
+    },
+    "alpha": {
+      "F0_full": 0.9753137838276247,
+      "F1_quantized": 0.9100671892826669,
+      "F2_downsampled": 0.9768888208011318,
+      "F3_spatial": 0.9541388276153661,
+      "F4_combined": 0.9210668460588994
+    },
+    "cov": {
+      "F0_full": 0.023472845936323473,
+      "F1_quantized": 0.007439864068772732,
+      "F2_downsampled": 0.04651846558619441,
+      "F3_spatial": 0.008415948741091835,
+      "F4_combined": 0.009330945391882426
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g25n18",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 387.56823867286033,
+      "F1_quantized": 110.94308355150969,
+      "F2_downsampled": 965.579173561263,
+      "F3_spatial": 294.3572256933756,
+      "F4_combined": 350.5551231579115
+    },
+    "alpha": {
+      "F0_full": 0.9745281168086987,
+      "F1_quantized": 0.9138066172129895,
+      "F2_downsampled": 0.9795000827639536,
+      "F3_spatial": 0.9665982526980813,
+      "F4_combined": 0.9445446038649807
+    },
+    "cov": {
+      "F0_full": 0.0222526368572944,
+      "F1_quantized": 0.007566588027507676,
+      "F2_downsampled": 0.05095158167182602,
+      "F3_spatial": 0.009828552625233314,
+      "F4_combined": 0.011142034917983238
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g26n10",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 537.2459256167057,
+      "F1_quantized": 138.73357650352008,
+      "F2_downsampled": 1200.9178693107842,
+      "F3_spatial": 245.22332569808836,
+      "F4_combined": 290.7993456598963
+    },
+    "alpha": {
+      "F0_full": 0.9815587107572925,
+      "F1_quantized": 0.9304558942509003,
+      "F2_downsampled": 0.9834839817948463,
+      "F3_spatial": 0.9600411268526944,
+      "F4_combined": 0.9335358193840917
+    },
+    "cov": {
+      "F0_full": 0.027772949286531654,
+      "F1_quantized": 0.008376016400701887,
+      "F2_downsampled": 0.05824141603701321,
+      "F3_spatial": 0.008836335837207662,
+      "F4_combined": 0.00998039316688135
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "g26n10",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 1164.6291929076597,
+      "F1_quantized": 347.66907277910485,
+      "F2_downsampled": 2772.764673699538,
+      "F3_spatial": 281.51325031363297,
+      "F4_combined": 366.59880978144895
+    },
+    "alpha": {
+      "F0_full": 0.9914503341017544,
+      "F1_quantized": 0.9716467329364422,
+      "F2_downsampled": 0.9928129339184243,
+      "F3_spatial": 0.9651012058276881,
+      "F4_combined": 0.9469059059909894
+    },
+    "cov": {
+      "F0_full": 0.03346571268028525,
+      "F1_quantized": 0.01192061452688581,
+      "F2_downsampled": 0.07516862484803934,
+      "F3_spatial": 0.008542112703173444,
+      "F4_combined": 0.010234765473974238
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h25n02",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 320.73246687275713,
+      "F1_quantized": 95.55400252511635,
+      "F2_downsampled": 728.2100099876357,
+      "F3_spatial": 314.2655711702165,
+      "F4_combined": 363.83010743955634
+    },
+    "alpha": {
+      "F0_full": 0.9693024078376006,
+      "F1_quantized": 0.9006371121835024,
+      "F2_downsampled": 0.972909118438162,
+      "F3_spatial": 0.9686807146522552,
+      "F4_combined": 0.9465128691542943
+    },
+    "cov": {
+      "F0_full": 0.023157354520909303,
+      "F1_quantized": 0.00786519325710053,
+      "F2_downsampled": 0.047796130735424665,
+      "F3_spatial": 0.010184394240269793,
+      "F4_combined": 0.011170372916276984
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h25n02",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 279.7846819135039,
+      "F1_quantized": 105.69892646498303,
+      "F2_downsampled": 752.8285813246404,
+      "F3_spatial": 271.46143200060453,
+      "F4_combined": 359.16348086739487
+    },
+    "alpha": {
+      "F0_full": 0.9648894238507721,
+      "F1_quantized": 0.909729168993112,
+      "F2_downsampled": 0.9737833116180611,
+      "F3_spatial": 0.9638326052039288,
+      "F4_combined": 0.9458370761736007
+    },
+    "cov": {
+      "F0_full": 0.02059825344304333,
+      "F1_quantized": 0.008613006676861728,
+      "F2_downsampled": 0.049931188028459486,
+      "F3_spatial": 0.009792403187273155,
+      "F4_combined": 0.011712901289420102
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h25n12",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 366.27121283084256,
+      "F1_quantized": 99.57846988801954,
+      "F2_downsampled": 767.520992193228,
+      "F3_spatial": 324.49464702895165,
+      "F4_combined": 378.24596186408166
+    },
+    "alpha": {
+      "F0_full": 0.9730671625183448,
+      "F1_quantized": 0.9044544682874266,
+      "F2_downsampled": 0.9742786585326363,
+      "F3_spatial": 0.9696528585248988,
+      "F4_combined": 0.9484979536114483
+    },
+    "cov": {
+      "F0_full": 0.028203181660575616,
+      "F1_quantized": 0.008667912735264509,
+      "F2_downsampled": 0.054710920618691455,
+      "F3_spatial": 0.010087466740931712,
+      "F4_combined": 0.011234943412849129
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h25n12",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 284.54077707364985,
+      "F1_quantized": 98.71402597596307,
+      "F2_downsampled": 604.5883366881118,
+      "F3_spatial": 298.0494728859014,
+      "F4_combined": 348.3432211765048
+    },
+    "alpha": {
+      "F0_full": 0.9654660434105458,
+      "F1_quantized": 0.9036594295907014,
+      "F2_downsampled": 0.9674608110414276,
+      "F3_spatial": 0.9670051315385936,
+      "F4_combined": 0.9442024858062129
+    },
+    "cov": {
+      "F0_full": 0.020875103639660622,
+      "F1_quantized": 0.008071022580977161,
+      "F2_downsampled": 0.041630599072823044,
+      "F3_spatial": 0.01008033859512356,
+      "F4_combined": 0.011395420347765877
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h30n12",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 243.91046529766837,
+      "F1_quantized": 82.06222924361,
+      "F2_downsampled": 510.00075990487926,
+      "F3_spatial": 242.3790508843508,
+      "F4_combined": 289.2671429267168
+    },
+    "alpha": {
+      "F0_full": 0.9598304249233937,
+      "F1_quantized": 0.8852734118525607,
+      "F2_downsampled": 0.9615433512724638,
+      "F3_spatial": 0.9595818224308982,
+      "F4_combined": 0.933195798509379
+    },
+    "cov": {
+      "F0_full": 0.019514057947577105,
+      "F1_quantized": 0.007544249956197919,
+      "F2_downsampled": 0.03733681529424915,
+      "F3_spatial": 0.009084777626740268,
+      "F4_combined": 0.010225740264691013
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h30n12",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 298.8085454920511,
+      "F1_quantized": 131.083306223516,
+      "F2_downsampled": 593.7974458604713,
+      "F3_spatial": 285.29712929078255,
+      "F4_combined": 335.47903852700995
+    },
+    "alpha": {
+      "F0_full": 0.967087554693458,
+      "F1_quantized": 0.9265499104769584,
+      "F2_downsampled": 0.9668793882483898,
+      "F3_spatial": 0.9655560013305396,
+      "F4_combined": 0.9421260113410741
+    },
+    "cov": {
+      "F0_full": 0.016907586488649897,
+      "F1_quantized": 0.008331364327393837,
+      "F2_downsampled": 0.031569997923840847,
+      "F3_spatial": 0.009735614802824734,
+      "F4_combined": 0.011025445064256284
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h31n04",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 343.5616826146739,
+      "F1_quantized": 112.366543774301,
+      "F2_downsampled": 661.8116250858022,
+      "F3_spatial": 241.11258122707534,
+      "F4_combined": 288.20796730403305
+    },
+    "alpha": {
+      "F0_full": 0.9713126695304478,
+      "F1_quantized": 0.9148506408987964,
+      "F2_downsampled": 0.9702319817694955,
+      "F3_spatial": 0.9593738935618,
+      "F4_combined": 0.9329587100119527
+    },
+    "cov": {
+      "F0_full": 0.025266754118836155,
+      "F1_quantized": 0.009104425629440882,
+      "F2_downsampled": 0.04525609512014342,
+      "F3_spatial": 0.009416741160037836,
+      "F4_combined": 0.010678935235125756
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h31n04",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 265.09313454614875,
+      "F1_quantized": 101.0100753447804,
+      "F2_downsampled": 545.323431510633,
+      "F3_spatial": 251.14298056810233,
+      "F4_combined": 297.7523793391388
+    },
+    "alpha": {
+      "F0_full": 0.9629800427774653,
+      "F1_quantized": 0.9057426852399649,
+      "F2_downsampled": 0.9639889158135058,
+      "F3_spatial": 0.960964361600078,
+      "F4_combined": 0.9350363174594204
+    },
+    "cov": {
+      "F0_full": 0.018896198357385718,
+      "F1_quantized": 0.008136140802692308,
+      "F2_downsampled": 0.03668349468303685,
+      "F3_spatial": 0.009139604381420911,
+      "F4_combined": 0.010483007938401146
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h36n04",
+    "socket": 0,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 407.2310308606602,
+      "F1_quantized": 169.51590992536694,
+      "F2_downsampled": 759.8330626347365,
+      "F3_spatial": 256.6216364446494,
+      "F4_combined": 308.9845143277954
+    },
+    "alpha": {
+      "F0_full": 0.9757429623807375,
+      "F1_quantized": 0.9427147699660301,
+      "F2_downsampled": 0.9740218219510971,
+      "F3_spatial": 0.9617816053267573,
+      "F4_combined": 0.93732222763497
+    },
+    "cov": {
+      "F0_full": 0.021624614120145824,
+      "F1_quantized": 0.009951069853208067,
+      "F2_downsampled": 0.03895101766570106,
+      "F3_spatial": 0.010217278546584085,
+      "F4_combined": 0.011980343563124376
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h36n04",
+    "socket": 1,
+    "in_subset": false,
+    "tau": {
+      "F0_full": 205.44740569973462,
+      "F1_quantized": 99.30383843834845,
+      "F2_downsampled": 334.9734263048373,
+      "F3_spatial": 152.55867995271058,
+      "F4_combined": 174.75824597092415
+    },
+    "alpha": {
+      "F0_full": 0.9524913457477032,
+      "F1_quantized": 0.9042033113450783,
+      "F2_downsampled": 0.9420412376156896,
+      "F3_spatial": 0.9365535775808513,
+      "F4_combined": 0.8918620481760592
+    },
+    "cov": {
+      "F0_full": 0.011487982980988666,
+      "F1_quantized": 0.006484141081431436,
+      "F2_downsampled": 0.0180696469193352,
+      "F3_spatial": 0.007907055444357982,
+      "F4_combined": 0.009039341104151647
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h36n14",
+    "socket": 0,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 274.43564553605216,
+      "F1_quantized": 143.68354611942328,
+      "F2_downsampled": 532.520792779138,
+      "F3_spatial": 225.96427891152788,
+      "F4_combined": 300.5388271514987
+    },
+    "alpha": {
+      "F0_full": 0.9642174732001165,
+      "F1_quantized": 0.9327692852347584,
+      "F2_downsampled": 0.9631393063421027,
+      "F3_spatial": 0.9567101734763904,
+      "F4_combined": 0.9356188078965095
+    },
+    "cov": {
+      "F0_full": 0.01699304091951163,
+      "F1_quantized": 0.009661830433881788,
+      "F2_downsampled": 0.03184125825704274,
+      "F3_spatial": 0.009094701810482437,
+      "F4_combined": 0.011439164705799741
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  },
+  {
+    "host": "h36n14",
+    "socket": 1,
+    "in_subset": true,
+    "tau": {
+      "F0_full": 274.62867142917975,
+      "F1_quantized": 134.00347443977805,
+      "F2_downsampled": 588.4147919115119,
+      "F3_spatial": 276.2406001405443,
+      "F4_combined": 353.41851334910444
+    },
+    "alpha": {
+      "F0_full": 0.9642421682401002,
+      "F1_quantized": 0.9280915196486508,
+      "F2_downsampled": 0.966581529783142,
+      "F3_spatial": 0.9644470695363933,
+      "F4_combined": 0.9449813084614959
+    },
+    "cov": {
+      "F0_full": 0.016937716704996206,
+      "F1_quantized": 0.009080146603208045,
+      "F2_downsampled": 0.034921079495556506,
+      "F3_spatial": 0.00995722197568067,
+      "F4_combined": 0.012318459765841665
+    },
+    "valid": {
+      "F0_full": true,
+      "F1_quantized": true,
+      "F2_downsampled": true,
+      "F3_spatial": true,
+      "F4_combined": true
+    }
+  }
+]

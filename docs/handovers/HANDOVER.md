@@ -11,7 +11,7 @@ scientific story see `docs/RESEARCH_SUMMARY.md`; for usage see `README.md`.
 A test of one question on real HPC processor telemetry:
 
 > Can a physics-informed neural network (PINN) learn thermal behaviour that
-> classical first-order physics cannot already explain, from the same
+> classical first-order physics cannot already explain, from the same 
 > observable inputs?
 
 **Answer (demonstrated, not assumed): NO.** The classical first-order model

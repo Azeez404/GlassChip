@@ -1,0 +1,31 @@
+{
+  "dataset_name": "Long Term Per-Component Power and Thermal Measurements of the OLCF Summit System",
+  "authors": ["Woong Shin", "J. Austin Ellis", "Ahmad Maroof Karimi", "Vladyslav Oles", "Sajal Dash", "Feiyi Wang"],
+  "institution": "Oak Ridge National Laboratory (OLCF)",
+  "system": "Summit (OLCF-4), IBM AC922, 2x IBM POWER9 CPU + 6x NVIDIA V100 GPU per node, 4626 nodes",
+  "doi": "10.13139/OLCF/1861393",
+  "doi_url": "https://doi.org/10.13139/OLCF/1861393",
+  "landing_page": "https://doi.ccs.ornl.gov/dataset/086578e9-8a9f-56b1-a657-0ed8b7393deb",
+  "companion_github": "https://github.com/at-aaims/summit_power_and_thermal_data",
+  "companion_paper": "Revealing power, energy and thermal dynamics of a 200PF pre-exascale supercomputer (SC'21, doi 10.1145/3458817.3476188)",
+  "license": "CC-BY-4.0",
+  "release_date": "2022-04-11",
+  "distribution_mechanism": "Globus ONLY (authenticated). No direct HTTP/HTTPS download exists. OSTI purl and DOI both redirect to the Constellation landing page, which offers a single Globus File Manager link.",
+  "globus_endpoint_origin_id": "57618e0a-2c99-45ff-9694-24141b92fa17",
+  "globus_origin_path": "/gen101/world-shared/doi-data/OLCF/202204/10.13139_OLCF_1861393/",
+  "globus_file_manager_url": "https://app.globus.org/file-manager?origin_id=57618e0a-2c99-45ff-9694-24141b92fa17&origin_path=%2Fgen101%2Fworld-shared%2Fdoi-data%2FOLCF%2F202204%2F10.13139_OLCF_1861393%2F",
+  "target_sample_for_pilot": "a_fullperiod_10sec_58hosts_decomp.tar",
+  "sample_archives": [
+    {"file": "a_fullperiod_10sec_58hosts_decomp.tar", "size": "4.6GB", "rows": 73904353, "interval": "10s", "layout": "hostname/month/yyyymmdd.parquet", "period": "2020-01,2020-08,2021-02,2021-08,2022-01", "note": "BEST for pilot: 58 nodes, long continuous per-node series"},
+    {"file": "a_fullperiod_10sec_100hosts.tar", "size": "4.2GB", "rows": 127007113, "interval": "10s", "layout": "one file per day, all 100 nodes"},
+    {"file": "b_snapshot_10sec_24h.tar", "size": "1.1GB", "rows": 27367428, "interval": "10s", "layout": "3000 random nodes, single 24h windows"},
+    {"file": "c_snapshot_1min_24h.tar", "size": "1.9GB", "rows": 30973416, "interval": "60s", "layout": "random sampling"},
+    {"file": "d_snapshot_1min_4626hosts_24h", "size": "4.1GB", "rows": 34649816, "interval": "60s", "layout": "all 4626 hosts, five 24h windows"}
+  ],
+  "downloaded_file": null,
+  "file_size_bytes": null,
+  "sha256": null,
+  "download_timestamp": null,
+  "acquisition_status": "BLOCKED_HUMAN_ACTION_REQUIRED",
+  "notes": "Verified from primary sources 2026-08-10. CORRECTIONS vs prior audit assumptions: (1) public release is 10s and 60s MEANS, not raw 1Hz. (2) NO coolant/boundary column exists in the data; the ~21C figure is a documented facility operating point (OLCF), i.e. an ASSUMED CONSTANT boundary, not measured node telemetry. (3) temperatures are float32 Celsius (NOT 1C quantized) confirmed. (4) CPU temp and CPU power share the same wide row per timestamp => exact co-location by construction, no join required. Missing data marked NaN, 1.2-5.5% depending on sample. Sample is legally usable (CC-BY-4.0). sha256/size to be filled after human Globus download."
+}

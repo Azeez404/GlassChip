@@ -1,0 +1,159 @@
+{
+  "generated": "2026-08-23T17:10:13+00:00",
+  "seed": 0,
+  "n_boot": 2000,
+  "source": "imports frozen v2_research/summit/observability_ablation (conditions, segmentation, identification unchanged)",
+  "scope": "identifiability only; pooled residual models not re-run",
+  "n_hosts": 58,
+  "n_units": 116,
+  "n_units_valid_all_conditions": 116,
+  "conditions": {
+    "F0_full": {
+      "temp": "mean",
+      "quant": false,
+      "decimate": false,
+      "dt": 10.0
+    },
+    "F1_quantized": {
+      "temp": "mean",
+      "quant": true,
+      "decimate": false,
+      "dt": 10.0
+    },
+    "F2_downsampled": {
+      "temp": "mean",
+      "quant": false,
+      "decimate": true,
+      "dt": 20.0
+    },
+    "F3_spatial": {
+      "temp": "max",
+      "quant": false,
+      "decimate": false,
+      "dt": 10.0
+    },
+    "F4_combined": {
+      "temp": "max",
+      "quant": true,
+      "decimate": true,
+      "dt": 20.0
+    }
+  },
+  "paired_analysis": {
+    "F0_full": {
+      "n_paired": 116,
+      "tau_median": 438.89084513985074,
+      "tau_iqr": 211.47610250762705,
+      "ratio_median": 1.0,
+      "ratio_p05": 1.0,
+      "ratio_p95": 1.0,
+      "ratio_min": 1.0,
+      "ratio_max": 1.0,
+      "ratio_median_ci": [
+        1.0,
+        1.0
+      ],
+      "spearman_rho": 1.0,
+      "spearman_ci95": [
+        1.0,
+        1.0
+      ],
+      "tau_iqr_ratio_vs_F0": 1.0,
+      "alpha_iqr_ratio_vs_F0": 1.0,
+      "cv_1_minus_alpha": 0.36908060981191887,
+      "cv_1_minus_alpha_F0": 0.36908060981191887
+    },
+    "F1_quantized": {
+      "n_paired": 116,
+      "tau_median": 141.757577506358,
+      "tau_iqr": 78.14989694991644,
+      "ratio_median": 0.32700207715097607,
+      "ratio_p05": 0.21455509149022464,
+      "ratio_p95": 0.4658308075585792,
+      "ratio_min": 0.13103594940622842,
+      "ratio_max": 0.52356007121002,
+      "ratio_median_ci": [
+        0.31325315104274926,
+        0.34908509105442304
+      ],
+      "spearman_rho": 0.7959558682197363,
+      "spearman_ci95": [
+        0.7053660716242824,
+        0.8634477840199883
+      ],
+      "tau_iqr_ratio_vs_F0": 0.3695448139209862,
+      "alpha_iqr_ratio_vs_F0": 3.315246872632706,
+      "cv_1_minus_alpha": 0.3271978238349392,
+      "cv_1_minus_alpha_F0": 0.36908060981191887
+    },
+    "F2_downsampled": {
+      "n_paired": 116,
+      "tau_median": 1021.6591876098929,
+      "tau_iqr": 728.8008515375872,
+      "ratio_median": 2.260216215757441,
+      "ratio_p05": 1.7031121085794196,
+      "ratio_p95": 5.472877652588292,
+      "ratio_min": 1.3003570848924153,
+      "ratio_max": 24.564875280738935,
+      "ratio_median_ci": [
+        2.119028560392476,
+        2.3963948270328537
+      ],
+      "spearman_rho": 0.8204820666589782,
+      "spearman_ci95": [
+        0.7271622577713217,
+        0.8831117840585045
+      ],
+      "tau_iqr_ratio_vs_F0": 3.4462563045926307,
+      "alpha_iqr_ratio_vs_F0": 1.2274666550841598,
+      "cv_1_minus_alpha": 0.47597061708235233,
+      "cv_1_minus_alpha_F0": 0.36908060981191887
+    },
+    "F3_spatial": {
+      "n_paired": 116,
+      "tau_median": 307.0823080911041,
+      "tau_iqr": 76.79175223062344,
+      "ratio_median": 0.6860749634949446,
+      "ratio_p05": 0.22300786907893375,
+      "ratio_p95": 0.9967584267475185,
+      "ratio_min": 0.15284236480566502,
+      "ratio_max": 1.2809552933184452,
+      "ratio_median_ci": [
+        0.6312636896317891,
+        0.7196797115387946
+      ],
+      "spearman_rho": 0.4905009033944566,
+      "spearman_ci95": [
+        0.32441079058373923,
+        0.6288406644434575
+      ],
+      "tau_iqr_ratio_vs_F0": 0.36312260023731946,
+      "alpha_iqr_ratio_vs_F0": 0.8426498587205098,
+      "cv_1_minus_alpha": 0.2791700434079609,
+      "cv_1_minus_alpha_F0": 0.36908060981191887
+    },
+    "F4_combined": {
+      "n_paired": 116,
+      "tau_median": 368.6752438425596,
+      "tau_iqr": 83.36980207791248,
+      "ratio_median": 0.8153064765643098,
+      "ratio_p05": 0.29454570770718985,
+      "ratio_p95": 1.1955245761292717,
+      "ratio_min": 0.21350026600030977,
+      "ratio_max": 1.4985869149686273,
+      "ratio_median_ci": [
+        0.7586555354950324,
+        0.8509318064765954
+      ],
+      "spearman_rho": 0.49943489793564755,
+      "spearman_ci95": [
+        0.3334978422261592,
+        0.6354116331844502
+      ],
+      "tau_iqr_ratio_vs_F0": 0.39422800538375574,
+      "alpha_iqr_ratio_vs_F0": 1.2579287942658095,
+      "cv_1_minus_alpha": 0.2153363270257994,
+      "cv_1_minus_alpha_F0": 0.36908060981191887
+    }
+  }
+}

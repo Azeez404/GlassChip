@@ -1,0 +1,2644 @@
+{
+  "generated": "2026-08-20T10:52:44+00:00",
+  "dt_s": 10.0,
+  "hosts": [
+    "g04n06",
+    "g14n16",
+    "g15n08",
+    "g20n18",
+    "g25n18",
+    "g26n10",
+    "h25n02",
+    "h25n12",
+    "h31n04",
+    "h36n14"
+  ],
+  "v1_anchor": {
+    "source": "src/baseline/classical_baseline.py",
+    "equation": "T[n+1] = alpha*T[n] + beta*P[n] + gamma (OLS)",
+    "tau_eff": "-dt/ln(alpha)",
+    "git_head": "7cbfd1da569519a12858ab7a3a3032e84687737b",
+    "verified_unchanged": true,
+    "inputs": [
+      "p{0,1}_core_temp_mean",
+      "p{0,1}_power"
+    ],
+    "boundary_note": "21 C is a documented facility constant, absorbed in gamma; NOT measured telemetry"
+  },
+  "m100_reference": {
+    "sampling_interval_s": 20,
+    "temp_resolution": "1 C quantized",
+    "alignment": "exact-timestamp inner join; single-core temp vs socket power",
+    "tau_eff_median_s": 230,
+    "increment_r2_in_sample": 0.04,
+    "increment_r2_out_of_sample": "~0 / negative (V2 audit)",
+    "residual_predictability_r2": "0.001-0.042 in-sample; negative out-of-sample",
+    "tau_uncertainty": "per-node bootstrap CI not published; cross-node spread only",
+    "source": "docs/RESEARCH_SUMMARY.md (frozen V1)"
+  },
+  "per_host_socket": {
+    "g04n06/p0": {
+      "A": {
+        "n_pairs": 1191683,
+        "n_segments": 81,
+        "duration_h": 3310.5,
+        "alpha": 0.9850292636800395,
+        "beta": 0.0004223872093599007,
+        "gamma": 0.40347844078035877,
+        "is_stable": true,
+        "tau_eff_s": 662.9572471069391,
+        "r_eff": 0.028214190693929445,
+        "t_ref": 26.95114202515215,
+        "rmse": 0.6045769536353822,
+        "mae": 0.2550653552322836,
+        "r2": 0.9793967722747444,
+        "persistence_rmse": 0.6061614658898057,
+        "increment_r2": 0.005221186833192948,
+        "residual_mean": 1.3772366903292837e-11,
+        "residual_std": 0.6045769536353822,
+        "residual_lag1_autocorr": -0.15329616094988044,
+        "residual_vs_power_corr": 3.2636993541563725e-12,
+        "residual_vs_temp_corr": 3.3361062105260177e-12,
+        "dTdt_std": 0.060616146573240395,
+        "dTdt_max_abs": 1.309152603149414
+      },
+      "B": {
+        "n_blocks": 5,
+        "n_folds": 4,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.7264882985347539,
+            "test_mae": 0.30951891855593067,
+            "test_r2": 0.9752592708030884,
+            "test_increment_r2": 0.004475762898900393,
+            "test_residual_std": 0.7261818453745208,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.5668730985677559,
+            "test_mae": 0.26640830045471103,
+            "test_r2": 0.9819261915291038,
+            "test_increment_r2": 0.0034090304947139716,
+            "test_residual_std": 0.566872960167207,
+            "n_test_pairs": 241124
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.549162769613846,
+            "test_mae": 0.2488523947530347,
+            "test_r2": 0.9793259414801144,
+            "test_increment_r2": 0.005260215206831398,
+            "test_residual_std": 0.549162769352569,
+            "n_test_pairs": 204455
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.48307650850496314,
+            "test_mae": 0.19918027256460943,
+            "test_r2": 0.9865350539536863,
+            "test_increment_r2": 0.0014403186243463484,
+            "test_residual_std": 0.48294591079444443,
+            "n_test_pairs": 265598
+          }
+        ],
+        "mean_test_increment_r2": 0.0036463318061980277,
+        "median_test_increment_r2": 0.003942396696807182
+      },
+      "C": {
+        "tau_point_s": 662.9572472495718,
+        "alpha": 0.9850292636832362,
+        "se_alpha": 0.0006371763014362203,
+        "se_tau_s": 28.430305526686126,
+        "tau_ci95_s": [
+          607.2338484172669,
+          718.6806460818766
+        ],
+        "tau_ci_width_s": 111.44679766460962,
+        "tau_cov": 0.04288407079737899,
+        "n_pairs": 1191683,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 926006,
+        "n_test": 265596,
+        "train_r2_NONEVIDENCE": 0.02846950305587792,
+        "test_r2_out_of_sample": 0.029244697487231686
+      }
+    },
+    "g04n06/p1": {
+      "A": {
+        "n_pairs": 1191683,
+        "n_segments": 81,
+        "duration_h": 3310.5,
+        "alpha": 0.9816398193954451,
+        "beta": 0.0008355984301734749,
+        "gamma": 0.48509871555323447,
+        "is_stable": true,
+        "tau_eff_s": 539.641509397663,
+        "r_eff": 0.04551144937899872,
+        "t_ref": 26.42123876673022,
+        "rmse": 0.533801932883053,
+        "mae": 0.23048168162398658,
+        "r2": 0.9825382977097835,
+        "persistence_rmse": 0.535075533508857,
+        "increment_r2": 0.004754785543196305,
+        "residual_mean": 1.3061097289295564e-11,
+        "residual_std": 0.533801932883053,
+        "residual_lag1_autocorr": -0.1463819549292665,
+        "residual_vs_power_corr": 3.2525176665160744e-12,
+        "residual_vs_temp_corr": 3.3615567248088924e-12,
+        "dTdt_std": 0.053507553331633755,
+        "dTdt_max_abs": 1.2447624206542969
+      },
+      "B": {
+        "n_blocks": 5,
+        "n_folds": 4,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6205274956305206,
+            "test_mae": 0.27232722596042436,
+            "test_r2": 0.9783516289354486,
+            "test_increment_r2": 0.003349811802102587,
+            "test_residual_std": 0.6199057521332068,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.49018407473792275,
+            "test_mae": 0.2299994757719075,
+            "test_r2": 0.98216328537102,
+            "test_increment_r2": 0.004938837217646985,
+            "test_residual_std": 0.48997455948060914,
+            "n_test_pairs": 241124
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.4801713123650924,
+            "test_mae": 0.2180195564330764,
+            "test_r2": 0.9861755532356264,
+            "test_increment_r2": 0.004085659687211751,
+            "test_residual_std": 0.48002114388639544,
+            "n_test_pairs": 204455
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.468643760746088,
+            "test_mae": 0.20100135169905142,
+            "test_r2": 0.9872060406228091,
+            "test_increment_r2": -0.004148104152704057,
+            "test_residual_std": 0.46679263236748697,
+            "n_test_pairs": 265598
+          }
+        ],
+        "mean_test_increment_r2": 0.0020565511385643165,
+        "median_test_increment_r2": 0.003717735744657169
+      },
+      "C": {
+        "tau_point_s": 539.6415092841825,
+        "alpha": 0.9816398193916198,
+        "se_alpha": 0.0004709921072757465,
+        "se_tau_s": 13.972436967252115,
+        "tau_ci95_s": [
+          512.2555328283684,
+          567.0274857399966
+        ],
+        "tau_ci_width_s": 54.77195291162829,
+        "tau_cov": 0.025892072286629906,
+        "n_pairs": 1191683,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 926006,
+        "n_test": 265596,
+        "train_r2_NONEVIDENCE": 0.029840382010745126,
+        "test_r2_out_of_sample": 0.026473863345800708
+      }
+    },
+    "g14n16/p0": {
+      "A": {
+        "n_pairs": 1191537,
+        "n_segments": 82,
+        "duration_h": 3310.1,
+        "alpha": 0.9955860349980811,
+        "beta": -0.0003610093706684699,
+        "gamma": 0.16246780219211845,
+        "is_stable": true,
+        "tau_eff_s": 2260.5330805327844,
+        "r_eff": -0.0817880002472889,
+        "t_ref": 36.80767793162998,
+        "rmse": 0.5527759959022535,
+        "mae": 0.23572436769503916,
+        "r2": 0.9841769620997489,
+        "persistence_rmse": 0.5539434647445549,
+        "increment_r2": 0.004210674256887037,
+        "residual_mean": 1.0240606649625465e-11,
+        "residual_std": 0.5527759959022536,
+        "residual_lag1_autocorr": -0.16033478381550628,
+        "residual_vs_power_corr": 2.3569614998592995e-12,
+        "residual_vs_temp_corr": 2.6699251577318964e-12,
+        "dTdt_std": 0.05539434638971277,
+        "dTdt_max_abs": 1.411429214477539
+      },
+      "B": {
+        "n_blocks": 5,
+        "n_folds": 4,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6052692244423834,
+            "test_mae": 0.2659305970263106,
+            "test_r2": 0.9727489863923545,
+            "test_increment_r2": 0.006410003439034195,
+            "test_residual_std": 0.6052310368519073,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.5441350830731313,
+            "test_mae": 0.2479443515811615,
+            "test_r2": 0.9833828842924859,
+            "test_increment_r2": 0.003113082600839201,
+            "test_residual_std": 0.5441201147288909,
+            "n_test_pairs": 240977
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.49665550333460323,
+            "test_mae": 0.22752013498249296,
+            "test_r2": 0.9747623228014001,
+            "test_increment_r2": 0.00703891018501257,
+            "test_residual_std": 0.49665475163334843,
+            "n_test_pairs": 204456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.4920968461884357,
+            "test_mae": 0.2213574241561594,
+            "test_r2": 0.9888826277397536,
+            "test_increment_r2": -0.04127897469168995,
+            "test_residual_std": 0.4827413693796824,
+            "n_test_pairs": 265598
+          }
+        ],
+        "mean_test_increment_r2": -0.006179244616700996,
+        "median_test_increment_r2": 0.004761543019936698
+      },
+      "C": {
+        "tau_point_s": 2260.5330799090943,
+        "alpha": 0.9955860349968659,
+        "se_alpha": 0.00023736913861626706,
+        "se_tau_s": 121.83363196969538,
+        "tau_ci95_s": [
+          2021.7391612484914,
+          2499.3269985696975
+        ],
+        "tau_ci_width_s": 477.5878373212059,
+        "tau_cov": 0.05389597394194949,
+        "n_pairs": 1191537,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 925859,
+        "n_test": 265596,
+        "train_r2_NONEVIDENCE": 0.052190693825653556,
+        "test_r2_out_of_sample": -0.10811842724981169
+      }
+    },
+    "g14n16/p1": {
+      "A": {
+        "n_pairs": 1191537,
+        "n_segments": 82,
+        "duration_h": 3310.1,
+        "alpha": 0.9961556326147069,
+        "beta": -0.0005213529515921486,
+        "gamma": 0.1463471483037453,
+        "is_stable": true,
+        "tau_eff_s": 2596.204998917906,
+        "r_eff": -0.13561475773273257,
+        "t_ref": 38.06794034919892,
+        "rmse": 0.6323366006219273,
+        "mae": 0.2627417310801984,
+        "r2": 0.9830192305901638,
+        "persistence_rmse": 0.6337927273638716,
+        "increment_r2": 0.004589681203026608,
+        "residual_mean": 1.2827202060718173e-11,
+        "residual_std": 0.6323366006219273,
+        "residual_lag1_autocorr": -0.16539485305674442,
+        "residual_vs_power_corr": 3.1061992112836796e-12,
+        "residual_vs_temp_corr": 3.4491119811027434e-12,
+        "dTdt_std": 0.06337927266139372,
+        "dTdt_max_abs": 1.4914281845092774
+      },
+      "B": {
+        "n_blocks": 5,
+        "n_folds": 4,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6784976109164141,
+            "test_mae": 0.28957369841490904,
+            "test_r2": 0.9741249680579491,
+            "test_increment_r2": 0.005775184964806002,
+            "test_residual_std": 0.6784905901290885,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.64212420376709,
+            "test_mae": 0.304836294276286,
+            "test_r2": 0.9761341988448556,
+            "test_increment_r2": 0.005835732257204129,
+            "test_residual_std": 0.6420615583679956,
+            "n_test_pairs": 240977
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.5727097983585508,
+            "test_mae": 0.24284940842849734,
+            "test_r2": 0.9750153466140203,
+            "test_increment_r2": 0.006668647223430635,
+            "test_residual_std": 0.5726548782150217,
+            "n_test_pairs": 204456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.5571328567167402,
+            "test_mae": 0.240486830702147,
+            "test_r2": 0.9895038400546364,
+            "test_increment_r2": -0.03975901388071268,
+            "test_residual_std": 0.5479494274422794,
+            "n_test_pairs": 265598
+          }
+        ],
+        "mean_test_increment_r2": -0.005369862358817978,
+        "median_test_increment_r2": 0.0058054586110050654
+      },
+      "C": {
+        "tau_point_s": 2596.2049984628984,
+        "alpha": 0.9961556326140344,
+        "se_alpha": 0.00026509628364044385,
+        "se_tau_s": 179.3718997970928,
+        "tau_ci95_s": [
+          2244.6360748605966,
+          2947.7739220652
+        ],
+        "tau_ci_width_s": 703.1378472046038,
+        "tau_cov": 0.06909003715164681,
+        "n_pairs": 1191537,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 925859,
+        "n_test": 265596,
+        "train_r2_NONEVIDENCE": 0.05293954350044161,
+        "test_r2_out_of_sample": -0.11185442068658569
+      }
+    },
+    "g15n08/p0": {
+      "A": {
+        "n_pairs": 1191484,
+        "n_segments": 82,
+        "duration_h": 3309.9,
+        "alpha": 0.988682028317504,
+        "beta": 0.00011437010114894938,
+        "gamma": 0.32184466279000806,
+        "is_stable": true,
+        "tau_eff_s": 878.5410553245102,
+        "r_eff": 0.010105176471313315,
+        "t_ref": 28.436602583814658,
+        "rmse": 0.6034606478001688,
+        "mae": 0.24585204481155934,
+        "r2": 0.9799655682172269,
+        "persistence_rmse": 0.6049876990771645,
+        "increment_r2": 0.005041833660450745,
+        "residual_mean": 1.2067319810543671e-11,
+        "residual_std": 0.6034606478001688,
+        "residual_lag1_autocorr": -0.17968450656855214,
+        "residual_vs_power_corr": 2.815837857170232e-12,
+        "residual_vs_temp_corr": 2.927790680629678e-12,
+        "dTdt_std": 0.06049876986882592,
+        "dTdt_max_abs": 1.324761199951172
+      },
+      "B": {
+        "n_blocks": 5,
+        "n_folds": 4,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6237693827726699,
+            "test_mae": 0.27569040713281373,
+            "test_r2": 0.9764401547429299,
+            "test_increment_r2": 0.0057726663371426845,
+            "test_residual_std": 0.6237586869761071,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.6163552323486543,
+            "test_mae": 0.25937237233205646,
+            "test_r2": 0.9819759374822373,
+            "test_increment_r2": 0.003572831336824289,
+            "test_residual_std": 0.6163463497194187,
+            "n_test_pairs": 240955
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.5845846069533893,
+            "test_mae": 0.24453557521598004,
+            "test_r2": 0.9703335608978415,
+            "test_increment_r2": 0.006762283291617099,
+            "test_residual_std": 0.5845542700753334,
+            "n_test_pairs": 204455
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.5349596798305116,
+            "test_mae": 0.2080312193223293,
+            "test_r2": 0.9844383409303048,
+            "test_increment_r2": 0.0013627102871754948,
+            "test_residual_std": 0.5343579583152045,
+            "n_test_pairs": 265568
+          }
+        ],
+        "mean_test_increment_r2": 0.004367622813189892,
+        "median_test_increment_r2": 0.004672748836983487
+      },
+      "C": {
+        "tau_point_s": 878.541055205718,
+        "alpha": 0.9886820283159823,
+        "se_alpha": 0.0004497606791497417,
+        "se_tau_s": 35.111466331266556,
+        "tau_ci95_s": [
+          809.7225811964355,
+          947.3595292150004
+        ],
+        "tau_ci_width_s": 137.6369480185649,
+        "tau_cov": 0.03996565228593091,
+        "n_pairs": 1191484,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 925837,
+        "n_test": 265565,
+        "train_r2_NONEVIDENCE": 0.05290016253529517,
+        "test_r2_out_of_sample": -0.047776644140186786
+      }
+    },
+    "g15n08/p1": {
+      "A": {
+        "n_pairs": 1191484,
+        "n_segments": 82,
+        "duration_h": 3309.9,
+        "alpha": 0.9884731906769932,
+        "beta": 0.0001088020903680766,
+        "gamma": 0.3510916881929674,
+        "is_stable": true,
+        "tau_eff_s": 862.5331008057838,
+        "r_eff": 0.009439046601639772,
+        "t_ref": 30.45870529776278,
+        "rmse": 0.6569807970380298,
+        "mae": 0.2635665431335758,
+        "r2": 0.9793391806216267,
+        "persistence_rmse": 0.6586954516663234,
+        "increment_r2": 0.005199435529414709,
+        "residual_mean": 9.486730765895869e-12,
+        "residual_std": 0.6569807970380298,
+        "residual_lag1_autocorr": -0.18737560787273913,
+        "residual_vs_power_corr": 2.0387269127756183e-12,
+        "residual_vs_temp_corr": 2.1360647924703017e-12,
+        "dTdt_std": 0.06586954510164657,
+        "dTdt_max_abs": 1.439522933959961
+      },
+      "B": {
+        "n_blocks": 5,
+        "n_folds": 4,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.663557817848195,
+            "test_mae": 0.28560333676409727,
+            "test_r2": 0.9762554919930524,
+            "test_increment_r2": 0.005390615289762146,
+            "test_residual_std": 0.663540420719967,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.7105037034264944,
+            "test_mae": 0.31844389836704895,
+            "test_r2": 0.9728233719413946,
+            "test_increment_r2": 0.007047485229092265,
+            "test_residual_std": 0.7104257116166054,
+            "n_test_pairs": 240955
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6207998932944128,
+            "test_mae": 0.24263183742904562,
+            "test_r2": 0.9702465359133281,
+            "test_increment_r2": 0.008761237915333342,
+            "test_residual_std": 0.6207927745826392,
+            "n_test_pairs": 204455
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.5625371390805812,
+            "test_mae": 0.22984450816315677,
+            "test_r2": 0.9869083638586207,
+            "test_increment_r2": -0.022565195967613194,
+            "test_residual_std": 0.5565420070645417,
+            "n_test_pairs": 265568
+          }
+        ],
+        "mean_test_increment_r2": -0.0003414643833563602,
+        "median_test_increment_r2": 0.006219050259427206
+      },
+      "C": {
+        "tau_point_s": 862.5331009182886,
+        "alpha": 0.988473190678488,
+        "se_alpha": 0.0004200981936197007,
+        "se_tau_s": 31.61822318268792,
+        "tau_ci95_s": [
+          800.5613834802202,
+          924.504818356357
+        ],
+        "tau_ci_width_s": 123.94343487613665,
+        "tau_cov": 0.03665740265391072,
+        "n_pairs": 1191484,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 925837,
+        "n_test": 265565,
+        "train_r2_NONEVIDENCE": 0.057677964881046595,
+        "test_r2_out_of_sample": -0.0662384066927233
+      }
+    },
+    "g20n18/p0": {
+      "A": {
+        "n_pairs": 1191513,
+        "n_segments": 79,
+        "duration_h": 3310.0,
+        "alpha": 0.9784794255469279,
+        "beta": 0.000759347576021592,
+        "gamma": 0.5663495549022823,
+        "is_stable": true,
+        "tau_eff_s": 459.6534815088789,
+        "r_eff": 0.035284726143227745,
+        "t_ref": 26.316656004572177,
+        "rmse": 0.6548105573506581,
+        "mae": 0.2744797478935324,
+        "r2": 0.974878454776711,
+        "persistence_rmse": 0.6569303132020579,
+        "increment_r2": 0.006443103777204917,
+        "residual_mean": 8.55083830288155e-12,
+        "residual_std": 0.6548105573506581,
+        "residual_lag1_autocorr": -0.15258018279689944,
+        "residual_vs_power_corr": 1.862872987053536e-12,
+        "residual_vs_temp_corr": 1.8921987204017293e-12,
+        "dTdt_std": 0.06569303124074322,
+        "dTdt_max_abs": 1.341640090942383
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6907351438083321,
+            "test_mae": 0.2959789883014265,
+            "test_r2": 0.9724098872190592,
+            "test_increment_r2": 0.0064296941290166165,
+            "test_residual_std": 0.6907258755905666,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.6407485729755896,
+            "test_mae": 0.3031307293104463,
+            "test_r2": 0.9746845964859037,
+            "test_increment_r2": 0.0061250028759536335,
+            "test_residual_std": 0.6407421177026119,
+            "n_test_pairs": 240954
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.592388293799629,
+            "test_mae": 0.26576384530033037,
+            "test_r2": 0.9794410653246488,
+            "test_increment_r2": 0.004765023801344914,
+            "test_residual_std": 0.5923814951010486,
+            "n_test_pairs": 204458
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.9786652846658053,
+            "test_mae": 0.303882900004296,
+            "test_r2": 0.9507464869997307,
+            "test_increment_r2": 0.00925426888784453,
+            "test_residual_std": 0.9786020472111306,
+            "n_test_pairs": 91456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.4286290098833774,
+            "test_mae": 0.18867662349468337,
+            "test_r2": 0.9875932650323697,
+            "test_increment_r2": -0.0006967863173661382,
+            "test_residual_std": 0.42862525799440354,
+            "n_test_pairs": 174142
+          }
+        ],
+        "mean_test_increment_r2": 0.0051754406753587116,
+        "median_test_increment_r2": 0.0061250028759536335
+      },
+      "C": {
+        "tau_point_s": 459.6534814529406,
+        "alpha": 0.9784794255443373,
+        "se_alpha": 0.0007528857634499182,
+        "se_tau_s": 16.256928457127437,
+        "tau_ci95_s": [
+          427.7899016769708,
+          491.51706122891034
+        ],
+        "tau_ci_width_s": 63.72715955193955,
+        "tau_cov": 0.035367791419179805,
+        "n_pairs": 1191513,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017293,
+        "n_test": 174141,
+        "train_r2_NONEVIDENCE": 0.03291653421567131,
+        "test_r2_out_of_sample": -0.020081797720255423
+      }
+    },
+    "g20n18/p1": {
+      "A": {
+        "n_pairs": 1191513,
+        "n_segments": 79,
+        "duration_h": 3310.0,
+        "alpha": 0.9693111031165493,
+        "beta": 0.001539638965448547,
+        "gamma": 0.7895506942524579,
+        "is_stable": true,
+        "tau_eff_s": 320.8247735462674,
+        "r_eff": 0.05016925083021849,
+        "t_ref": 25.72756841834325,
+        "rmse": 0.6115423499004707,
+        "mae": 0.2537300889132357,
+        "r2": 0.9771390747099967,
+        "persistence_rmse": 0.6135505394818065,
+        "increment_r2": 0.006535410977239309,
+        "residual_mean": 9.620547163929493e-12,
+        "residual_std": 0.6115423499004707,
+        "residual_lag1_autocorr": -0.15893376958512284,
+        "residual_vs_power_corr": 2.151668509627688e-12,
+        "residual_vs_temp_corr": 2.1938015457102958e-12,
+        "dTdt_std": 0.06135505388271297,
+        "dTdt_max_abs": 1.260847282409668
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6481958404652127,
+            "test_mae": 0.27672218126527887,
+            "test_r2": 0.974773603391274,
+            "test_increment_r2": 0.005969029306834295,
+            "test_residual_std": 0.6480732972456658,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.5838721896793589,
+            "test_mae": 0.26638096452763943,
+            "test_r2": 0.9782551885167788,
+            "test_increment_r2": 0.005813335637225525,
+            "test_residual_std": 0.5837389078467382,
+            "n_test_pairs": 240954
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.5492853266248916,
+            "test_mae": 0.2392700585406706,
+            "test_r2": 0.981928879553778,
+            "test_increment_r2": 0.005515481330966132,
+            "test_residual_std": 0.5491372086004562,
+            "n_test_pairs": 204458
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.8981210925232003,
+            "test_mae": 0.2962074841227573,
+            "test_r2": 0.9572407282134546,
+            "test_increment_r2": 0.009620536647340194,
+            "test_residual_std": 0.8980249159955394,
+            "n_test_pairs": 91456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.41463799382376865,
+            "test_mae": 0.1892202823274884,
+            "test_r2": 0.9881313455652062,
+            "test_increment_r2": 0.0001619943445302363,
+            "test_residual_std": 0.414426423916856,
+            "n_test_pairs": 174142
+          }
+        ],
+        "mean_test_increment_r2": 0.005416075453379276,
+        "median_test_increment_r2": 0.005813335637225525
+      },
+      "C": {
+        "tau_point_s": 320.82477353187875,
+        "alpha": 0.9693111031151943,
+        "se_alpha": 0.0006419401196825773,
+        "se_tau_s": 6.816589231717996,
+        "tau_ci95_s": [
+          307.46425863771145,
+          334.18528842604604
+        ],
+        "tau_ci_width_s": 26.721029788334544,
+        "tau_cov": 0.021247078761019264,
+        "n_pairs": 1191513,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017293,
+        "n_test": 174141,
+        "train_r2_NONEVIDENCE": 0.03493687362464093,
+        "test_r2_out_of_sample": -0.013651827184909315
+      }
+    },
+    "g25n18/p0": {
+      "A": {
+        "n_pairs": 1191649,
+        "n_segments": 78,
+        "duration_h": 3310.4,
+        "alpha": 0.9753137838269166,
+        "beta": 0.00103147386718728,
+        "gamma": 0.6482478676370285,
+        "is_stable": true,
+        "tau_eff_s": 400.06352697962313,
+        "r_eff": 0.04178339280330641,
+        "t_ref": 26.259507050085894,
+        "rmse": 0.5136320078804054,
+        "mae": 0.22893113654433597,
+        "r2": 0.977753943838856,
+        "persistence_rmse": 0.5152022603839606,
+        "increment_r2": 0.006086384216454577,
+        "residual_mean": 1.1868414189460046e-11,
+        "residual_std": 0.5136320078804055,
+        "residual_lag1_autocorr": -0.13428266347386072,
+        "residual_vs_power_corr": 2.6765364858539605e-12,
+        "residual_vs_temp_corr": 2.7554731115326247e-12,
+        "dTdt_std": 0.051520226026947745,
+        "dTdt_max_abs": 1.2214284896850587
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.5957391335617176,
+            "test_mae": 0.2529560820418167,
+            "test_r2": 0.9732627906245634,
+            "test_increment_r2": 0.004958907087522113,
+            "test_residual_std": 0.595410891236504,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.5399641657997966,
+            "test_mae": 0.26652714704948616,
+            "test_r2": 0.9761402800289706,
+            "test_increment_r2": 0.006543047492006515,
+            "test_residual_std": 0.5399180314964169,
+            "n_test_pairs": 241090
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.4641721995331392,
+            "test_mae": 0.2174067950105853,
+            "test_r2": 0.9731600783114671,
+            "test_increment_r2": 0.0065212852823098855,
+            "test_residual_std": 0.4641625122376596,
+            "n_test_pairs": 204458
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.37873524343509074,
+            "test_mae": 0.17487086241609912,
+            "test_r2": 0.9883038790112828,
+            "test_increment_r2": 0.0007749221467174827,
+            "test_residual_std": 0.37860768070999434,
+            "n_test_pairs": 91456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.4993050441540635,
+            "test_mae": 0.2037548984257249,
+            "test_r2": 0.9803062895232607,
+            "test_increment_r2": 0.005777252466234395,
+            "test_residual_std": 0.499255934007783,
+            "n_test_pairs": 174142
+          }
+        ],
+        "mean_test_increment_r2": 0.0049150828949580784,
+        "median_test_increment_r2": 0.005777252466234395
+      },
+      "C": {
+        "tau_point_s": 400.0635269912431,
+        "alpha": 0.9753137838276247,
+        "se_alpha": 0.0005722438723552931,
+        "se_tau_s": 9.390629533807637,
+        "tau_ci95_s": [
+          381.65789310498013,
+          418.4691608775061
+        ],
+        "tau_ci_width_s": 36.81126777252594,
+        "tau_cov": 0.023472845936323473,
+        "n_pairs": 1191649,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017430,
+        "n_test": 174141,
+        "train_r2_NONEVIDENCE": 0.025018568114258843,
+        "test_r2_out_of_sample": 0.013915733503132244
+      }
+    },
+    "g25n18/p1": {
+      "A": {
+        "n_pairs": 1191649,
+        "n_segments": 78,
+        "duration_h": 3310.4,
+        "alpha": 0.9745281168069584,
+        "beta": 0.0012863732246062038,
+        "gamma": 0.6562197669690258,
+        "is_stable": true,
+        "tau_eff_s": 387.56823864603655,
+        "r_eff": 0.050501692978774895,
+        "t_ref": 25.76251476955153,
+        "rmse": 0.5584286627366704,
+        "mae": 0.2444131363208369,
+        "r2": 0.979521853783468,
+        "persistence_rmse": 0.560054322994001,
+        "increment_r2": 0.005796940430599085,
+        "residual_mean": 1.3542634758262353e-11,
+        "residual_std": 0.5584286627366704,
+        "residual_lag1_autocorr": -0.14194420443181358,
+        "residual_vs_power_corr": 3.1431116501667884e-12,
+        "residual_vs_temp_corr": 3.232208254501962e-12,
+        "dTdt_std": 0.05600543228985993,
+        "dTdt_max_abs": 1.3128570556640624
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6336839056129412,
+            "test_mae": 0.2729365853661773,
+            "test_r2": 0.9769346421240167,
+            "test_increment_r2": 0.0038445674596585544,
+            "test_residual_std": 0.6333924496978072,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.5781719332379335,
+            "test_mae": 0.2719241840032974,
+            "test_r2": 0.9764049499293886,
+            "test_increment_r2": 0.006147915543466609,
+            "test_residual_std": 0.5780294617999613,
+            "n_test_pairs": 241090
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.5091020577433699,
+            "test_mae": 0.2331975869582587,
+            "test_r2": 0.9744656570059147,
+            "test_increment_r2": 0.007429495282406107,
+            "test_residual_std": 0.5090825394372669,
+            "n_test_pairs": 204458
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.396970578669482,
+            "test_mae": 0.18920653681103752,
+            "test_r2": 0.9906657196049756,
+            "test_increment_r2": -0.0007944380131028606,
+            "test_residual_std": 0.39670764495938116,
+            "n_test_pairs": 91456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.5560586531301658,
+            "test_mae": 0.22244118270470903,
+            "test_r2": 0.9812875392946313,
+            "test_increment_r2": 0.005167423592514764,
+            "test_residual_std": 0.5559998594450517,
+            "n_test_pairs": 174142
+          }
+        ],
+        "mean_test_increment_r2": 0.004358992772988635,
+        "median_test_increment_r2": 0.005167423592514764
+      },
+      "C": {
+        "tau_point_s": 387.56823867286033,
+        "alpha": 0.9745281168086987,
+        "se_alpha": 0.0005595355379177906,
+        "se_tau_s": 8.624415272608365,
+        "tau_ci95_s": [
+          370.66438473854794,
+          404.4720926071727
+        ],
+        "tau_ci_width_s": 33.80770786862479,
+        "tau_cov": 0.0222526368572944,
+        "n_pairs": 1191649,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017430,
+        "n_test": 174141,
+        "train_r2_NONEVIDENCE": 0.027507696830230688,
+        "test_r2_out_of_sample": 0.018589187901902005
+      }
+    },
+    "g26n10/p0": {
+      "A": {
+        "n_pairs": 1191689,
+        "n_segments": 77,
+        "duration_h": 3310.5,
+        "alpha": 0.9815587107546784,
+        "beta": 0.0007172432010748749,
+        "gamma": 0.49557634690795743,
+        "is_stable": true,
+        "tau_eff_s": 537.2459255398355,
+        "r_eff": 0.03889333286482845,
+        "t_ref": 26.873194184819823,
+        "rmse": 0.5629510450081731,
+        "mae": 0.24617684719274194,
+        "r2": 0.9812542487509388,
+        "persistence_rmse": 0.5643613329627647,
+        "increment_r2": 0.004991574149092348,
+        "residual_mean": 1.0722297776571839e-11,
+        "residual_std": 0.5629510450081731,
+        "residual_lag1_autocorr": -0.11362246373911687,
+        "residual_vs_power_corr": 2.5514878666432573e-12,
+        "residual_vs_temp_corr": 2.6308392696817066e-12,
+        "dTdt_std": 0.05643613328186925,
+        "dTdt_max_abs": 1.339682388305664
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.5847083796827802,
+            "test_mae": 0.25295380451732963,
+            "test_r2": 0.9813834936513638,
+            "test_increment_r2": 0.0020559716653916205,
+            "test_residual_std": 0.5846264692783425,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.5970072375541186,
+            "test_mae": 0.2875829213466412,
+            "test_r2": 0.9773747954070439,
+            "test_increment_r2": 0.00586310443062632,
+            "test_residual_std": 0.5969467971679733,
+            "n_test_pairs": 241130
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.5172015651856955,
+            "test_mae": 0.2356240549436142,
+            "test_r2": 0.9751584553522592,
+            "test_increment_r2": 0.006099214183646562,
+            "test_residual_std": 0.5172008069750991,
+            "n_test_pairs": 204458
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.4589519408568875,
+            "test_mae": 0.19343974874708786,
+            "test_r2": 0.9877070001583825,
+            "test_increment_r2": -0.0010766045019487969,
+            "test_residual_std": 0.45793273384955857,
+            "n_test_pairs": 91456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.5753858707821895,
+            "test_mae": 0.22609096036465154,
+            "test_r2": 0.9822500894717681,
+            "test_increment_r2": 0.004214758184374667,
+            "test_residual_std": 0.5749944205973492,
+            "n_test_pairs": 174142
+          }
+        ],
+        "mean_test_increment_r2": 0.0034312887924180745,
+        "median_test_increment_r2": 0.004214758184374667
+      },
+      "C": {
+        "tau_point_s": 537.2459256167057,
+        "alpha": 0.9815587107572925,
+        "se_alpha": 0.0005074171621557293,
+        "se_tau_s": 14.920903846548525,
+        "tau_ci95_s": [
+          508.00095407747057,
+          566.4908971559407
+        ],
+        "tau_ci_width_s": 58.48994307847022,
+        "tau_cov": 0.027772949286531654,
+        "n_pairs": 1191689,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017471,
+        "n_test": 174141,
+        "train_r2_NONEVIDENCE": 0.018476518611109327,
+        "test_r2_out_of_sample": 0.016078310162416787
+      }
+    },
+    "g26n10/p1": {
+      "A": {
+        "n_pairs": 1191689,
+        "n_segments": 77,
+        "duration_h": 3310.5,
+        "alpha": 0.9914503341014717,
+        "beta": 0.00010248094094296575,
+        "gamma": 0.2535868285630936,
+        "is_stable": true,
+        "tau_eff_s": 1164.6291928689748,
+        "r_eff": 0.011986543352601157,
+        "t_ref": 29.66043721155741,
+        "rmse": 0.5292424720171769,
+        "mae": 0.2469302094216629,
+        "r2": 0.9851836308449806,
+        "persistence_rmse": 0.530233194021493,
+        "increment_r2": 0.0037334374650708213,
+        "residual_mean": 9.809956346132611e-12,
+        "residual_std": 0.5292424720171769,
+        "residual_lag1_autocorr": -0.10073308249569074,
+        "residual_vs_power_corr": 2.4477422302049757e-12,
+        "residual_vs_temp_corr": 2.650594446423307e-12,
+        "dTdt_std": 0.053023319381684975,
+        "dTdt_max_abs": 1.1999998092651367
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.5263149124806779,
+            "test_mae": 0.2519636683069874,
+            "test_r2": 0.9836168088283177,
+            "test_increment_r2": 0.002409266004470334,
+            "test_residual_std": 0.5261527397634337,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.5393682340628112,
+            "test_mae": 0.2737961202045488,
+            "test_r2": 0.9779524965388129,
+            "test_increment_r2": 0.006389398359809673,
+            "test_residual_std": 0.5390983598488691,
+            "n_test_pairs": 241130
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.4920636964401058,
+            "test_mae": 0.24144275623522893,
+            "test_r2": 0.9764543674933664,
+            "test_increment_r2": 0.007980516311294705,
+            "test_residual_std": 0.4919874568814308,
+            "n_test_pairs": 204458
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.48390871924435375,
+            "test_mae": 0.2233400171622776,
+            "test_r2": 0.9895439802226039,
+            "test_increment_r2": -0.047430069784461626,
+            "test_residual_std": 0.472600154174451,
+            "n_test_pairs": 91456
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.5678775015059652,
+            "test_mae": 0.23428479408228411,
+            "test_r2": 0.9856898601997337,
+            "test_increment_r2": -0.001793491706094219,
+            "test_residual_std": 0.566145137894121,
+            "n_test_pairs": 174142
+          }
+        ],
+        "mean_test_increment_r2": -0.006488876162996227,
+        "median_test_increment_r2": 0.002409266004470334
+      },
+      "C": {
+        "tau_point_s": 1164.6291929076597,
+        "alpha": 0.9914503341017544,
+        "se_alpha": 0.0002848940436997345,
+        "se_tau_s": 38.97514594892024,
+        "tau_ci95_s": [
+          1088.237906847776,
+          1241.0204789675433
+        ],
+        "tau_ci_width_s": 152.78257211976734,
+        "tau_cov": 0.03346571268028525,
+        "n_pairs": 1191689,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017471,
+        "n_test": 174141,
+        "train_r2_NONEVIDENCE": 0.02200153875788846,
+        "test_r2_out_of_sample": 0.003120239882412834
+      }
+    },
+    "h25n02/p0": {
+      "A": {
+        "n_pairs": 1191624,
+        "n_segments": 84,
+        "duration_h": 3310.3,
+        "alpha": 0.9693024078373708,
+        "beta": 0.0014919606529447214,
+        "gamma": 0.7735837160909084,
+        "is_stable": true,
+        "tau_eff_s": 320.73246687031815,
+        "r_eff": 0.048601878774095206,
+        "t_ref": 25.200143124992614,
+        "rmse": 0.6288744155390621,
+        "mae": 0.25671823931826343,
+        "r2": 0.9766827476219548,
+        "persistence_rmse": 0.6309308050863628,
+        "increment_r2": 0.006507964610627193,
+        "residual_mean": 6.937950059675916e-12,
+        "residual_std": 0.6288744155390621,
+        "residual_lag1_autocorr": -0.1558584940551545,
+        "residual_vs_power_corr": 1.5440489629478015e-12,
+        "residual_vs_temp_corr": 1.574863956164185e-12,
+        "dTdt_std": 0.06309308044001938,
+        "dTdt_max_abs": 1.2181880950927735
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.542640781318607,
+            "test_mae": 0.23391923263245648,
+            "test_r2": 0.9827517281221909,
+            "test_increment_r2": 0.0035357117264552818,
+            "test_residual_std": 0.542375943296051,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.7613996893045887,
+            "test_mae": 0.323822794772029,
+            "test_r2": 0.9614334060600032,
+            "test_increment_r2": 0.006068489895832863,
+            "test_residual_std": 0.761301120858696,
+            "n_test_pairs": 241144
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.5162372852125836,
+            "test_mae": 0.24506116156434174,
+            "test_r2": 0.9826821551783033,
+            "test_increment_r2": 0.004632817363092068,
+            "test_residual_std": 0.5161818749947997,
+            "n_test_pairs": 204404
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.4928210843852728,
+            "test_mae": 0.1895788538901694,
+            "test_r2": 0.98622713411531,
+            "test_increment_r2": 0.0035403979593823243,
+            "test_residual_std": 0.4927768139068942,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.8268716733493179,
+            "test_mae": 0.27101573090657777,
+            "test_r2": 0.9602499410851824,
+            "test_increment_r2": 0.008856032607821196,
+            "test_residual_std": 0.8268644106334921,
+            "n_test_pairs": 174107
+          }
+        ],
+        "mean_test_increment_r2": 0.005326689910516746,
+        "median_test_increment_r2": 0.004632817363092068
+      },
+      "C": {
+        "tau_point_s": 320.73246687275713,
+        "alpha": 0.9693024078376006,
+        "se_alpha": 0.0006998505550475323,
+        "se_tau_s": 7.427315441738235,
+        "tau_ci95_s": [
+          306.1749286069502,
+          335.2900051385641
+        ],
+        "tau_ci_width_s": 29.115076531613884,
+        "tau_cov": 0.023157354520909303,
+        "n_pairs": 1191624,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017435,
+        "n_test": 174105,
+        "train_r2_NONEVIDENCE": 0.03854930388039701,
+        "test_r2_out_of_sample": 0.003127193438263176
+      }
+    },
+    "h25n02/p1": {
+      "A": {
+        "n_pairs": 1191624,
+        "n_segments": 84,
+        "duration_h": 3310.3,
+        "alpha": 0.9648894238556607,
+        "beta": 0.0020395077781249615,
+        "gamma": 0.8408254204231967,
+        "is_stable": true,
+        "tau_eff_s": 279.78468195316356,
+        "r_eff": 0.058088131899076786,
+        "t_ref": 23.947924322476783,
+        "rmse": 0.733888570763311,
+        "mae": 0.2986052796837021,
+        "r2": 0.9759357304388595,
+        "persistence_rmse": 0.736459182294319,
+        "increment_r2": 0.006968817363347868,
+        "residual_mean": 6.492775642279367e-12,
+        "residual_std": 0.733888570763311,
+        "residual_lag1_autocorr": -0.16030136408515297,
+        "residual_vs_power_corr": 1.4531737935502752e-12,
+        "residual_vs_temp_corr": 1.4799305018999515e-12,
+        "dTdt_std": 0.07364591818900713,
+        "dTdt_max_abs": 1.3518516540527343
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.633143350662861,
+            "test_mae": 0.2887985169832499,
+            "test_r2": 0.9828341115625375,
+            "test_increment_r2": 0.003432507851448774,
+            "test_residual_std": 0.6328561622091611,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.8696979838656191,
+            "test_mae": 0.3625651890334161,
+            "test_r2": 0.9639764049556913,
+            "test_increment_r2": 0.005630800930967239,
+            "test_residual_std": 0.8695259356904438,
+            "n_test_pairs": 241144
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6261029366926857,
+            "test_mae": 0.2910550295768195,
+            "test_r2": 0.9815282502027458,
+            "test_increment_r2": 0.006462067774220093,
+            "test_residual_std": 0.6259772286238924,
+            "n_test_pairs": 204404
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.5493142278944191,
+            "test_mae": 0.20773735831958207,
+            "test_r2": 0.9862207861391932,
+            "test_increment_r2": 0.0048152279349706895,
+            "test_residual_std": 0.5492743467391225,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 1.0324791527061112,
+            "test_mae": 0.32956859072989503,
+            "test_r2": 0.9510472573644605,
+            "test_increment_r2": 0.008997644068822974,
+            "test_residual_std": 1.0323356682742013,
+            "n_test_pairs": 174107
+          }
+        ],
+        "mean_test_increment_r2": 0.0058676497120859535,
+        "median_test_increment_r2": 0.005630800930967239
+      },
+      "C": {
+        "tau_point_s": 279.7846819135039,
+        "alpha": 0.9648894238507721,
+        "se_alpha": 0.0007103690152391786,
+        "se_tau_s": 5.763075787535615,
+        "tau_ci95_s": [
+          268.4890533699341,
+          291.0803104570737
+        ],
+        "tau_ci_width_s": 22.59125708713961,
+        "tau_cov": 0.02059825344304333,
+        "n_pairs": 1191624,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017435,
+        "n_test": 174105,
+        "train_r2_NONEVIDENCE": 0.03597665321370813,
+        "test_r2_out_of_sample": 0.025065891695325027
+      }
+    },
+    "h25n12/p0": {
+      "A": {
+        "n_pairs": 1191646,
+        "n_segments": 83,
+        "duration_h": 3310.4,
+        "alpha": 0.9730671625098432,
+        "beta": 0.0014037731242806644,
+        "gamma": 0.6580661292841498,
+        "is_stable": true,
+        "tau_eff_s": 366.2712127136322,
+        "r_eff": 0.05212124882102385,
+        "t_ref": 24.433598187515646,
+        "rmse": 0.7167611525185256,
+        "mae": 0.2971311105001478,
+        "r2": 0.9768694056903593,
+        "persistence_rmse": 0.7189860076021951,
+        "increment_r2": 0.00617929096829517,
+        "residual_mean": 7.862592252236646e-12,
+        "residual_std": 0.7167611525185256,
+        "residual_lag1_autocorr": -0.13148453206265914,
+        "residual_vs_power_corr": 1.8143132430148996e-12,
+        "residual_vs_temp_corr": 1.8437221121823806e-12,
+        "dTdt_std": 0.07189860067187481,
+        "dTdt_max_abs": 1.4257143020629883
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.5905425203939033,
+            "test_mae": 0.2739024117810357,
+            "test_r2": 0.9828621159893127,
+            "test_increment_r2": 0.003981870630364703,
+            "test_residual_std": 0.5905034341863284,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.8133354989408754,
+            "test_mae": 0.34860861620407313,
+            "test_r2": 0.9626848478999657,
+            "test_increment_r2": 0.005957780648704114,
+            "test_residual_std": 0.8132795715024654,
+            "n_test_pairs": 241131
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6707673909498048,
+            "test_mae": 0.3025004334644859,
+            "test_r2": 0.976452020080011,
+            "test_increment_r2": 0.0060699107660876495,
+            "test_residual_std": 0.6707526023625042,
+            "n_test_pairs": 204405
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.645706512924,
+            "test_mae": 0.24132757639398028,
+            "test_r2": 0.9843157289924199,
+            "test_increment_r2": 0.002420893998742457,
+            "test_residual_std": 0.6452807752425423,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.9351889103866521,
+            "test_mae": 0.29973892049990597,
+            "test_r2": 0.9649254370811209,
+            "test_increment_r2": 0.00813503057528453,
+            "test_residual_std": 0.935186029118326,
+            "n_test_pairs": 174141
+          }
+        ],
+        "mean_test_increment_r2": 0.005313097323836691,
+        "median_test_increment_r2": 0.005957780648704114
+      },
+      "C": {
+        "tau_point_s": 366.27121283084256,
+        "alpha": 0.9730671625183448,
+        "se_alpha": 0.0007492696393019615,
+        "se_tau_s": 10.330013552507607,
+        "tau_ci95_s": [
+          346.02438626792764,
+          386.5180393937575
+        ],
+        "tau_ci_width_s": 40.493653125829816,
+        "tau_cov": 0.028203181660575616,
+        "n_pairs": 1191646,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017423,
+        "n_test": 174140,
+        "train_r2_NONEVIDENCE": 0.03002196851196337,
+        "test_r2_out_of_sample": -0.012217852842137722
+      }
+    },
+    "h25n12/p1": {
+      "A": {
+        "n_pairs": 1191646,
+        "n_segments": 83,
+        "duration_h": 3310.4,
+        "alpha": 0.9654660434092284,
+        "beta": 0.001972936697503414,
+        "gamma": 0.872944343967104,
+        "is_stable": true,
+        "tau_eff_s": 284.5407770626023,
+        "r_eff": 0.05713034046120954,
+        "t_ref": 25.277854904131587,
+        "rmse": 0.6814982097254633,
+        "mae": 0.263987039729156,
+        "r2": 0.9779648207911859,
+        "persistence_rmse": 0.683721291590236,
+        "increment_r2": 0.006492316709105328,
+        "residual_mean": 9.459884088929477e-12,
+        "residual_std": 0.6814982097254633,
+        "residual_lag1_autocorr": -0.10941870335963506,
+        "residual_vs_power_corr": 2.1069507029242826e-12,
+        "residual_vs_temp_corr": 2.1449086239774242e-12,
+        "dTdt_std": 0.0683721291420948,
+        "dTdt_max_abs": 1.3607141494750976
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.5301992261663829,
+            "test_mae": 0.24001755862881913,
+            "test_r2": 0.9850826876456461,
+            "test_increment_r2": 0.0034292908647751696,
+            "test_residual_std": 0.5300793414398801,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.7453012364566608,
+            "test_mae": 0.3000946910923922,
+            "test_r2": 0.9677389899135785,
+            "test_increment_r2": 0.005501921917832608,
+            "test_residual_std": 0.7451449157808698,
+            "n_test_pairs": 241131
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6477544224353045,
+            "test_mae": 0.27478672729140124,
+            "test_r2": 0.9785425114724495,
+            "test_increment_r2": 0.00633372967719581,
+            "test_residual_std": 0.6476403578847804,
+            "n_test_pairs": 204405
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.5919340826644865,
+            "test_mae": 0.21226097565038232,
+            "test_r2": 0.9857630789511805,
+            "test_increment_r2": 0.0026613176655763127,
+            "test_residual_std": 0.5914446854475569,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.9554960323723448,
+            "test_mae": 0.2902685270312746,
+            "test_r2": 0.961006663811504,
+            "test_increment_r2": 0.008834307168712252,
+            "test_residual_std": 0.9554441485406499,
+            "n_test_pairs": 174141
+          }
+        ],
+        "mean_test_increment_r2": 0.005352113458818431,
+        "median_test_increment_r2": 0.005501921917832608
+      },
+      "C": {
+        "tau_point_s": 284.54077707364985,
+        "alpha": 0.9654660434105458,
+        "se_alpha": 0.0007083063427338415,
+        "se_tau_s": 5.9398182111220095,
+        "tau_ci95_s": [
+          272.8987333798507,
+          296.182820767449
+        ],
+        "tau_ci_width_s": 23.284087387598277,
+        "tau_cov": 0.020875103639660622,
+        "n_pairs": 1191646,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017423,
+        "n_test": 174140,
+        "train_r2_NONEVIDENCE": 0.019026594336142066,
+        "test_r2_out_of_sample": 0.00977695000645118
+      }
+    },
+    "h31n04/p0": {
+      "A": {
+        "n_pairs": 1191675,
+        "n_segments": 83,
+        "duration_h": 3310.4,
+        "alpha": 0.9713126695321296,
+        "beta": 0.0015880616914062846,
+        "gamma": 0.7252137523424347,
+        "is_stable": true,
+        "tau_eff_s": 343.56168263511086,
+        "r_eff": 0.05535759743085544,
+        "t_ref": 25.279931611436215,
+        "rmse": 0.71997461490932,
+        "mae": 0.28807723230329907,
+        "r2": 0.9788977697668375,
+        "persistence_rmse": 0.7220937953725398,
+        "increment_r2": 0.00586093016634992,
+        "residual_mean": 9.007311392346164e-12,
+        "residual_std": 0.7199746149093201,
+        "residual_lag1_autocorr": -0.1342392402557482,
+        "residual_vs_power_corr": 2.0651003357031888e-12,
+        "residual_vs_temp_corr": 2.0976365531747834e-12,
+        "dTdt_std": 0.07220937952179969,
+        "dTdt_max_abs": 1.4471431732177735
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6244157424904058,
+            "test_mae": 0.2793427568445772,
+            "test_r2": 0.9826104354364358,
+            "test_increment_r2": 0.004182307645866579,
+            "test_residual_std": 0.624348945771694,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.7345692918764449,
+            "test_mae": 0.31508930241081234,
+            "test_r2": 0.9741564089150638,
+            "test_increment_r2": 0.0053781028070372106,
+            "test_residual_std": 0.7344444721421526,
+            "n_test_pairs": 241159
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6167549083966921,
+            "test_mae": 0.25148084442404434,
+            "test_r2": 0.9799022479089728,
+            "test_increment_r2": 0.005526818961055779,
+            "test_residual_std": 0.616750629448465,
+            "n_test_pairs": 204406
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.759126669025309,
+            "test_mae": 0.27417543891182916,
+            "test_r2": 0.9797472363514934,
+            "test_increment_r2": 0.005701262186360467,
+            "test_residual_std": 0.7588127008316651,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 0.9780545450806706,
+            "test_mae": 0.31683714700231486,
+            "test_r2": 0.9684958463624636,
+            "test_increment_r2": 0.007630313905235719,
+            "test_residual_std": 0.9778751308195414,
+            "n_test_pairs": 174141
+          }
+        ],
+        "mean_test_increment_r2": 0.005683761101111151,
+        "median_test_increment_r2": 0.005526818961055779
+      },
+      "C": {
+        "tau_point_s": 343.5616826146739,
+        "alpha": 0.9713126695304478,
+        "se_alpha": 0.0007143380544291225,
+        "se_tau_s": 8.680688559278591,
+        "tau_ci95_s": [
+          326.54753303848787,
+          360.5758321908599
+        ],
+        "tau_ci_width_s": 34.02829915237208,
+        "tau_cov": 0.025266754118836155,
+        "n_pairs": 1191675,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017452,
+        "n_test": 174140,
+        "train_r2_NONEVIDENCE": 0.0298738185291495,
+        "test_r2_out_of_sample": -0.007465221029389735
+      }
+    },
+    "h31n04/p1": {
+      "A": {
+        "n_pairs": 1191675,
+        "n_segments": 83,
+        "duration_h": 3310.4,
+        "alpha": 0.9629800427783205,
+        "beta": 0.002313016083936175,
+        "gamma": 0.9096307319428422,
+        "is_stable": true,
+        "tau_eff_s": 265.09313455238964,
+        "r_eff": 0.062480247345656964,
+        "t_ref": 24.571360968784354,
+        "rmse": 0.7042274604865786,
+        "mae": 0.2739752147444105,
+        "r2": 0.9792252386599789,
+        "persistence_rmse": 0.7065355795153074,
+        "increment_r2": 0.006522952275383687,
+        "residual_mean": 9.358014548952146e-12,
+        "residual_std": 0.7042274604865786,
+        "residual_lag1_autocorr": -0.1045440913512981,
+        "residual_vs_power_corr": 2.1800419841489354e-12,
+        "residual_vs_temp_corr": 2.219539162302294e-12,
+        "dTdt_std": 0.07065355795152625,
+        "dTdt_max_abs": 1.4431749343872071
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.6043827792500956,
+            "test_mae": 0.2680209842601189,
+            "test_r2": 0.9831824747145115,
+            "test_increment_r2": 0.00421952885600696,
+            "test_residual_std": 0.6042923170608938,
+            "n_test_pairs": 259198
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.7092961002622064,
+            "test_mae": 0.2970585598001597,
+            "test_r2": 0.9761587574455143,
+            "test_increment_r2": 0.005275707608752067,
+            "test_residual_std": 0.7090797442037113,
+            "n_test_pairs": 241159
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6086097632785262,
+            "test_mae": 0.24255840492541542,
+            "test_r2": 0.9806677072023878,
+            "test_increment_r2": 0.006221997184414407,
+            "test_residual_std": 0.608570210581852,
+            "n_test_pairs": 204406
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.698310258404841,
+            "test_mae": 0.25467710622089507,
+            "test_r2": 0.9824441880415857,
+            "test_increment_r2": 0.006376399883675665,
+            "test_residual_std": 0.6979288574575935,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 1.0322414237308264,
+            "test_mae": 0.3333303793105447,
+            "test_r2": 0.9642721193311093,
+            "test_increment_r2": 0.00847883696528573,
+            "test_residual_std": 1.0319548100613636,
+            "n_test_pairs": 174141
+          }
+        ],
+        "mean_test_increment_r2": 0.006114494099626966,
+        "median_test_increment_r2": 0.006221997184414407
+      },
+      "C": {
+        "tau_point_s": 265.09313454614875,
+        "alpha": 0.9629800427774653,
+        "se_alpha": 0.0006864252419694031,
+        "se_tau_s": 5.009252453565167,
+        "tau_ci95_s": [
+          255.274999737161,
+          274.9112693551365
+        ],
+        "tau_ci_width_s": 19.636269617975454,
+        "tau_cov": 0.018896198357385718,
+        "n_pairs": 1191675,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017452,
+        "n_test": 174140,
+        "train_r2_NONEVIDENCE": 0.01711996502314561,
+        "test_r2_out_of_sample": 0.010403329477700285
+      }
+    },
+    "h36n14/p0": {
+      "A": {
+        "n_pairs": 1191538,
+        "n_segments": 86,
+        "duration_h": 3310.1,
+        "alpha": 0.9642174731981362,
+        "beta": 0.0019776980508885884,
+        "gamma": 0.9174752439610527,
+        "is_stable": true,
+        "tau_eff_s": 274.43564552058405,
+        "r_eff": 0.05526993836515697,
+        "t_ref": 25.64031458821586,
+        "rmse": 0.7688251288508043,
+        "mae": 0.2744755618435899,
+        "r2": 0.9770220008593065,
+        "persistence_rmse": 0.7716219506663848,
+        "increment_r2": 0.007236064570294021,
+        "residual_mean": 7.394489656164728e-12,
+        "residual_std": 0.7688251288508043,
+        "residual_lag1_autocorr": -0.047156606963123515,
+        "residual_vs_power_corr": 1.5442116368325376e-12,
+        "residual_vs_temp_corr": 1.585622194098327e-12,
+        "dTdt_std": 0.07716219506620069,
+        "dTdt_max_abs": 1.4042861938476563
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.5865288367759814,
+            "test_mae": 0.2301981472829769,
+            "test_r2": 0.9839008869154791,
+            "test_increment_r2": 0.004656247368672539,
+            "test_residual_std": 0.5862506985738475,
+            "n_test_pairs": 259179
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.6427989261858893,
+            "test_mae": 0.23995833805229697,
+            "test_r2": 0.9833627969815532,
+            "test_increment_r2": 0.005885518174206239,
+            "test_residual_std": 0.6425649709182321,
+            "n_test_pairs": 241074
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6655816015802511,
+            "test_mae": 0.24916030012724316,
+            "test_r2": 0.9749679962441081,
+            "test_increment_r2": 0.006898566245087334,
+            "test_residual_std": 0.6653907369176043,
+            "n_test_pairs": 204404
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 1.059258931963356,
+            "test_mae": 0.37904895381282694,
+            "test_r2": 0.9598503408094516,
+            "test_increment_r2": 0.008432067489577366,
+            "test_residual_std": 1.0578790857508569,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 1.206828166374223,
+            "test_mae": 0.4235590351132639,
+            "test_r2": 0.9623956887921576,
+            "test_increment_r2": 0.007640513332710319,
+            "test_residual_std": 1.2046389996318767,
+            "n_test_pairs": 174110
+          }
+        ],
+        "mean_test_increment_r2": 0.00670258252205076,
+        "median_test_increment_r2": 0.006898566245087334
+      },
+      "C": {
+        "tau_point_s": 274.43564553605216,
+        "alpha": 0.9642174732001165,
+        "se_alpha": 0.000597042958664975,
+        "se_tau_s": 4.663496154366724,
+        "tau_ci95_s": [
+          265.2951930734934,
+          283.5760979986109
+        ],
+        "tau_ci_width_s": 18.280904925117557,
+        "tau_cov": 0.01699304091951163,
+        "n_pairs": 1191538,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017344,
+        "n_test": 174108,
+        "train_r2_NONEVIDENCE": 0.012099976308076799,
+        "test_r2_out_of_sample": 0.006445683303287653
+      }
+    },
+    "h36n14/p1": {
+      "A": {
+        "n_pairs": 1191538,
+        "n_segments": 86,
+        "duration_h": 3310.1,
+        "alpha": 0.9642421682378758,
+        "beta": 0.0021861738420559766,
+        "gamma": 0.873790267481659,
+        "is_stable": true,
+        "tau_eff_s": 274.6286714117806,
+        "r_eff": 0.06113832227298632,
+        "t_ref": 24.436332529737005,
+        "rmse": 0.7512163117790288,
+        "mae": 0.2817811185221308,
+        "r2": 0.9784247681164127,
+        "persistence_rmse": 0.75384838283087,
+        "increment_r2": 0.006970834330838227,
+        "residual_mean": 9.249706555212657e-12,
+        "residual_std": 0.7512163117790288,
+        "residual_lag1_autocorr": -0.05221726606391894,
+        "residual_vs_power_corr": 2.08722286554963e-12,
+        "residual_vs_temp_corr": 2.138059566541214e-12,
+        "dTdt_std": 0.07538483828271342,
+        "dTdt_max_abs": 1.3695240020751953
+      },
+      "B": {
+        "n_blocks": 6,
+        "n_folds": 5,
+        "folds": [
+          {
+            "train_blocks": [
+              "2020-01"
+            ],
+            "test_block": "2020-08",
+            "test_rmse": 0.5742603961160603,
+            "test_mae": 0.24374537582400144,
+            "test_r2": 0.9849639263154965,
+            "test_increment_r2": 0.004266357499276507,
+            "test_residual_std": 0.5738239960516743,
+            "n_test_pairs": 259179
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08"
+            ],
+            "test_block": "2021-02",
+            "test_rmse": 0.6418428436479322,
+            "test_mae": 0.2556644010822874,
+            "test_r2": 0.9827959903646788,
+            "test_increment_r2": 0.006031132750745738,
+            "test_residual_std": 0.641535460942926,
+            "n_test_pairs": 241074
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02"
+            ],
+            "test_block": "2021-08",
+            "test_rmse": 0.6448579608413473,
+            "test_mae": 0.2563516862841378,
+            "test_r2": 0.9790080437110338,
+            "test_increment_r2": 0.00628565563414718,
+            "test_residual_std": 0.6444643644331631,
+            "n_test_pairs": 204404
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08"
+            ],
+            "test_block": "2021-12",
+            "test_rmse": 0.901772455928708,
+            "test_mae": 0.3417934569609516,
+            "test_r2": 0.9714971286866539,
+            "test_increment_r2": 0.006009987101232017,
+            "test_residual_std": 0.9002869204140131,
+            "n_test_pairs": 91457
+          },
+          {
+            "train_blocks": [
+              "2020-01",
+              "2020-08",
+              "2021-02",
+              "2021-08",
+              "2021-12"
+            ],
+            "test_block": "2022-01",
+            "test_rmse": 1.2197691514161577,
+            "test_mae": 0.4297483791538131,
+            "test_r2": 0.9604717605571457,
+            "test_increment_r2": 0.007799423555073792,
+            "test_residual_std": 1.218073951658261,
+            "n_test_pairs": 174110
+          }
+        ],
+        "mean_test_increment_r2": 0.006078511308095047,
+        "median_test_increment_r2": 0.006031132750745738
+      },
+      "C": {
+        "tau_point_s": 274.62867142917975,
+        "alpha": 0.9642421682401002,
+        "se_alpha": 0.0005946961253415146,
+        "se_tau_s": 4.651582635736932,
+        "tau_ci95_s": [
+          265.51156946313534,
+          283.74577339522415
+        ],
+        "tau_ci_width_s": 18.23420393208877,
+        "tau_cov": 0.016937716704996206,
+        "n_pairs": 1191538,
+        "method": "analytic OLS delta-method (iid); autocorr may make this optimistic"
+      },
+      "D": {
+        "features": [
+          "P",
+          "dP",
+          "T",
+          "lagP",
+          "lagT"
+        ],
+        "test_block": "2022-01",
+        "n_train": 1017344,
+        "n_test": 174108,
+        "train_r2_NONEVIDENCE": 0.01293817621047233,
+        "test_r2_out_of_sample": 0.009574679594670954
+      }
+    }
+  },
+  "rollup": {
+    "tau_point_s": {
+      "n": 20,
+      "median": 393.81588281282984,
+      "min": 265.09313455238964,
+      "max": 2596.204998917906
+    },
+    "tau_cov": {
+      "n": 20,
+      "median": 0.02557941320273303,
+      "min": 0.016937716704996206,
+      "max": 0.06909003715164681
+    },
+    "oos_increment_r2": {
+      "n": 20,
+      "median": 0.005578809946011509,
+      "min": 0.002409266004470334,
+      "max": 0.006898566245087334
+    },
+    "residual_pred_oos_r2": {
+      "n": 20,
+      "median": 0.004786438370775414,
+      "min": -0.11185442068658569,
+      "max": 0.029244697487231686
+    }
+  },
+  "decision_gate": {
+    "gate": "A_TAU_IDENTIFIABILITY__B_RESIDUAL_NULL (split)",
+    "tau_axis": {
+      "median_tau_cov": 0.02557941320273303,
+      "well_identified_lt_0.05": true,
+      "interpretation": "Summit tau CoV ~median is a few percent -> tau is SHARPLY identified (M100 published no per-node CI; tau there was the 'trustworthy' quantity but not tightly constrained). Observability IMPROVED for the parameter."
+    },
+    "residual_axis": {
+      "median_oos_increment_r2": 0.005578809946011509,
+      "median_residual_pred_oos_r2": 0.004786438370775414,
+      "learnable": false,
+      "interpretation": "OOS increment R2 ~0 and residual unpredictable OOS -> the unexplained DYNAMICS remain unlearnable even with float temps + co-located power. V1's residual-null CORROBORATED."
+    },
+    "headline": "Better instrumentation sharply identifies tau but does NOT make the residual learnable: observability gain is in PARAMETER IDENTIFIABILITY, not residual predictability."
+  },
+  "comparison": {
+    "M100_v1": {
+      "sampling_s": 20,
+      "temp_resolution": "1 C quantized",
+      "alignment": "exact-ts join; single-core temp vs socket power",
+      "increment_r2": "~0.04 in-sample; ~0/neg OOS",
+      "tau": "~230 s median; per-node CI not published, not tightly constrained",
+      "residual_predictability": "R2 <= 0.042 in-sample; negative OOS"
+    },
+    "Summit_v2": {
+      "sampling_s": 10,
+      "temp_resolution": "float (non-quantized)",
+      "alignment": "co-located in one row (no join)",
+      "increment_r2": "~0.006 in & OOS (still ~0)",
+      "tau": "median 394 s; CoV median 0.026 (tight, well-identified)",
+      "residual_predictability": "OOS test R2 median 0.005 (~0)"
+    }
+  }
+}
