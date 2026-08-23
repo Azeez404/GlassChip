@@ -1,193 +1,111 @@
-# GLASSCHIP-V1
+# GLASSCHIP-V2
 
-Physics-constrained thermal modelling of fleet-scale processor telemetry.
-
-Dataset: **M100 ExaData** (CINECA Marconi100), record `21-03`, CC-BY-4.0.
-
----
-
-## Status — FROZEN (all phases complete)
-
-| Layer | State |
-|---|---|
-| Dataset exploration, schema, EDA | complete |
-| `loader` | **LOCKED** |
-| `validator` | **LOCKED** |
-| `preprocessing` | **LOCKED** |
-| `visualization` | **LOCKED** |
-| `screening` (physics-based node screening) | **LOCKED** |
-| `baseline` (classical first-order thermal model) | **LOCKED** |
-| `pinn` (the single physics-informed neural network) | **LOCKED** |
-| Adversarial audit | complete |
-
-**Headline result:** the PINN provides **no scientifically meaningful
-improvement** over the classical first-order baseline. The residual the
-baseline leaves is real but **orthogonal to the available inputs** (explained
-variance R² ≤ 0.04 from power, power-change, fan, and temperature), so it is
-not learnable within scope. See `docs/RESEARCH_SUMMARY.md`.
+**An empirical HPC measurement-quality study on the Summit supercomputer.**
+Manuscript complete and submission-ready.
 
 ---
 
-## Layout
+## Research question
+
+> On real supercomputer temperature and power measurements, how does measurement quality —
+> temperature quantization, sampling rate, and spatial aggregation — affect identification of
+> a first-order thermal model, and does higher measurement quality that sharpens parameter
+> identification also make the unexplained residual dynamics more predictable out-of-sample?
+
+Holding hardware and workload fixed, only the *measurements* are degraded (five conditions,
+F0–F4), and the model is re-identified in each.
+
+## Main findings
+
+- **Measurement quality substantially changes the identified effective thermal response time
+  τ**: about 394 s at full quality, 116 s under 1 °C quantization (0.29×), 910 s under 10 s→20 s
+  downsampling (2.31×) — roughly a factor of eight across conditions on the same units.
+- **The strongest result:** the quantization-induced estimate falls **below the entire
+  full-quality range observed across all 116 sampled host-sockets** (minimum ≈ 205 s). A
+  measurement choice can bias an identified parameter further than real unit-to-unit variation.
+- **Better measurements do not buy predictability**: out-of-sample residual R² ≤ 0.066, near a
+  permutation null, and no better at full quality than under degradation.
+- **Extended 116-unit ablation (Phase 2F):** the degradation is *not* a constant per-unit
+  factor, and spatial aggregation disturbs the rank ordering of units (Spearman ρ ≈ 0.49) far
+  more than quantization or downsampling do (ρ ≈ 0.80).
+- **F0 is a reference measurement regime, not physical ground truth.** An ideal first-order
+  process would leave τ invariant under decimation; the observed shift indicates dynamics
+  faster than the model represents.
+
+This is a measurement-quality study. It is **not** a new model, a monitor, a digital twin, or
+a physics-informed-ML paper.
+
+## Repository layout
 
 ```
-data/       raw/ (Zenodo record, gitignored) - exports/ (generated, gitignored)
-src/        loader/ - validator/ - preprocessing/ - visualization/
-            screening/ - baseline/ - pinn/     (7 locked layers)
-docs/       RESEARCH_SUMMARY.md - handovers/HANDOVER.md
-reports/    validation/
-examples/   run_pipeline.py - run_baseline.py - run_pinn.py
-README.md - requirements.txt - .gitignore
+README.md                     this file
+requirements.txt
+docs/handovers/
+  PROJECT_HANDOVER.md         full project history and state — read this second
+src/baseline/                 frozen classical first-order estimator (V1 module,
+                              imported read-only by the Phase 2 generators)
+v2_research/
+  README.md                   V2 pipeline guide
+  paper/                      manuscript, figures, tables, references, claim audits
+    manuscript.md             ** the paper **
+  paper_analysis/             canonical analysis pipeline, validator, result manifest
+  summit/                     Phase 2A–2F experiment code + locked JSON results
+  data_audit/                 dataset provenance
 ```
 
----
+## Reproduce the analysis
 
-## Dataset
-
-**The dataset is not included in this repository and never will be.** It is
-public, permanently archived, and must be downloaded separately.
-
-| | |
-|---|---|
-| Source | M100 ExaData, CINECA Marconi100 |
-| Paper | Borghesi et al., *Nature Scientific Data* (2023), DOI `10.1038/s41597-023-02174-3` |
-| Archive | Zenodo, DOI series `10.5281/zenodo.7588815` … `7590583` |
-| Licence | CC-BY-4.0 |
-| Record used | `21-03` (March 2021), inside the `21-01` – `21-06` record (`10.5281/zenodo.7589131`) |
-| Size on disk | ~575 MB extracted, 338 Parquet files |
-
-### Download
-
-1. Open the Zenodo record and download the archive containing `21-03`.
-2. Extract it so the tree looks exactly like this:
-
-```
-data/raw/21-03/
-    year_month=21-03/
-        plugin=ipmi_pub/
-            metric=p0_power/
-                a_0.parquet
-        plugin=ganglia_pub/
-        plugin=logics_pub/
-        plugin=nagios_pub/
-        plugin=schneider_pub/
-```
-
-3. Confirm the loader sees it:
+Regenerates every table, figure, and manifest entry from the locked Phase 2 result artifacts,
+then validates them. **Requires no raw data.**
 
 ```bash
-PYTHONPATH=src python -c "from loader import DatasetLoader; print(DatasetLoader('data/raw/21-03'))"
+python v2_research/paper_analysis/run_all.py
 ```
 
-Expected: `DatasetLoader(root='...21-03/year_month=21-03', metrics=338, plugins=5)`
+Expected: `44/44 passed`, `PASS (23 checks)`, `GATE: GREEN (reproduced + validated)`.
 
-`data/` is git-ignored in full. Nothing you place there will be committed.
-
----
-
-## Setup
+Validation alone:
 
 ```bash
-git clone <repository-url>
-cd GLASSCHIP
-
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-pip install -r requirements.txt
+python v2_research/paper_analysis/validate_results.py
 ```
 
-Python 3.10 or newer (verified on 3.13). No packaging metadata is required;
-`src/` is placed on the path by the examples. `torch` (CPU build) is needed
-only for the PINN layer.
+## Datasets are intentionally not committed
 
----
+Both datasets are public and are referenced by local path, never redistributed here. `.gitignore`
+excludes them deliberately.
 
-## Running
+| Dataset | Size | Where it must go locally |
+|---|---|---|
+| Summit per-component power and thermal (OSTI/OLCF DOI `10.13139/OLCF/1861393`, CC-BY-4.0) | ~12 GB | `v2_research/summit/raw/` → derived to `v2_research/summit/derived/cleaned/` |
+| M100 ExaData (DOI `10.1038/s41597-023-02174-3`, CC-BY-4.0) — V1 only, context in V2 | ~1.2 GB | `data/raw/` |
 
-From the repository root, after the dataset is in place:
+Only the **derived JSON result artifacts** and provenance manifests are committed (~4 MB total).
+Regenerating the Phase 2 results from raw data additionally requires the Summit archive and
+`polars`.
 
-```bash
-python examples/run_pipeline.py     # load -> validate -> preprocess -> visualise
-python examples/run_baseline.py     # screening + classical first-order fit
-python examples/run_pinn.py         # PINN vs baseline on one node
-```
+Note: the public Summit release provides 10 s and 1 min means only — the original 1 Hz
+measurements are **not** distributed. This bounds the fast dynamics any analysis of this archive
+can resolve, and is discussed in the manuscript.
 
-The examples insert `src/` on `sys.path` themselves. For ad-hoc imports set
-`PYTHONPATH=src`:
+## Branches
 
-```python
-from loader import DatasetLoader
-from validator import DatasetValidator
-from preprocessing import TimeSeriesBuilder, Exporter
-from visualization import ThermalVisualizer
-from screening import NodeScreener
-from baseline import ClassicalBaselineModel
-from pinn import ThermalPINN
-```
-
-Examples write to the git-ignored `data/exports/`. The pipeline is
-deterministic: node 15's model-ready frame has SHA-256 (first 16)
-`8473342129fb19f0` — the reproducibility anchor.
-
----
-
-## Pipeline
-
-```
-data/raw/21-03
-      |
-   loader          raw parquet -> dataframes
-      |
-   validator       what can safely coexist?  PASS / FAIL
-      |
-  preprocessing    gate -> clean -> exact join -> export
-      |
-  visualization    what does the data look like?
-      |
-  screening        which nodes deserve to teach a model?  PASS / FAIL (372/22)
-      |
-  baseline         how much does simple first-order physics explain?
-      |
-  pinn             can a PINN explain what the baseline cannot?  (answer: no)
-```
-
-Each layer refuses to proceed when the previous one reports a problem.
-`preprocessing` raises `IncompatibleSelectionError` whenever `validator`
-returns `FAIL`; there is no override.
-
----
-
-## Documentation
-
-| Topic | Path |
+| Branch | Contents |
 |---|---|
-| **Complete scientific summary** | `docs/RESEARCH_SUMMARY.md` |
-| **Project state + how to continue** | `docs/handovers/HANDOVER.md` |
-| Validation report | `reports/validation/glasschip_v1_compatibility.md` |
-| API reference | in-code docstrings in `src/` |
+| `main` | **GLASSCHIP-V2** — the current project (this README) |
+| `backup/v1` | **GLASSCHIP-V1**, frozen at the `Release GLASSCHIP-V1.0` commit: 26 files, full V1 source, docs, handover, research summary, usage examples |
+| `archive/exploratory-2026-08` | Historical exploratory work removed from `main` — PINN opportunity hunts and prototype, GPU/HBM coupling study, strategy/novelty audits, early V2 decision records |
 
----
+**V1** asked whether a physics-informed neural network could learn thermal behaviour classical
+first-order physics cannot already explain, on CINECA Marconi100 data. The answer was **no** — a
+rigorous negative result. V1 is frozen; nothing in V2 depends on it except the classical
+estimator in `src/baseline/`.
 
-## Scope
+The `archive/` branch preserves later exploratory directions (a PINN prototype and a GPU/HBM
+thermal-coupling study, both of which produced honest negative results). They are historical and
+form no part of the V2 contribution.
 
-**In scope (prototype):** temperature (`p0_core0_temp`), power
-(`p0_power`), fan speed (`fan0_0`) - the IPMI-only triple that validates.
+## Licence and citation
 
-**Out of scope:** CPU utilisation, frequency, GPU metrics, and the
-remaining ~330 metrics.
-
----
-
-## Known constraints
-
-1. Record `21-03` contains **61.978 h** of contiguous data plus a 9-sample
-   fragment, separated by a 648.9 h gap - not a month.
-2. **394 nodes** carry all three metrics, not 980.
-3. Node ID namespaces are **plugin-specific** and do not match across
-   plugins.
-4. The data is **observational and closed-loop**; no causal claim is
-   supported.
-5. No instrument characterisation is possible from this record.
-
-Full detail in `docs/handovers/HANDOVER.md`.
+Datasets are used under CC-BY-4.0 and cited in the manuscript. See
+`v2_research/paper/references/references_block.md` for the verified reference list.
