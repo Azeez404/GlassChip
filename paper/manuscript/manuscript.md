@@ -269,7 +269,7 @@ semantics. We do not interpolate missing values. Long interruptions in the measu
 stream (collection gaps) segment each unit's series into contiguous segments; no model pair
 or evaluation window is ever formed across a gap. From the raw archive of about 73.9 million
 rows this yields about 67.3 million cleaned rows across the sampled hosts [source:
-v2_research/summit/derived derived_manifest.json]. The raw data hash is recorded and
+artifacts/manifests/derived_manifest.json]. The raw data hash is recorded and
 unchanged (Section 10).
 
 ### 4.5 Measurement-quality conditions (F0-F4)

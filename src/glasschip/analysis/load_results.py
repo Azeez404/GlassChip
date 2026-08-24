@@ -134,7 +134,8 @@ def write_manifest(data, path):
     add("streaming_oos_vs_baseline", st.per_window["F0_full"], "2E", "fig06_streaming_boundary",
         "table04_fleet_streaming", "computable does not mean useful as a standalone monitor", "V")
 
-    Path(path).write_text(json.dumps({"generated_from": {k: str(v) for k, v in C.SRC.items()},
+    Path(path).write_text(json.dumps({"generated_from": {k: v.relative_to(C.REPO).as_posix()
+                                          for k, v in C.SRC.items()},
                                       "source_hashes": {k: _sha12(v) for k, v in C.SRC.items()},
                                       "raw_sha256": C.RAW_SHA256, "rows": rows}, indent=2))
     return len(rows)

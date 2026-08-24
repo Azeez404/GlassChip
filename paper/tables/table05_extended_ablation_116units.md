@@ -1,6 +1,6 @@
 # Table 5 — Extended ablation across all 116 sampled host-sockets (paired per unit)
 
-Source: `v2_research/summit/phase2f_fleet_ablation/phase2f_results.json` (Phase 2F).
+Source: `artifacts/results/phase2f_ablation_116.json` (Phase 2F).
 Reuses the frozen Phase 2B condition definitions, segmentation and estimator. Bootstrap
 CIs are percentile intervals over 2000 resamples of the 116 paired units, seed 0.
 

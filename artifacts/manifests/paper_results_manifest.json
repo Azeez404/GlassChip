@@ -1,10 +1,10 @@
 {
   "generated_from": {
-    "2A": "C:\\Users\\Acer\\Desktop\\Azeez Archieve\\Internship kottayam\\GlassChip\\artifacts\\results\\phase2a_counterfactual.json",
-    "2B": "C:\\Users\\Acer\\Desktop\\Azeez Archieve\\Internship kottayam\\GlassChip\\artifacts\\results\\phase2b_ablation.json",
-    "2C": "C:\\Users\\Acer\\Desktop\\Azeez Archieve\\Internship kottayam\\GlassChip\\artifacts\\results\\phase2c_bootstrap.json",
-    "2D": "C:\\Users\\Acer\\Desktop\\Azeez Archieve\\Internship kottayam\\GlassChip\\artifacts\\results\\phase2d_fleet.json",
-    "2E": "C:\\Users\\Acer\\Desktop\\Azeez Archieve\\Internship kottayam\\GlassChip\\artifacts\\results\\phase2e_streaming.json"
+    "2A": "artifacts/results/phase2a_counterfactual.json",
+    "2B": "artifacts/results/phase2b_ablation.json",
+    "2C": "artifacts/results/phase2c_bootstrap.json",
+    "2D": "artifacts/results/phase2d_fleet.json",
+    "2E": "artifacts/results/phase2e_streaming.json"
   },
   "source_hashes": {
     "2A": "aab18fe9307a",
