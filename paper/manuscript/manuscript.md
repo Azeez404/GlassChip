@@ -12,26 +12,25 @@ only the measurements along three axes — temperature quantization to 1 degC, t
 downsampling from 10 s to 20 s, and spatial aggregation to a single hottest-core proxy —
 and re-identify the model in each condition. The identified effective thermal response
 time, tau (an identification parameter, not a directly measured physical R.C constant),
-shifts substantially: quantization moves the subset median from about 394 s to about
-116 s (0.29x), and downsampling to about 910 s (2.31x). A moving-block bootstrap confirms
-Because an ideal first-order process would leave tau unchanged under decimation, we read
-the downsampling result as evidence of dynamics faster than the model represents, and
-treat F0 as a reference measurement regime rather than as physical ground truth. A
-moving-block bootstrap confirms these shifts are not an artifact of the uncertainty
-calculation, and shows that a precise-looking confidence interval can surround a
-substantially biased estimate. Across
-all 116 host-socket units (median tau about 439 s, range 205-2596 s), the
-quantization-induced estimate falls below the entire full-quality range observed across
-those units. In contrast, higher measurement quality does not materially improve
-out-of-sample prediction
-of the residual (strongest model R^2 <= 0.066, near a permutation null). Finally, tau is
-cheaply and causally computable online (about 0.041 ms per window), but a short-window tau
-statistic does not separate out-of-sample behaviour from baseline variability. Applying
-all five conditions to all 116 units, paired per unit, shows the shift is not a constant
-factor, and that spatial aggregation disturbs unit ordering (Spearman rho about 0.49) far
-more than quantization or downsampling does (about 0.80). These are controlled empirical
-findings — a caution for thermal-model calibration on real systems —
-rather than a new model, a monitor, or a physical claim.
+shifts substantially: quantization moves the subset median from about 394 s to about 116 s
+(0.29x), and downsampling to about 910 s (2.31x). Because an ideal first-order process
+would leave tau unchanged under decimation, we read the downsampling result as evidence of
+dynamics faster than the model represents, and treat F0 as a reference measurement regime
+rather than as physical ground truth. A moving-block bootstrap confirms these shifts are
+not an artifact of the uncertainty calculation, and shows that a precise-looking
+confidence interval can surround a substantially biased estimate. Across all 116
+host-socket units (median tau about 439 s, range 205-2596 s), the quantization-induced
+estimate falls below the entire full-quality range observed across those units — whether
+that estimate is the 20-unit subset median (about 116 s) or the all-116-unit median (about
+142 s). In contrast, higher measurement quality does not materially improve out-of-sample
+prediction of the residual (strongest model R^2 <= 0.066, near a permutation null).
+Finally, tau is cheaply and causally computable online (about 0.041 ms per window), but a
+short-window tau statistic does not separate out-of-sample behaviour from baseline
+variability. Applying all five conditions to all 116 units, paired per unit, shows the
+shift is not a constant factor, and that spatial aggregation disturbs unit ordering
+(Spearman rho about 0.49) far more than quantization or downsampling does (about 0.80).
+These are controlled empirical findings — a caution for thermal-model calibration on real
+systems — rather than a new model, a monitor, or a physical claim.
 
 ## 2. Introduction
 
@@ -94,7 +93,9 @@ are established in prior work, and we position our contribution accordingly.
 1. A controlled, same-hardware measurement-quality ablation on real Summit temperature and
    power measurements (five conditions, F0-F4).
 2. A quantification of how quantization, sampling, and spatial aggregation shift the
-   identified effective tau (ratios 1.00, 0.29, 2.31, 0.72, 0.89 relative to full quality).
+   identified effective tau. On the 20-unit ablation subset the ratios relative to full
+   quality are 1.00, 0.29, 2.31, 0.72 and 0.89; across all 116 sampled units (Section 7.8)
+   the corresponding per-unit median ratios are 1.00, 0.33, 2.26, 0.69 and 0.82.
 3. A demonstration that conventional analytic uncertainty can remain tight around a
    substantially shifted estimate, corroborated by a moving-block bootstrap.
 4. A population-scale comparison across 116 sampled host-sockets — our strongest result —
@@ -392,7 +393,8 @@ reference; we use this to avoid over-interpreting small positive values.
 
 We first compare the identified effective thermal response time across the five
 measurement-quality conditions on the same hardware and workload (Table 2, Figure 2). At
-full quality (F0) the subset median is about 394 s. Quantizing temperature to 1 degC (F1)
+full quality (F0) the median over the 20-unit ablation subset is about 394 s. Quantizing
+temperature to 1 degC (F1)
 lowers it to about 116 s, a factor of about 0.29 relative to F0; downsampling from 10 s to
 20 s (F2) raises it to about 910 s, a factor of about 2.31; the hottest-core proxy (F3)
 gives about 283 s (about 0.72x); and the combined degradation (F4) gives about 352 s
@@ -483,18 +485,23 @@ Placing the measurement-quality effect against this natural variation is our str
 observation (Table 4, Figure 5). The quantized estimate of about 116 s lies below the
 entire full-quality range observed across the sampled units: it is below the sampled
 minimum of about 205 s and well below the 5th percentile of about 275 s. In other words,
-quantizing the temperature
-measurements produces an identified effective response time that no full-quality unit in
-any of the 116 sampled units exhibits. By contrast, the downsampled estimate of about
-910 s falls within the sampled units' natural upper range (below the 95th percentile of
-about 1200 s). The overall swing
-induced by measurement quality, from the quantized 0.29x to the downsampled 2.31x, spans
-about a factor of eight, compared with a natural spread across sampled units (95th over
-5th percentile) of about 4.4x. A measurement artifact can thus produce an identified
-effective thermal
-parameter outside the range observed across any full-quality sampled unit. This is an
-empirical comparison on these measurements and does not establish that every quantized
+quantizing the temperature measurements produces an identified effective response time
+that no full-quality sampled unit exhibits.
+
+By contrast, the downsampled estimate of about 910 s falls within the sampled units'
+natural upper range (below the 95th percentile of about 1200 s). The overall swing induced
+by measurement quality, from the quantized 0.29x to the downsampled 2.31x, spans about a
+factor of eight, compared with a natural spread across sampled units (95th over 5th
+percentile) of about 4.4x. A measurement artifact can thus produce an identified effective
+thermal parameter outside the range observed across any full-quality sampled unit. This is
+an empirical comparison on these measurements and does not establish that every quantized
 deployment will behave this way.
+
+This comparison does not depend on the choice of ablation subset. The 116 s figure is the
+median over the 20-unit subset; applying the same quantization to all 116 units
+(Section 7.8) gives a median of about 142 s, which also lies below the full-quality
+minimum of about 205 s. The margin is narrower at the larger sample, and we report both
+values rather than only the more favourable one.
 
 ### 7.7 Online computation is feasible, but tau is not a useful standalone monitor here
 
@@ -523,7 +530,14 @@ five conditions to all 116 sampled host-sockets, reusing the same condition defi
 segmentation, and estimator without modification. All 116 units yield a valid estimate in
 every condition, so every comparison below is exactly paired. The full-quality median over
 all 116 units is about 439 s, reproducing the independently computed value of Section 7.5.
-Two things become visible that the medians conceal (Table 5).
+
+Two sets of condition medians therefore appear in this paper and should not be conflated.
+Sections 7.1-7.4 report the 20-unit ablation subset (F0 about 394 s, F1 about 116 s); this
+section reports all 116 units (F0 about 439 s, F1 about 142 s). Both are correct for their
+respective samples, and the subset is representative of the wider population (Section 7.5).
+A condition median quoted without qualification elsewhere in the text refers to the 20-unit
+subset, which is the canonical ablation. Two things become visible that the medians conceal
+(Table 5).
 
 **The degradation is not a constant factor.** Under quantization the per-unit ratio to
 full quality has a median of about 0.33 but a 5th-95th percentile range of about
